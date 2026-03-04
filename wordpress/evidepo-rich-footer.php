@@ -61,7 +61,7 @@ add_action('generate_before_footer', function() {
                         <p style="font-size:14px;margin:0;">💬 <a href="https://wa.me/905355298192" style="color:#25D366;text-decoration:none;font-weight:600;">WhatsApp ile Yazın</a></p>
                     </div>
                     <div style="margin-bottom:14px;">
-                        <p style="font-size:14px;margin:0;">📧 <a href="/iletisim/" style="color:#cbd5e1;text-decoration:none;">İletişim Formu</a></p>
+                        <p style="font-size:14px;margin:0;">📧 <a href="mailto:info@evidepo.com" style="color:#cbd5e1;text-decoration:none;">info@evidepo.com</a></p>
                     </div>
                     <div style="margin-bottom:14px;">
                         <p style="font-size:14px;margin:0;">📍 İstanbul, Türkiye</p>
