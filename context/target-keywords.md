@@ -36,15 +36,15 @@ Her konu kümesinde:
 
 4. **güvenli eşya depolama**
    - Niyet: Ticari
-   - İçerik: Henüz oluşturulmadı
+   - İçerik: https://evidepo.com/guvenli-esya-depolama-istanbul/
 
 5. **kilitli depolama odası**
    - Niyet: Ticari
-   - İçerik: Henüz oluşturulmadı
+   - İçerik: https://evidepo.com/kilitli-depolama-odasi/
 
 6. **kiralık eşya deposu**
    - Niyet: İşlemsel
-   - İçerik: Henüz oluşturulmadı
+   - İçerik: https://evidepo.com/kiralik-esya-deposu-istanbul/
 
 7. **eşya depolama firması**
    - Niyet: Ticari
@@ -138,7 +138,7 @@ Her konu kümesinde:
    - İçerik: Henüz oluşturulmadı
 
 5. **uzun süreli depolama**
-   - İçerik: Henüz oluşturulmadı
+   - İçerik: https://evidepo.com/uzun-sureli-esya-depolama/
 
 ### Uzun Kuyruk Anahtar Kelimeler
 - kentsel dönüşümde eşyalar nereye konur
@@ -173,7 +173,7 @@ Her konu kümesinde:
    - İçerik: Henüz oluşturulmadı
 
 3. **uzun süreli eşya depolama**
-   - İçerik: Henüz oluşturulmadı
+   - İçerik: https://evidepo.com/uzun-sureli-esya-depolama/
 
 4. **göç ederken eşya depolama**
    - İçerik: Henüz oluşturulmadı
@@ -203,7 +203,7 @@ Her konu kümesinde:
 
 ### Küme Anahtar Kelimeleri
 1. **evden eve nakliyat depolama**
-   - İçerik: Henüz oluşturulmadı
+   - İçerik: https://evidepo.com/evden-eve-nakliyat-ve-depolama/
 
 2. **taşınma sırasında depolama**
    - İçerik: Henüz oluşturulmadı
@@ -329,12 +329,16 @@ Her konu kümesinde:
 
 ## Anahtar Kelime Fırsat Hattı
 
+### Yüksek Öncelik (Tamamlanan)
+1. ~~**güvenli eşya depolama İstanbul**~~ - OLUŞTURULDU: /guvenli-esya-depolama-istanbul/
+2. ~~**kiralık eşya deposu İstanbul**~~ - OLUŞTURULDU: /kiralik-esya-deposu-istanbul/
+3. ~~**uzun süreli eşya depolama**~~ - OLUŞTURULDU: /uzun-sureli-esya-depolama/
+4. ~~**kilitli depolama odası**~~ - OLUŞTURULDU: /kilitli-depolama-odasi/
+5. ~~**evden eve nakliyat ve depolama**~~ - OLUŞTURULDU: /evden-eve-nakliyat-ve-depolama/
+
 ### Yüksek Öncelik (Yakında Oluştur)
-1. **güvenli eşya depolama İstanbul** - Doğrudan dönüşüm potansiyeli yüksek
-2. **tadilat depolama fiyatları** - Ticari niyet, mevcut sayfa yok
-3. **kentsel dönüşüm depolama fiyatları** - Uzun süreli müşteri potansiyeli
-4. **kiralık eşya deposu İstanbul** - Yüksek hacim, işlemsel niyet
-5. **uzun süreli eşya depolama** - Yurt dışı + kentsel dönüşüm kesişimi
+1. **tadilat depolama fiyatları** - Ticari niyet, mevcut sayfa yok
+2. **kentsel dönüşüm depolama fiyatları** - Uzun süreli müşteri potansiyeli
 
 ### Orta Öncelik (Gelecek Çeyrek)
 - evden eve nakliyat ve depolama

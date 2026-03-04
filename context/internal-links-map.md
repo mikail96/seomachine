@@ -124,6 +124,36 @@ Bu belge, blog içeriklerinde stratejik iç bağlantılar için kullanılacak Ev
 - **Ne Zaman Linkle**: Ofis, kurumsal, iş yeri taşıma ve depolama
 - **Anchor Text Örnekleri**: "ofis taşıma rehberi", "kurumsal depolama kılavuzu", "ofis depolama çözümleri"
 
+### Güvenli Eşya Depolama İstanbul
+- **URL**: https://evidepo.com/guvenli-esya-depolama-istanbul/
+- **Birincil Konu**: Güvenli depolama, güvenlik kriterleri
+- **Ne Zaman Linkle**: Güvenlik, eşya emniyeti, firma güvenilirliği konularında
+- **Anchor Text Örnekleri**: "güvenli eşya depolama rehberi", "güvenli depolama kriterleri", "İstanbul güvenli depo"
+
+### Kiralık Eşya Deposu İstanbul
+- **URL**: https://evidepo.com/kiralik-esya-deposu-istanbul/
+- **Birincil Konu**: Kiralık depo, depo kiralama süreci
+- **Ne Zaman Linkle**: Depo kiralama, aylık kiralama, depo seçimi konularında
+- **Anchor Text Örnekleri**: "kiralık eşya deposu rehberi", "depo kiralama kılavuzu", "İstanbul kiralık depo"
+
+### Uzun Süreli Eşya Depolama
+- **URL**: https://evidepo.com/uzun-sureli-esya-depolama/
+- **Birincil Konu**: Uzun vadeli depolama çözümleri
+- **Ne Zaman Linkle**: Uzun süreli saklama, yıllık depolama, kentsel dönüşüm/yurt dışı süreçlerinde
+- **Anchor Text Örnekleri**: "uzun süreli depolama rehberi", "uzun vadeli eşya saklama", "yıllık depolama çözümleri"
+
+### Kilitli Depolama Odası
+- **URL**: https://evidepo.com/kilitli-depolama-odasi/
+- **Birincil Konu**: Anahtar Sizde modeli, kilitli oda kavramı
+- **Ne Zaman Linkle**: Güvenlik, kilitli oda, anahtar sizde modeli konularında
+- **Anchor Text Örnekleri**: "kilitli depolama odası nedir", "anahtar sizde modeli", "kişiye özel kilitli oda"
+
+### Evden Eve Nakliyat ve Depolama
+- **URL**: https://evidepo.com/evden-eve-nakliyat-ve-depolama/
+- **Birincil Konu**: Entegre nakliyat + depolama hizmeti
+- **Ne Zaman Linkle**: Taşınma + depolama, tek elden hizmet, Sanat Nakliyat entegrasyonu konularında
+- **Anchor Text Örnekleri**: "nakliyat ve depolama tek elden", "evden eve nakliyat depolama", "taşınma ve depolama paketi"
+
 ---
 
 ## WhatsApp & Doğrudan İletişim Linkleri
