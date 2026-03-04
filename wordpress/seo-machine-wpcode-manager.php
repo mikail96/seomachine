@@ -51,6 +51,93 @@ add_action('rest_api_init', function () {
         },
     ));
 
+    // GET: ld+json içeren tüm kaynakları tara
+    register_rest_route('seo-machine/v1', '/find-schema', array(
+        'methods'  => 'GET',
+        'callback' => function () {
+            global $wpdb;
+            $results = array();
+
+            // 1. wp_options tablosunda ld+json ara
+            $options = $wpdb->get_results(
+                "SELECT option_name, option_value FROM {$wpdb->options} WHERE option_value LIKE '%ld+json%' LIMIT 50"
+            );
+            foreach ($options as $opt) {
+                $results[] = array(
+                    'source' => 'wp_options',
+                    'key'    => $opt->option_name,
+                    'value'  => substr($opt->option_value, 0, 2000),
+                );
+            }
+
+            // 2. wp_postmeta tablosunda ld+json ara
+            $metas = $wpdb->get_results(
+                "SELECT post_id, meta_key, meta_value FROM {$wpdb->postmeta} WHERE meta_value LIKE '%ld+json%' LIMIT 50"
+            );
+            foreach ($metas as $m) {
+                $results[] = array(
+                    'source'  => 'wp_postmeta',
+                    'post_id' => $m->post_id,
+                    'key'     => $m->meta_key,
+                    'value'   => substr($m->meta_value, 0, 2000),
+                );
+            }
+
+            // 3. wp_posts tablosunda ld+json ara (content)
+            $posts = $wpdb->get_results(
+                "SELECT ID, post_title, post_type, post_status FROM {$wpdb->posts} WHERE post_content LIKE '%ld+json%' LIMIT 50"
+            );
+            foreach ($posts as $p) {
+                $results[] = array(
+                    'source'  => 'wp_posts',
+                    'post_id' => $p->ID,
+                    'title'   => $p->post_title,
+                    'type'    => $p->post_type,
+                    'status'  => $p->post_status,
+                );
+            }
+
+            // 4. Tema customizer (theme_mods)
+            $theme_mods = get_theme_mods();
+            foreach ($theme_mods as $key => $val) {
+                if (is_string($val) && strpos($val, 'ld+json') !== false) {
+                    $results[] = array(
+                        'source' => 'theme_mods',
+                        'key'    => $key,
+                        'value'  => substr($val, 0, 2000),
+                    );
+                }
+            }
+
+            // 5. Widget'larda ara
+            $sidebars = get_option('sidebars_widgets', array());
+            foreach ($sidebars as $sidebar => $widgets) {
+                if (!is_array($widgets)) continue;
+                foreach ($widgets as $widget_id) {
+                    $base = preg_replace('/-\d+$/', '', $widget_id);
+                    $num  = preg_replace('/^.+-/', '', $widget_id);
+                    $instances = get_option("widget_{$base}", array());
+                    if (isset($instances[$num])) {
+                        $content = json_encode($instances[$num]);
+                        if (strpos($content, 'ld+json') !== false) {
+                            $results[] = array(
+                                'source'    => 'widget',
+                                'sidebar'   => $sidebar,
+                                'widget_id' => $widget_id,
+                                'content'   => substr($content, 0, 2000),
+                            );
+                        }
+                    }
+                }
+            }
+
+            return $results;
+        },
+        'permission_callback' => function () {
+            return current_user_can('manage_options');
+        },
+    ));
+
     // GET: WPCode snippet'lerini listele (eğer varsa)
     register_rest_route('seo-machine/v1', '/wpcode-snippets', array(
         'methods'  => 'GET',
