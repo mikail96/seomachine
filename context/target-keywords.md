@@ -19,20 +19,20 @@ Her konu kümesinde:
 ### Pillar Anahtar Kelime
 - **Anahtar Kelime**: eşya depolama
 - **Arama Niyeti**: Ticari
-- **Pillar İçerik URL**: https://evidepo.com/blog/istanbul-esya-depolama-rehberi
+- **Pillar İçerik URL**: https://evidepo.com/istanbul-esya-depolama-rehberi/
 
 ### Küme Anahtar Kelimeleri (Alt Konular)
 1. **İstanbul eşya depolama**
    - Niyet: Ticari/Yerel
-   - İçerik: https://evidepo.com/blog/istanbul-esya-depolama-rehberi
+   - İçerik: https://evidepo.com/istanbul-esya-depolama-rehberi/
 
 2. **eşya depolama fiyatları**
    - Niyet: Ticari
-   - İçerik: https://evidepo.com/blog/esya-depolama-fiyatlari
+   - İçerik: https://evidepo.com/esya-depolama-fiyatlari-2026/
 
 3. **ev eşyası depolama**
    - Niyet: Ticari
-   - İçerik: https://evidepo.com/ev-esyasi-depolama
+   - İçerik: https://evidepo.com/hizmetlerimiz/ev-esyasi-depolama/
 
 4. **güvenli eşya depolama**
    - Niyet: Ticari
@@ -48,7 +48,7 @@ Her konu kümesinde:
 
 7. **eşya depolama firması**
    - Niyet: Ticari
-   - İçerik: https://evidepo.com/blog/depolama-firmasi-secimi-kriterleri
+   - İçerik: https://evidepo.com/depolama-firmasi-secerken-dikkat/
 
 ### Uzun Kuyruk Anahtar Kelimeler
 - İstanbul'da en uygun eşya depolama
@@ -80,17 +80,17 @@ Her konu kümesinde:
 ### Pillar Anahtar Kelime
 - **Anahtar Kelime**: tadilat depolama
 - **Arama Niyeti**: Ticari
-- **Pillar İçerik URL**: https://evidepo.com/tadilat-depolama
+- **Pillar İçerik URL**: https://evidepo.com/hizmetlerimiz/tadilat-depolama/
 
 ### Küme Anahtar Kelimeleri
 1. **tadilat sırasında eşya depolama**
-   - İçerik: https://evidepo.com/blog/tadilat-sirasinda-esya-koruma
+   - İçerik: https://evidepo.com/tadilat-sirasinda-esya-depolama/
 
 2. **tadilat depolama fiyatları**
    - İçerik: Henüz oluşturulmadı
 
 3. **ev tadilatında eşya koruma**
-   - İçerik: https://evidepo.com/blog/tadilat-sirasinda-esya-koruma
+   - İçerik: https://evidepo.com/tadilat-sirasinda-esya-depolama/
 
 4. **tadilat süresince depo kiralama**
    - İçerik: Henüz oluşturulmadı
@@ -122,11 +122,11 @@ Her konu kümesinde:
 ### Pillar Anahtar Kelime
 - **Anahtar Kelime**: kentsel dönüşüm depolama
 - **Arama Niyeti**: Ticari
-- **Pillar İçerik URL**: https://evidepo.com/kentsel-donusum-depolama
+- **Pillar İçerik URL**: https://evidepo.com/hizmetlerimiz/kentsel-donusum-depolama/
 
 ### Küme Anahtar Kelimeleri
 1. **kentsel dönüşümde eşya depolama**
-   - İçerik: https://evidepo.com/blog/kentsel-donusumde-esya-depolama
+   - İçerik: https://evidepo.com/kentsel-donusumde-esya-depolama/
 
 2. **kentsel dönüşüm eşya deposu**
    - İçerik: Henüz oluşturulmadı
@@ -163,11 +163,11 @@ Her konu kümesinde:
 ### Pillar Anahtar Kelime
 - **Anahtar Kelime**: yurt dışına çıkarken eşya depolama
 - **Arama Niyeti**: Ticari
-- **Pillar İçerik URL**: https://evidepo.com/yurt-disi-depolama
+- **Pillar İçerik URL**: https://evidepo.com/hizmetlerimiz/yurt-disi-depolama/
 
 ### Küme Anahtar Kelimeleri
 1. **yurt dışı eşya depolama**
-   - İçerik: https://evidepo.com/blog/yurt-disina-cikarken-esya-depolama
+   - İçerik: https://evidepo.com/yurt-disina-cikarken-esya-depolama/
 
 2. **yurt dışına giderken eşya saklama**
    - İçerik: Henüz oluşturulmadı
@@ -199,7 +199,7 @@ Her konu kümesinde:
 ### Pillar Anahtar Kelime
 - **Anahtar Kelime**: nakliyat ve depolama
 - **Arama Niyeti**: Ticari
-- **Pillar İçerik URL**: https://evidepo.com/nakliyat-depolama
+- **Pillar İçerik URL**: https://evidepo.com/hizmetlerimiz/nakliyat-ve-depolama/
 
 ### Küme Anahtar Kelimeleri
 1. **evden eve nakliyat depolama**
@@ -229,11 +229,11 @@ Her konu kümesinde:
 ### Pillar Anahtar Kelime
 - **Anahtar Kelime**: ofis depolama
 - **Arama Niyeti**: Ticari
-- **Pillar İçerik URL**: https://evidepo.com/ofis-kurumsal-depolama
+- **Pillar İçerik URL**: https://evidepo.com/hizmetlerimiz/ofis-depolama/
 
 ### Küme Anahtar Kelimeleri
 1. **ofis taşıma depolama**
-   - İçerik: https://evidepo.com/blog/ofis-tasima-depolama-rehberi
+   - İçerik: https://evidepo.com/ofis-tasima-depolama-kurumsal-rehber/
 
 2. **kurumsal depolama hizmeti**
    - İçerik: Henüz oluşturulmadı
@@ -258,7 +258,7 @@ Her konu kümesinde:
 ### Pillar Anahtar Kelime
 - **Anahtar Kelime**: eşya paketleme
 - **Arama Niyeti**: Bilgisel
-- **Pillar İçerik URL**: https://evidepo.com/blog/esya-paketleme-rehberi
+- **Pillar İçerik URL**: https://evidepo.com/esya-paketleme-rehberi/
 
 ### Küme Anahtar Kelimeleri
 1. **depolama öncesi paketleme**
@@ -283,7 +283,7 @@ Her konu kümesinde:
 ### Pillar Anahtar Kelime
 - **Anahtar Kelime**: eşya depolama fiyatları
 - **Arama Niyeti**: Ticari
-- **Pillar İçerik URL**: https://evidepo.com/blog/esya-depolama-fiyatlari
+- **Pillar İçerik URL**: https://evidepo.com/esya-depolama-fiyatlari-2026/
 
 ### Küme Anahtar Kelimeleri
 1. **depolama fiyat listesi 2026**

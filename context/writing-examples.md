@@ -4,7 +4,7 @@ Bu dosya, Evidepo'nun marka sesini, stilini ve kalite standartlarını gösteren
 
 ## Örnek 1: İstanbul'da Eşya Depolama: 2026 Kapsamlı Rehber
 
-**URL**: https://evidepo.com/blog/istanbul-esya-depolama-rehberi
+**URL**: https://evidepo.com/istanbul-esya-depolama-rehberi/
 **Birincil Anahtar Kelime**: İstanbul eşya depolama
 **Kelime Sayısı**: ~3.000+ kelime
 **Yayın Tarihi**: 2026
@@ -27,7 +27,7 @@ Bu dosya, Evidepo'nun marka sesini, stilini ve kalite standartlarını gösteren
 
 ## Örnek 2: Eşya Depolama Fiyatları 2026: Kapsamlı Fiyat Rehberi
 
-**URL**: https://evidepo.com/blog/esya-depolama-fiyatlari
+**URL**: https://evidepo.com/esya-depolama-fiyatlari-2026/
 **Birincil Anahtar Kelime**: eşya depolama fiyatları
 **Yayın Tarihi**: 2026
 
@@ -47,7 +47,7 @@ Bu dosya, Evidepo'nun marka sesini, stilini ve kalite standartlarını gösteren
 
 ## Örnek 3: Depolama Firması Seçerken Dikkat Edilmesi Gereken 12 Kriter
 
-**URL**: https://evidepo.com/blog/depolama-firmasi-secimi-kriterleri
+**URL**: https://evidepo.com/depolama-firmasi-secerken-dikkat/
 **Birincil Anahtar Kelime**: depolama firması seçimi
 **Yayın Tarihi**: 2026
 
