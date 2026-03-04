@@ -1,8 +1,8 @@
 """
 WordPress SEO Issue Fixer
 
-Audits all posts/pages on evidepo.com for missing SEO fields
-and fixes them via the WordPress REST API + Yoast SEO.
+Audits all posts/pages on evidepo.com for SEO issues and fixes them
+via the WordPress REST API + RankMath SEO.
 
 Usage:
     # Audit only (no changes)
@@ -11,16 +11,19 @@ Usage:
     # Fix all issues
     python3 fix_wordpress_seo.py --fix
 
+    # Fix double H1 tags in page content
+    python3 fix_wordpress_seo.py --fix-h1
+
     # Fix specific post by ID
     python3 fix_wordpress_seo.py --fix --id 123
 
 Prerequisites:
     1. WordPress API credentials in data_sources/config/.env
-    2. SEO Machine Yoast REST plugin installed (wordpress/seo-machine-yoast-rest.php)
+    2. RankMath SEO plugin active on WordPress
 """
 
 import sys
-import os
+import re
 from pathlib import Path
 
 # Add modules to path
@@ -41,165 +44,59 @@ for env_path in env_paths:
 from wordpress_publisher import WordPressPublisher
 
 
-# Known SEO data for evidepo.com pages that need fixes
-# Map: slug -> {meta_description, focus_keyphrase, seo_title, canonical_url}
-KNOWN_SEO_FIXES = {
-    # Hizmet sayfaları - meta description eksik olanlar
-    'ev-esyasi-depolama': {
-        'meta_description': 'İstanbul\'da ev eşyası depolama hizmeti. Kilitli özel odalar, 7/24 güvenlik, sigorta ve ücretsiz nakliyat. Evidepo ile eşyalarınız güvende.',
-        'focus_keyphrase': 'ev eşyası depolama',
-        'seo_title': 'Ev Eşyası Depolama İstanbul | Kilitli Oda Sistemi — Evidepo',
-    },
-    'ofis-depolama': {
-        'meta_description': 'İstanbul\'da ofis ve kurumsal depolama çözümleri. Arşiv, mobilya ve ekipman depolama. Kilitli odalar, sigorta ve esnek sözleşme seçenekleri.',
-        'focus_keyphrase': 'ofis depolama',
-        'seo_title': 'Ofis ve Kurumsal Depolama İstanbul — Evidepo',
-    },
-    'tadilat-depolama': {
-        'meta_description': 'Tadilat süresince eşyalarınızı güvenle depolayın. Kısa süreli esnek sözleşme, ücretsiz nakliyat ve sigorta ile tadilat depolama hizmeti.',
-        'focus_keyphrase': 'tadilat depolama',
-        'seo_title': 'Tadilat Depolama İstanbul | Esnek Süreli Depolama — Evidepo',
-    },
-    'kentsel-donusum-depolama': {
-        'meta_description': 'Kentsel dönüşüm sürecinde eşyalarınız için güvenli depolama. Uzun süreli özel fiyatlar, sigorta ve ücretsiz nakliyat. Evidepo kentsel dönüşüm depolama.',
-        'focus_keyphrase': 'kentsel dönüşüm depolama',
-        'seo_title': 'Kentsel Dönüşüm Depolama İstanbul — Evidepo',
-    },
-    'yurt-disi-depolama': {
-        'meta_description': 'Yurt dışına çıkarken eşyalarınızı güvenle depolayın. Uzun süreli depolama, sigorta, vekalet ile erişim. Evidepo yurt dışı depolama hizmeti.',
-        'focus_keyphrase': 'yurt dışı depolama',
-        'seo_title': 'Yurt Dışı Depolama İstanbul | Uzun Süreli Güvenli Depo — Evidepo',
-    },
-    'nakliyat-ve-depolama': {
-        'meta_description': 'Nakliyat ve depolama tek elden. İstanbul içi taşıma + güvenli depolama hizmeti. Profesyonel ekip, sigorta ve kilitli oda sistemi.',
-        'focus_keyphrase': 'nakliyat ve depolama',
-        'seo_title': 'Nakliyat ve Depolama İstanbul | Tek Elden Çözüm — Evidepo',
-    },
-    # Fiyatlar sayfası
-    'fiyatlar': {
-        'meta_description': 'Evidepo eşya depolama fiyatları 2026. Kilitli oda boyutlarına göre aylık fiyatlar, nakliyat dahil seçenekler. Ücretsiz keşif ve fiyat teklifi.',
-        'focus_keyphrase': 'eşya depolama fiyatları',
-        'seo_title': 'Eşya Depolama Fiyatları 2026 | Güncel Fiyat Listesi — Evidepo',
-    },
+# RankMath focus keywords for all content
+FOCUS_KEYWORDS = {
+    # Blog Posts
+    101: 'istanbul eşya depolama',
+    102: 'eşya depolama fiyatları',
+    106: 'kentsel dönüşüm eşya depolama',
+    107: 'tadilat sırasında eşya depolama',
+    108: 'yurt dışına çıkarken eşya depolama',
+    109: 'eşya paketleme rehberi',
+    110: 'depolama firması seçerken dikkat',
+    111: 'ofis taşıma depolama',
+    # Hizmet Sayfaları
+    9: 'ev eşyası depolama',
+    10: 'ofis depolama',
+    11: 'tadilat depolama',
+    12: 'kentsel dönüşüm depolama',
+    13: 'yurt dışı depolama',
+    14: 'nakliyat ve depolama',
+    # Ana Sayfalar
+    6: 'eşya depolama istanbul',
+    15: 'eşya depolama fiyatları',
+    17: 'eşya depolama nasıl çalışır',
+    18: 'eşya depolama sıkça sorulan sorular',
+    8: 'depolama hizmetleri',
+    # İlçe Sayfaları
+    19: 'kadıköy eşya depolama',
+    20: 'üsküdar eşya depolama',
+    21: 'ataşehir eşya depolama',
+    22: 'ümraniye eşya depolama',
+    23: 'kartal eşya depolama',
+    24: 'pendik eşya depolama',
+    25: 'maltepe eşya depolama',
+    26: 'tuzla eşya depolama',
+    27: 'sancaktepe eşya depolama',
+    28: 'sultanbeyli eşya depolama',
+    29: 'beşiktaş eşya depolama',
+    30: 'şişli eşya depolama',
+    31: 'sarıyer eşya depolama',
+    32: 'beylikdüzü eşya depolama',
+    33: 'esenyurt eşya depolama',
+    34: 'bakırköy eşya depolama',
+    35: 'bahçelievler eşya depolama',
+    36: 'küçükçekmece eşya depolama',
+    37: 'başakşehir eşya depolama',
+    38: 'fatih eşya depolama',
+    145: 'bağcılar eşya depolama',
 }
 
 
-def audit(publisher: WordPressPublisher):
-    """Audit all posts and pages for SEO issues"""
-    print("=" * 60)
-    print("EVIDEPO.COM SEO AUDIT")
-    print("=" * 60)
-
-    result = publisher.audit_seo()
-    issues = result['issues']
-    summary = result['summary']
-
-    if not issues:
-        print("\nHiç SEO sorunu bulunamadı!")
-        return
-
-    print(f"\nToplam {summary['total_issues']} sayfa/yazıda sorun var:\n")
-    print(f"  Meta Description eksik: {summary['meta_desc_missing']}")
-    print(f"  SEO Title eksik:        {summary['seo_title_missing']}")
-    print(f"  Canonical URL eksik:     {summary['canonical_missing']}")
-    print(f"  Focus Keyphrase eksik:   {summary['keyphrase_missing']}")
-
-    print("\n" + "-" * 60)
-
-    for item in issues:
-        print(f"\n[ID: {item['id']}] {item['title']}")
-        print(f"  URL: {item['url']}")
-        print(f"  Tip: {item['type']}")
-        print(f"  Sorunlar: {', '.join(item['issues'])}")
-
-    print("\n" + "=" * 60)
-    print(f"Düzeltmek için: python3 fix_wordpress_seo.py --fix")
-
-
-def fix(publisher: WordPressPublisher, target_id: int = None):
-    """Fix SEO issues on posts and pages"""
-    print("=" * 60)
-    print("EVIDEPO.COM SEO FIX")
-    print("=" * 60)
-
-    fixed_count = 0
-
-    for post_type in ['posts', 'pages']:
-        items = publisher.get_all_content(post_type)
-
-        for item in items:
-            post_id = item['id']
-            if target_id and post_id != target_id:
-                continue
-
-            url = item.get('link', '')
-            title = item.get('title', {}).get('rendered', '')
-            slug = item.get('slug', '')
-            yoast = item.get('yoast_seo', {})
-
-            needs_fix = False
-            fix_data = {}
-
-            # Check if we have known fixes for this slug
-            if slug in KNOWN_SEO_FIXES:
-                known = KNOWN_SEO_FIXES[slug]
-                if not yoast.get('meta_description') and known.get('meta_description'):
-                    fix_data['meta_description'] = known['meta_description']
-                    needs_fix = True
-                if not yoast.get('seo_title') and known.get('seo_title'):
-                    fix_data['seo_title'] = known['seo_title']
-                    needs_fix = True
-                if not yoast.get('focus_keyphrase') and known.get('focus_keyphrase'):
-                    fix_data['focus_keyphrase'] = known['focus_keyphrase']
-                    needs_fix = True
-
-            # Always set canonical URL if missing
-            if not yoast.get('canonical_url') and url:
-                fix_data['canonical_url'] = url
-                needs_fix = True
-
-            if needs_fix:
-                print(f"\n[ID: {post_id}] {title}")
-                print(f"  URL: {url}")
-
-                yoast_update = {'yoast_seo': fix_data}
-
-                try:
-                    response = publisher.session.post(
-                        f"{publisher.api_base}/{post_type}/{post_id}",
-                        json=yoast_update
-                    )
-                    response.raise_for_status()
-
-                    for key, val in fix_data.items():
-                        print(f"  + {key}: {val[:60]}{'...' if len(val) > 60 else ''}")
-
-                    fixed_count += 1
-                except Exception as e:
-                    print(f"  HATA: {e}")
-
-    print(f"\n{'=' * 60}")
-    print(f"Toplam {fixed_count} sayfa düzeltildi.")
-
-
-def main():
-    import argparse
-
-    parser = argparse.ArgumentParser(description='WordPress SEO Issue Fixer')
-    parser.add_argument('--audit', action='store_true', help='Audit only, no changes')
-    parser.add_argument('--fix', action='store_true', help='Fix SEO issues')
-    parser.add_argument('--id', type=int, help='Fix specific post/page by ID')
-    args = parser.parse_args()
-
-    if not args.audit and not args.fix:
-        print("Kullanım:")
-        print("  python3 fix_wordpress_seo.py --audit   # Sadece kontrol")
-        print("  python3 fix_wordpress_seo.py --fix     # Düzelt")
-        print("  python3 fix_wordpress_seo.py --fix --id 123  # Belirli sayfa")
-        sys.exit(0)
-
+def get_publisher():
+    """Create and return a WordPressPublisher instance"""
     try:
-        publisher = WordPressPublisher()
+        return WordPressPublisher()
     except ValueError as e:
         print(f"Hata: {e}")
         print("\nWordPress API bilgilerini .env dosyasına ekleyin:")
@@ -208,10 +105,176 @@ def main():
         print("  WORDPRESS_APP_PASSWORD=your_app_password")
         sys.exit(1)
 
+
+def audit(wp):
+    """Audit all posts and pages for SEO issues"""
+    import requests
+
+    print("=" * 60)
+    print("EVIDEPO.COM SEO AUDIT")
+    print("=" * 60)
+
+    issues_found = []
+
+    for post_type in ['posts', 'pages']:
+        items = wp.get_all_content(post_type)
+
+        for item in items:
+            url = item.get('link', '')
+            title = item.get('title', {}).get('rendered', '')
+            post_id = item['id']
+
+            item_issues = []
+
+            # Check live page for actual meta
+            try:
+                resp = requests.get(url, timeout=10)
+                html = resp.text
+
+                # Check meta description
+                if not re.search(r'<meta\s+name=["\']description["\']', html, re.I):
+                    item_issues.append('META_DESC_YOK')
+
+                # Check canonical
+                if not re.search(r'<link\s+rel=["\']canonical["\']', html, re.I):
+                    item_issues.append('CANONICAL_YOK')
+
+                # Check H1 count
+                h1s = re.findall(r'<h1[^>]*>.*?</h1>', html, re.DOTALL)
+                if len(h1s) > 1:
+                    item_issues.append(f'CIFT_H1({len(h1s)})')
+                elif len(h1s) == 0:
+                    item_issues.append('H1_YOK')
+
+                # Check focus keyword in RankMath
+                if post_id not in FOCUS_KEYWORDS:
+                    item_issues.append('FOCUS_KW_TANIMSIZ')
+
+            except Exception:
+                item_issues.append('SAYFA_ERISILEMEDI')
+
+            if item_issues:
+                issues_found.append({
+                    'id': post_id,
+                    'type': post_type,
+                    'url': url,
+                    'title': title,
+                    'issues': item_issues,
+                })
+
+    if not issues_found:
+        print("\nHiç SEO sorunu bulunamadı!")
+        return
+
+    print(f"\nToplam {len(issues_found)} sayfada sorun var:\n")
+    for item in issues_found:
+        print(f"[ID: {item['id']}] {item['title']}")
+        print(f"  URL: {item['url']}")
+        print(f"  Sorunlar: {', '.join(item['issues'])}")
+        print()
+
+
+def fix_focus_keywords(wp):
+    """Set RankMath focus keywords for all content"""
+    print("=" * 60)
+    print("RANKMATH FOCUS KEYWORD AYARLAMA")
+    print("=" * 60)
+
+    success = 0
+    for obj_id, keyword in FOCUS_KEYWORDS.items():
+        try:
+            resp = wp.session.post(f'{wp.url}/wp-json/rankmath/v1/updateMeta', json={
+                'objectID': obj_id,
+                'objectType': 'post',
+                'meta': {
+                    'rank_math_focus_keyword': keyword,
+                }
+            })
+            if resp.status_code == 200:
+                success += 1
+                print(f"  [ID:{obj_id}] Focus keyword: \"{keyword}\"")
+            else:
+                print(f"  [ID:{obj_id}] HATA {resp.status_code}")
+        except Exception as e:
+            print(f"  [ID:{obj_id}] HATA: {e}")
+
+    print(f"\n{success}/{len(FOCUS_KEYWORDS)} focus keyword ayarlandı.")
+
+
+def fix_double_h1(wp):
+    """Fix double H1 tags by converting content H1s to H2s"""
+    print("=" * 60)
+    print("CIFT H1 DUZELTME")
+    print("=" * 60)
+
+    fixed = 0
+
+    for post_type in ['pages', 'posts']:
+        page_num = 1
+        while True:
+            resp = wp.session.get(
+                f'{wp.api_base}/{post_type}',
+                params={'per_page': 100, 'page': page_num, 'status': 'publish', 'context': 'edit'}
+            )
+            if resp.status_code == 400:
+                break
+            items = resp.json()
+            if not items:
+                break
+
+            for item in items:
+                pid = item['id']
+                title = item.get('title', {}).get('raw', '')
+                raw_content = item.get('content', {}).get('raw', '')
+
+                h1_tags = re.findall(r'<h1[^>]*>.*?</h1>', raw_content, re.DOTALL)
+                if not h1_tags:
+                    continue
+
+                new_content = re.sub(r'<h1([^>]*)>', r'<h2\1>', raw_content)
+                new_content = re.sub(r'</h1>', r'</h2>', new_content)
+
+                try:
+                    resp = wp.session.post(f'{wp.api_base}/{post_type}/{pid}', json={
+                        'content': new_content
+                    })
+                    resp.raise_for_status()
+                    fixed += 1
+                    h1_text = re.sub(r'<[^>]+>', '', h1_tags[0]).strip()[:50]
+                    print(f"  [ID:{pid}] {title} -> \"{h1_text}\" H1->H2")
+                except Exception as e:
+                    print(f"  [ID:{pid}] {title} -> HATA: {e}")
+
+            page_num += 1
+
+    print(f"\n{fixed} sayfada H1 -> H2 düzeltildi.")
+
+
+def main():
+    import argparse
+
+    parser = argparse.ArgumentParser(description='WordPress SEO Issue Fixer (RankMath)')
+    parser.add_argument('--audit', action='store_true', help='SEO sorunlarını tara')
+    parser.add_argument('--fix', action='store_true', help='Focus keyword ayarla')
+    parser.add_argument('--fix-h1', action='store_true', help='Çift H1 sorununu düzelt')
+    parser.add_argument('--id', type=int, help='Belirli post/page ID')
+    args = parser.parse_args()
+
+    if not args.audit and not args.fix and not args.fix_h1:
+        print("Kullanım:")
+        print("  python3 fix_wordpress_seo.py --audit    # SEO sorunlarını tara")
+        print("  python3 fix_wordpress_seo.py --fix      # Focus keyword ayarla")
+        print("  python3 fix_wordpress_seo.py --fix-h1   # Çift H1 düzelt")
+        sys.exit(0)
+
+    wp = get_publisher()
+
     if args.audit:
-        audit(publisher)
-    elif args.fix:
-        fix(publisher, target_id=args.id)
+        audit(wp)
+    if args.fix:
+        fix_focus_keywords(wp)
+    if args.fix_h1:
+        fix_double_h1(wp)
 
 
 if __name__ == '__main__':
