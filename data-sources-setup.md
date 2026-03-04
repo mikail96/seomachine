@@ -222,12 +222,12 @@ WordPress integration enables publishing articles and landing pages directly fro
 ### Prerequisites
 - A WordPress site with REST API enabled
 - Admin access to install plugins
-- Yoast SEO plugin installed (for SEO metadata)
+- Rank Math SEO plugin installed (for SEO metadata)
 
 ### Step 1: Install the MU-Plugin
 
-1. Copy `wordpress/seo-machine-yoast-rest.php` to your WordPress site's `wp-content/mu-plugins/` directory
-2. This plugin exposes Yoast SEO fields via the REST API for programmatic publishing
+1. Copy `wordpress/seo-machine-rankmath-rest.php` to your WordPress site's `wp-content/mu-plugins/` directory
+2. This plugin exposes Rank Math SEO fields via the REST API for programmatic publishing
 
 ### Step 2: Create an Application Password
 

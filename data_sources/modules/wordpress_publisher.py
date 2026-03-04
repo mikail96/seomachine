@@ -2,7 +2,7 @@
 WordPress Publisher Module
 
 Publishes draft articles to WordPress as draft posts via the REST API.
-Supports Yoast SEO meta fields (title, description, focus keyphrase).
+Supports Rank Math SEO meta fields (title, description, focus keyword).
 """
 
 import os
@@ -309,42 +309,46 @@ class WordPressPublisher:
         response.raise_for_status()
         return response.json()
 
-    def set_yoast_meta(
+    def set_rankmath_meta(
         self,
         post_id: int,
         meta_title: str,
         meta_description: str,
-        focus_keyphrase: str,
-        post_type: str = 'posts'
+        focus_keyword: str,
+        post_type: str = 'posts',
+        noindex: bool = False
     ) -> Dict:
         """
-        Set Yoast SEO meta fields on a post, page, or custom post type
+        Set Rank Math SEO meta fields on a post, page, or custom post type
 
-        Requires the SEO Machine Yoast REST plugin to be installed:
-        wp-content/mu-plugins/seo-machine-yoast-rest.php
+        Requires the SEO Machine Rank Math REST plugin to be installed:
+        wp-content/mu-plugins/seo-machine-rankmath-rest.php
 
         Args:
             post_id: WordPress post ID
             meta_title: SEO title
             meta_description: Meta description
-            focus_keyphrase: Focus keyphrase (target keyword)
+            focus_keyword: Focus keyword (target keyword)
             post_type: WordPress post type endpoint ('posts', 'pages', or custom type)
+            noindex: Set noindex robots meta (for PPC pages)
 
         Returns:
             Updated post response
         """
-        # Use the yoast_seo field provided by our mu-plugin
-        yoast_data = {
-            'yoast_seo': {
+        rankmath_data = {
+            'rankmath_seo': {
                 'seo_title': meta_title,
                 'meta_description': meta_description,
-                'focus_keyphrase': focus_keyphrase
+                'focus_keyword': focus_keyword
             }
         }
 
+        if noindex:
+            rankmath_data['rankmath_seo']['robots'] = 'noindex'
+
         response = self.session.post(
             f"{self.api_base}/{post_type}/{post_id}",
-            json=yoast_data
+            json=rankmath_data
         )
         response.raise_for_status()
         return response.json()
@@ -406,13 +410,13 @@ class WordPressPublisher:
 
         post_id = post['id']
 
-        # Set Yoast meta
+        # Set Rank Math meta
         if draft['meta_title'] or draft['meta_description'] or draft['target_keyword']:
-            self.set_yoast_meta(
+            self.set_rankmath_meta(
                 post_id=post_id,
                 meta_title=draft['meta_title'],
                 meta_description=draft['meta_description'],
-                focus_keyphrase=draft['target_keyword'],
+                focus_keyword=draft['target_keyword'],
                 post_type=api_endpoint
             )
 
@@ -465,7 +469,7 @@ def main():
         print(f"\n✓ Parsed draft file")
         print(f"✓ Converted {result['word_count']:,} words to HTML")
         print(f"✓ Created WordPress {type_label} draft (ID: {result['post_id']})")
-        print(f"✓ Set Yoast meta (title, description, focus keyphrase)")
+        print(f"✓ Set Rank Math meta (title, description, focus keyword)")
 
         if result['categories']:
             print(f"✓ Assigned categories: {', '.join(result['categories'])}")

@@ -20,7 +20,7 @@ Use this command to publish landing pages to WordPress as pages (not blog posts)
 2. Checks landing page score (must be ≥75)
 3. Parses markdown and metadata
 4. Creates WordPress page via REST API
-5. Sets Yoast SEO fields
+5. Sets Rank Math SEO fields
 6. Returns edit URL for review
 
 ## Prerequisites
@@ -82,7 +82,7 @@ if score['overall_score'] < 75:
 1. Parse metadata from file header
 2. Extract main content (markdown)
 3. Convert markdown to HTML
-4. Prepare Yoast SEO fields
+4. Prepare Rank Math SEO fields
 
 ### Step 4: WordPress API Call
 
@@ -99,9 +99,9 @@ result = publisher.create_page(
     slug=url_slug,
     status='draft',  # Always create as draft first
     meta={
-        'yoast_wpseo_title': meta_title,
-        'yoast_wpseo_metadesc': meta_description,
-        'yoast_wpseo_focuskw': target_keyword,
+        'rank_math_title': meta_title,
+        'rank_math_description': meta_description,
+        'rank_math_focus_keyword': target_keyword,
     }
 )
 ```
@@ -110,8 +110,8 @@ result = publisher.create_page(
 
 **For PPC Pages (--noindex):**
 ```python
-# Set noindex via Yoast
-meta['yoast_wpseo_meta-robots-noindex'] = '1'
+# Set noindex via Rank Math
+meta['rank_math_robots'] = 'noindex'
 ```
 
 **For Page Templates:**
@@ -209,7 +209,7 @@ After publishing to WordPress:
    - Add trust badges/logos
 
 3. **Final SEO Check**
-   - Verify Yoast green lights
+   - Verify Rank Math green lights
    - Check mobile preview
    - Validate schema if applicable
 

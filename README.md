@@ -244,7 +244,7 @@ Final SEO optimization pass before publishing.
 ---
 
 ### `/publish-draft [file]`
-Publish article to WordPress via REST API with Yoast SEO metadata.
+Publish article to WordPress via REST API with Rank Math SEO metadata.
 
 ---
 
@@ -575,11 +575,11 @@ python3 test_dataforseo.py
 
 ### WordPress Integration
 
-Publishing uses the WordPress REST API with a custom MU-plugin that exposes Yoast SEO fields.
+Publishing uses the WordPress REST API with a custom MU-plugin that exposes Rank Math SEO fields.
 
 **Setup**:
-1. Install `wordpress/seo-machine-yoast-rest.php` as an MU-plugin on your WordPress site
-2. Add `wordpress/functions-snippet.php` to your theme's functions.php
+1. Install `wordpress/seo-machine-rankmath-rest.php` as an MU-plugin on your WordPress site
+2. Or add `wordpress/functions-snippet.php` to your theme's functions.php
 3. Configure WordPress credentials in `.env`:
    ```
    WP_URL=https://yoursite.com
@@ -670,7 +670,7 @@ seomachine/
 │   ├── competitor-analysis.md
 │   └── cro-best-practices.md
 ├── wordpress/             # WordPress integration
-│   ├── seo-machine-yoast-rest.php
+│   ├── seo-machine-rankmath-rest.php
 │   ├── functions-snippet.php
 │   └── README.md
 ├── topics/                # Raw topic ideas

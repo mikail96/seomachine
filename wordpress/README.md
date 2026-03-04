@@ -1,69 +1,70 @@
-# WordPress Integration Files
+# WordPress Entegrasyon Dosyaları
 
-These files enable the SEO Machine tool to set Yoast SEO meta fields (Focus Keyphrase, SEO Title, Meta Description) via the REST API.
+Bu dosyalar, SEO Machine aracının REST API üzerinden Rank Math SEO meta alanlarını (Focus Keyword, SEO Title, Meta Description) ayarlamasını sağlar.
 
-**Choose ONE option** - either the mu-plugin OR the functions.php snippet. They do the same thing.
-
----
-
-## Option A: MU-Plugin (Recommended)
-
-**File:** `seo-machine-yoast-rest.php`
-
-**Installation:**
-1. Upload to: `wp-content/mu-plugins/seo-machine-yoast-rest.php`
-2. Create the `mu-plugins` folder if it doesn't exist
-3. Done - mu-plugins auto-activate, no enabling required
-
-**Pros:**
-- Won't be lost during theme updates
-- Can't be accidentally deactivated
-- Clean separation from theme code
+**BİR seçenek seçin** - ya MU-plugin YA DA functions.php snippet'i. İkisi de aynı işi yapar.
 
 ---
 
-## Option B: Functions.php Snippet
+## Seçenek A: MU-Plugin (Önerilen)
 
-**File:** `functions-snippet.php`
+**Dosya:** `seo-machine-rankmath-rest.php`
 
-**Installation:**
-1. Copy the contents of this file
-2. Paste at the end of your theme's `functions.php`
-3. Or use a code snippets plugin (WPCode, Code Snippets, etc.)
+**Kurulum:**
+1. Şuraya yükleyin: `wp-content/mu-plugins/seo-machine-rankmath-rest.php`
+2. `mu-plugins` klasörü yoksa oluşturun
+3. Tamam - mu-plugin'ler otomatik aktif olur, etkinleştirme gerekmez
 
-**Pros:**
-- No new files to manage
-- Works with code snippet plugins
-
-**Cons:**
-- Lost if theme is changed/updated (unless using child theme)
+**Artıları:**
+- Tema güncellemelerinde kaybolmaz
+- Yanlışlıkla devre dışı bırakılamaz
+- Tema kodundan temiz ayrım
 
 ---
 
-## What This Code Does
+## Seçenek B: Functions.php Snippet
 
-Registers a custom REST API field called `yoast_seo` on posts that allows reading and writing:
+**Dosya:** `functions-snippet.php`
 
-- `focus_keyphrase` → `_yoast_wpseo_focuskw`
-- `seo_title` → `_yoast_wpseo_title`
-- `meta_description` → `_yoast_wpseo_metadesc`
+**Kurulum:**
+1. Bu dosyanın içeriğini kopyalayın
+2. Temanızın `functions.php` dosyasının sonuna yapıştırın
+3. Veya bir kod snippet eklentisi kullanın (WPCode, Code Snippets, vb.)
 
-**API Usage:**
+**Artıları:**
+- Yönetilecek yeni dosya yok
+- Kod snippet eklentileriyle çalışır
+
+**Eksileri:**
+- Tema değiştirilir/güncellenirse kaybolur (child tema kullanılmıyorsa)
+
+---
+
+## Bu Kod Ne Yapar
+
+Post ve page'lerde `rankmath_seo` adlı özel bir REST API alanı kaydeder:
+
+- `focus_keyword` → `rank_math_focus_keyword`
+- `seo_title` → `rank_math_title`
+- `meta_description` → `rank_math_description`
+- `robots` → `rank_math_robots`
+
+**API Kullanımı:**
 ```json
 POST /wp-json/wp/v2/posts/{id}
 {
-  "yoast_seo": {
-    "focus_keyphrase": "your target keyword",
-    "seo_title": "Your SEO Title | Brand",
-    "meta_description": "Your meta description here."
+  "rankmath_seo": {
+    "focus_keyword": "hedef anahtar kelime",
+    "seo_title": "SEO Başlığınız | Marka",
+    "meta_description": "Meta açıklamanız buraya."
   }
 }
 ```
 
 ---
 
-## Security
+## Güvenlik
 
-- Requires authentication (Application Password)
-- User must have `edit_post` capability
-- All inputs are sanitized with `sanitize_text_field()`
+- Kimlik doğrulama gerektirir (Application Password)
+- Kullanıcının `edit_post` yetkisi olmalı
+- Tüm girdiler `sanitize_text_field()` ile temizlenir

@@ -1,68 +1,68 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Bu dosya, Claude Code'a (claude.ai/code) bu repodaki kodla çalışırken rehberlik sağlar.
 
-## Project Overview
+## Proje Genel Bakış
 
-SEO Machine is an open-source Claude Code workspace for creating SEO-optimized blog content. It combines custom commands, specialized agents, and Python-based analytics to research, write, optimize, and publish articles for any business.
+SEO Machine, SEO odaklı blog içerikleri oluşturmak için açık kaynaklı bir Claude Code çalışma alanıdır. Özel komutlar, uzmanlaşmış ajanlar ve Python tabanlı analizleri bir araya getirerek herhangi bir işletme için araştırma, yazım, optimizasyon ve yayınlama işlemlerini gerçekleştirir.
 
-## Setup
+## Kurulum
 
 ```bash
 pip install -r data_sources/requirements.txt
 ```
 
-API credentials are configured in `data_sources/config/.env` (GA4, GSC, DataForSEO, WordPress). GA4 service account credentials go in `credentials/ga4-credentials.json`.
+API kimlik bilgileri `data_sources/config/.env` dosyasında yapılandırılır (GA4, GSC, DataForSEO, WordPress). GA4 hizmet hesabı kimlik bilgileri `credentials/ga4-credentials.json` dosyasına yerleştirilir.
 
-## Commands
+## Komutlar
 
-All commands are defined in `.claude/commands/` and invoked as slash commands:
+Tüm komutlar `.claude/commands/` dizininde tanımlanmıştır ve eğik çizgi komutları olarak çağrılır:
 
-- `/research [topic]` - Keyword/competitor research, generates brief in `research/`
-- `/write [topic]` - Create full article in `drafts/`, auto-triggers optimization agents
-- `/rewrite [topic]` - Update existing content, saves to `rewrites/`
-- `/optimize [file]` - Final SEO polish pass
-- `/analyze-existing [URL or file]` - Content health audit
-- `/performance-review` - Analytics-driven content priorities
-- `/publish-draft [file]` - Publish to WordPress via REST API
-- `/article [topic]` - Simplified article creation
-- `/priorities` - Content prioritization matrix
-- `/research-serp`, `/research-gaps`, `/research-trending`, `/research-performance`, `/research-topics` - Specialized research commands
-- `/landing-write`, `/landing-audit`, `/landing-research`, `/landing-publish`, `/landing-competitor` - Landing page commands
+- `/research [konu]` - Anahtar kelime/rakip araştırması, `research/` klasörüne brief oluşturur
+- `/write [konu]` - `drafts/` klasörüne tam makale oluşturur, optimizasyon ajanlarını otomatik tetikler
+- `/rewrite [konu]` - Mevcut içeriği günceller, `rewrites/` klasörüne kaydeder
+- `/optimize [dosya]` - Son SEO cilalama geçişi
+- `/analyze-existing [URL veya dosya]` - İçerik sağlık denetimi
+- `/performance-review` - Analitik odaklı içerik önceliklendirme
+- `/publish-draft [dosya]` - WordPress REST API üzerinden yayınlama
+- `/article [konu]` - Basitleştirilmiş makale oluşturma
+- `/priorities` - İçerik önceliklendirme matrisi
+- `/research-serp`, `/research-gaps`, `/research-trending`, `/research-performance`, `/research-topics` - Özel araştırma komutları
+- `/landing-write`, `/landing-audit`, `/landing-research`, `/landing-publish`, `/landing-competitor` - Açılış sayfası komutları
 
-## Architecture
+## Mimari
 
-### Command-Agent Model
+### Komut-Ajan Modeli
 
-**Commands** (`.claude/commands/`) orchestrate workflows. **Agents** (`.claude/agents/`) are specialized roles invoked by commands. After `/write`, these agents auto-run: SEO Optimizer, Meta Creator, Internal Linker, Keyword Mapper.
+**Komutlar** (`.claude/commands/`) iş akışlarını yönetir. **Ajanlar** (`.claude/agents/`) komutlar tarafından çağrılan uzmanlaşmış rollerdir. `/write` komutundan sonra bu ajanlar otomatik çalışır: SEO Optimizer, Meta Creator, Internal Linker, Keyword Mapper.
 
-Key agents: `content-analyzer.md`, `seo-optimizer.md`, `meta-creator.md`, `internal-linker.md`, `keyword-mapper.md`, `editor.md`, `headline-generator.md`, `cro-analyst.md`, `performance.md`.
+Temel ajanlar: `content-analyzer.md`, `seo-optimizer.md`, `meta-creator.md`, `internal-linker.md`, `keyword-mapper.md`, `editor.md`, `headline-generator.md`, `cro-analyst.md`, `performance.md`.
 
-### Python Analysis Pipeline
+### Python Analiz Hattı
 
-Located in `data_sources/modules/`. The Content Analyzer chains:
-1. `search_intent_analyzer.py` - Query intent classification
-2. `keyword_analyzer.py` - Density, distribution, stuffing detection
-3. `content_length_comparator.py` - Benchmarks against top 10 SERP results
-4. `readability_scorer.py` - Flesch Reading Ease, grade level
-5. `seo_quality_rater.py` - Comprehensive 0-100 SEO score
+`data_sources/modules/` dizininde bulunur. İçerik Analizörü şu sırayla çalışır:
+1. `search_intent_analyzer.py` - Arama niyeti sınıflandırması
+2. `keyword_analyzer.py` - Yoğunluk, dağılım, anahtar kelime doldurmayı tespit
+3. `content_length_comparator.py` - SERP ilk 10 sonuçla karşılaştırma
+4. `readability_scorer.py` - Flesch Okunabilirlik Skoru, sınıf seviyesi
+5. `seo_quality_rater.py` - Kapsamlı 0-100 SEO puanı
 
-### Data Integrations
+### Veri Entegrasyonları
 
-- `google_analytics.py` - GA4 traffic/engagement data
-- `google_search_console.py` - Rankings and impressions
-- `dataforseo.py` - SERP positions, keyword metrics
-- `data_aggregator.py` - Combines all sources into unified analytics
-- `wordpress_publisher.py` - Publishes to WordPress with Yoast SEO metadata
+- `google_analytics.py` - GA4 trafik/etkileşim verileri
+- `google_search_console.py` - Sıralama ve gösterimler
+- `dataforseo.py` - SERP pozisyonları, anahtar kelime metrikleri
+- `data_aggregator.py` - Tüm kaynakları birleşik analize dönüştürür
+- `wordpress_publisher.py` - Rank Math SEO meta verileriyle WordPress'e yayınlar
 
-### Opportunity Scoring
+### Fırsat Puanlama
 
-`opportunity_scorer.py` uses 8 weighted factors: Volume (25%), Position (20%), Intent (20%), Competition (15%), Cluster (10%), CTR (5%), Freshness (5%), Trend (5%).
+`opportunity_scorer.py` 8 ağırlıklı faktör kullanır: Hacim (%25), Pozisyon (%20), Niyet (%20), Rekabet (%15), Küme (%10), TO (%5), Tazelik (%5), Trend (%5).
 
-## Running Python Scripts
+## Python Scriptlerini Çalıştırma
 
 ```bash
-# Research & analysis scripts (run from repo root)
+# Araştırma ve analiz scriptleri (repo kök dizininden çalıştırın)
 python3 research_quick_wins.py
 python3 research_competitor_gaps.py
 python3 research_performance_matrix.py
@@ -74,27 +74,27 @@ python3 seo_baseline_analysis.py
 python3 seo_bofu_rankings.py
 python3 seo_competitor_analysis.py
 
-# Test API connectivity
+# API bağlantısını test et
 python3 test_dataforseo.py
 ```
 
-## Content Pipeline
+## İçerik Hattı
 
-`topics/` (ideas) → `research/` (briefs) → `drafts/` (articles) → `review-required/` (pending review) → `published/` (final)
+`topics/` (fikirler) → `research/` (briefler) → `drafts/` (makaleler) → `review-required/` (inceleme bekleyen) → `published/` (son hali)
 
-Rewrites go to `rewrites/`. Landing pages go to `landing-pages/`. Audits go to `audits/`.
+Yeniden yazımlar `rewrites/` klasörüne gider. Açılış sayfaları `landing-pages/` klasörüne gider. Denetimler `audits/` klasörüne gider.
 
-## Context Files
+## Bağlam Dosyaları
 
-`context/` contains brand guidelines that inform all content generation:
-- `brand-voice.md` - Tone, messaging pillars
-- `style-guide.md` - Grammar, formatting standards
-- `seo-guidelines.md` - Keyword and structure rules
-- `internal-links-map.md` - Key pages for internal linking
-- `features.md` - Product features
-- `competitor-analysis.md` - Competitive intelligence
-- `cro-best-practices.md` - Conversion optimization guidelines
+`context/` klasörü tüm içerik üretimini yönlendiren marka kurallarını içerir:
+- `brand-voice.md` - Ton, mesaj ana hatları
+- `style-guide.md` - Dilbilgisi, biçimlendirme standartları
+- `seo-guidelines.md` - Anahtar kelime ve yapı kuralları
+- `internal-links-map.md` - İç bağlantı için ana sayfalar
+- `features.md` - Ürün özellikleri
+- `competitor-analysis.md` - Rekabet istihbaratı
+- `cro-best-practices.md` - Dönüşüm optimizasyonu kuralları
 
-## WordPress Integration
+## WordPress Entegrasyonu
 
-Publishing uses the WordPress REST API with a custom MU-plugin (`wordpress/seo-machine-yoast-rest.php`) that exposes Yoast SEO fields. Articles are published in WordPress block format (HTML comments in Markdown files).
+Yayınlama, Rank Math SEO alanlarını açığa çıkaran özel bir MU-eklentisi (`wordpress/seo-machine-rankmath-rest.php`) ile WordPress REST API kullanır. Makaleler WordPress blok formatında (Markdown dosyalarındaki HTML yorumları) yayınlanır.
