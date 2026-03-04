@@ -138,6 +138,53 @@ add_action('rest_api_init', function () {
         },
     ));
 
+    // GET: Veritabanında herhangi bir metni ara
+    register_rest_route('seo-machine/v1', '/db-search', array(
+        'methods'  => 'GET',
+        'callback' => function ($request) {
+            global $wpdb;
+            $q = $request->get_param('q');
+            if (!$q) return new WP_Error('missing_param', 'q parameter required');
+            $like = '%' . $wpdb->esc_like($q) . '%';
+            $results = array();
+
+            $opts = $wpdb->get_results($wpdb->prepare(
+                "SELECT option_name, LEFT(option_value,500) as val FROM {$wpdb->options} WHERE option_value LIKE %s LIMIT 20", $like
+            ));
+            foreach ($opts as $o) $results[] = array('src'=>'option','key'=>$o->option_name,'val'=>$o->val);
+
+            $posts = $wpdb->get_results($wpdb->prepare(
+                "SELECT ID,post_title,post_type,post_status FROM {$wpdb->posts} WHERE post_content LIKE %s LIMIT 20", $like
+            ));
+            foreach ($posts as $p) $results[] = array('src'=>'post','id'=>$p->ID,'title'=>$p->post_title,'type'=>$p->post_type,'status'=>$p->post_status);
+
+            $metas = $wpdb->get_results($wpdb->prepare(
+                "SELECT post_id,meta_key,LEFT(meta_value,500) as val FROM {$wpdb->postmeta} WHERE meta_value LIKE %s LIMIT 20", $like
+            ));
+            foreach ($metas as $m) $results[] = array('src'=>'postmeta','post_id'=>$m->post_id,'key'=>$m->meta_key,'val'=>$m->val);
+
+            return $results;
+        },
+        'permission_callback' => function () {
+            return current_user_can('manage_options');
+        },
+    ));
+
+    // POST: Belirli bir WPCode snippet'ini sil veya deaktive et
+    register_rest_route('seo-machine/v1', '/delete-snippet/(?P<id>\d+)', array(
+        'methods'  => 'DELETE',
+        'callback' => function ($request) {
+            $id = (int) $request->get_param('id');
+            $post = get_post($id);
+            if (!$post) return new WP_Error('not_found', 'Post not found');
+            wp_delete_post($id, true);
+            return array('success' => true, 'deleted' => $id);
+        },
+        'permission_callback' => function () {
+            return current_user_can('manage_options');
+        },
+    ));
+
     // GET: WPCode snippet'lerini listele (eğer varsa)
     register_rest_route('seo-machine/v1', '/wpcode-snippets', array(
         'methods'  => 'GET',
