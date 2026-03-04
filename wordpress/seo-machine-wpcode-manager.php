@@ -170,6 +170,76 @@ add_action('rest_api_init', function () {
         },
     ));
 
+    // GET: Belirli bir post'un tüm meta verilerini oku
+    register_rest_route('seo-machine/v1', '/post-meta/(?P<id>\d+)', array(
+        'methods'  => 'GET',
+        'callback' => function ($request) {
+            global $wpdb;
+            $id = (int) $request->get_param('id');
+            $filter = $request->get_param('filter');
+            $sql = $wpdb->prepare("SELECT meta_key, meta_value FROM {$wpdb->postmeta} WHERE post_id = %d", $id);
+            if ($filter) {
+                $sql .= $wpdb->prepare(" AND meta_key LIKE %s", '%' . $wpdb->esc_like($filter) . '%');
+            }
+            $sql .= " LIMIT 100";
+            $rows = $wpdb->get_results($sql);
+            $result = array();
+            foreach ($rows as $r) {
+                $result[] = array('key' => $r->meta_key, 'value' => substr($r->meta_value, 0, 2000));
+            }
+            return $result;
+        },
+        'permission_callback' => function () {
+            return current_user_can('manage_options');
+        },
+    ));
+
+    // POST: Belirli bir post'un meta verisini güncelle
+    register_rest_route('seo-machine/v1', '/post-meta/(?P<id>\d+)', array(
+        'methods'  => 'POST',
+        'callback' => function ($request) {
+            $id = (int) $request->get_param('id');
+            $params = $request->get_json_params();
+            $key = $params['key'] ?? '';
+            $value = $params['value'] ?? '';
+            if (!$key) return new WP_Error('missing_param', 'key required');
+            update_post_meta($id, $key, $value);
+            return array('success' => true, 'post_id' => $id, 'key' => $key);
+        },
+        'permission_callback' => function () {
+            return current_user_can('manage_options');
+        },
+    ));
+
+    // DELETE: Belirli bir post'un meta verisini sil
+    register_rest_route('seo-machine/v1', '/post-meta/(?P<id>\d+)', array(
+        'methods'  => 'DELETE',
+        'callback' => function ($request) {
+            $id = (int) $request->get_param('id');
+            $params = $request->get_json_params();
+            $key = $params['key'] ?? '';
+            if (!$key) return new WP_Error('missing_param', 'key required');
+            delete_post_meta($id, $key);
+            return array('success' => true, 'deleted_meta' => $key, 'post_id' => $id);
+        },
+        'permission_callback' => function () {
+            return current_user_can('manage_options');
+        },
+    ));
+
+    // GET: Belirli bir WP option'ı oku
+    register_rest_route('seo-machine/v1', '/option/(?P<name>[a-zA-Z0-9_-]+)', array(
+        'methods'  => 'GET',
+        'callback' => function ($request) {
+            $name = $request->get_param('name');
+            $value = get_option($name, null);
+            return array('name' => $name, 'value' => $value);
+        },
+        'permission_callback' => function () {
+            return current_user_can('manage_options');
+        },
+    ));
+
     // POST: Belirli bir WPCode snippet'ini sil veya deaktive et
     register_rest_route('seo-machine/v1', '/delete-snippet/(?P<id>\d+)', array(
         'methods'  => 'DELETE',
