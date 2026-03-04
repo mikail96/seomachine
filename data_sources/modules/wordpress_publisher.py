@@ -319,10 +319,9 @@ class WordPressPublisher:
         noindex: bool = False
     ) -> Dict:
         """
-        Set Rank Math SEO meta fields on a post, page, or custom post type
+        Set Rank Math SEO meta fields using Rank Math's native REST API
 
-        Requires the SEO Machine Rank Math REST plugin to be installed:
-        wp-content/mu-plugins/seo-machine-rankmath-rest.php
+        Uses rankmath/v1/updateMeta endpoint - no MU-plugin required.
 
         Args:
             post_id: WordPress post ID
@@ -333,23 +332,33 @@ class WordPressPublisher:
             noindex: Set noindex robots meta (for PPC pages)
 
         Returns:
-            Updated post response
+            Rank Math API response
         """
-        rankmath_data = {
-            'rankmath_seo': {
-                'seo_title': meta_title,
-                'meta_description': meta_description,
-                'focus_keyword': focus_keyword
-            }
+        # Map post type endpoint to Rank Math object type
+        type_mapping = {
+            'posts': 'post',
+            'pages': 'page',
+        }
+        object_type = type_mapping.get(post_type, post_type)
+
+        meta = {
+            'rank_math_focus_keyword': focus_keyword,
+            'rank_math_title': meta_title,
+            'rank_math_description': meta_description,
         }
 
         if noindex:
-            rankmath_data['rankmath_seo']['robots'] = 'noindex'
+            meta['rank_math_robots'] = 'noindex'
 
-        response = self.session.post(
-            f"{self.api_base}/{post_type}/{post_id}",
-            json=rankmath_data
-        )
+        rankmath_data = {
+            'objectID': post_id,
+            'objectType': object_type,
+            'meta': meta
+        }
+
+        # Use Rank Math's native REST API endpoint
+        rankmath_api = self.url + '/wp-json/rankmath/v1/updateMeta'
+        response = self.session.post(rankmath_api, json=rankmath_data)
         response.raise_for_status()
         return response.json()
 
