@@ -17,12 +17,69 @@
 if (!is_admin()) {
     add_action('template_redirect', function () {
         ob_start(function ($html) {
-            // SelfStorage/LocalBusiness içeren ld+json bloklarını kaldır (Rank Math duplikeleri)
+            // 1. Rank Math'ın ürettiği duplike LocalBusiness/SelfStorage bloklarını kaldır
             $html = preg_replace(
                 '/<script[^>]*type=["\']application\/ld\+json["\'][^>]*>\s*\{[^}]*"@type"\s*:\s*(\["SelfStorage"[^<]*|"LocalBusiness"[^<]*)<\/script>/s',
                 '',
                 $html
             );
+
+            // 2. Birleştirilmiş tek schema'yı </head> öncesine enjekte et
+            $schema = '<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["SelfStorage", "LocalBusiness"],
+  "@id": "https://evidepo.com/#localbusiness",
+  "name": "Evidepo",
+  "description": "İstanbul\'da güvenli, kameralı ve kilitli oda kiralama sistemiyle eşya depolama hizmeti. Randevulu erişim, anahtar müşteride. Sanat Evden Eve Nakliyat iştiraki.",
+  "url": "https://evidepo.com",
+  "telephone": "+905355298192",
+  "email": "mikailaymaz1@gmail.com",
+  "image": "https://evidepo.com/wp-content/uploads/2026/03/evidepo-logo-112.png",
+  "logo": "https://evidepo.com/wp-content/uploads/2026/03/evidepo-logo-112.png",
+  "priceRange": "₺₺",
+  "currenciesAccepted": "TRY",
+  "paymentAccepted": "Nakit, Kredi Kartı, Havale",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Güllübağlar Mahallesi, Sümer Sokak",
+    "addressLocality": "Pendik",
+    "addressRegion": "İstanbul",
+    "postalCode": "34906",
+    "addressCountry": "TR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "40.8783",
+    "longitude": "29.2333"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ],
+  "areaServed": {"@type": "City", "name": "İstanbul"},
+  "parentOrganization": {"@type": "Organization", "name": "Sanat Evden Eve Nakliyat"},
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Depolama Hizmetleri",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ev Eşyası Depolama"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ofis ve Kurumsal Depolama"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tadilat Depolama"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Kentsel Dönüşüm Depolama"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Yurt Dışı Depolama"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Nakliyat ve Depolama"}}
+    ]
+  },
+  "sameAs": []
+}
+</script>';
+            $html = str_replace('</head>', $schema . "\n</head>", $html);
+
             return $html;
         });
     });
