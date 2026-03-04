@@ -10,27 +10,22 @@
  */
 
 // ============================================================
-// ONE-TIME FIX: Rank Math broken local_seo_description düzelt
-// Bu kod bir kere çalışır ve kendini deaktive eder (flag ile)
+// FIX: Bozuk ld+json schema bloklarını output buffer ile düzelt
+// "description":"description": pattern'ini düzeltir
 // ============================================================
-add_action('init', function () {
-    if (get_option('seo_machine_schema_fix_done')) return;
-
-    $opt = get_option('rank-math-options-titles');
-    if (!is_array($opt)) return;
-
-    // Fix: local_seo_description alanındaki "description": prefix'i temizle
-    if (isset($opt['local_seo_description'])) {
-        $desc = $opt['local_seo_description'];
-        // Eğer değer "description": ile başlıyorsa düzelt
-        if (preg_match('/^["\']?description["\']?\s*:\s*["\'](.+)["\']$/s', $desc, $m)) {
-            $opt['local_seo_description'] = $m[1];
-            update_option('rank-math-options-titles', $opt);
-        }
-    }
-
-    update_option('seo_machine_schema_fix_done', 1);
-});
+if (!is_admin()) {
+    add_action('template_redirect', function () {
+        ob_start(function ($html) {
+            // Bozuk description pattern'ini düzelt: "description":"description": "value" → "description": "value"
+            $html = preg_replace(
+                '/"description"\s*:\s*"description"\s*:\s*"/',
+                '"description": "',
+                $html
+            );
+            return $html;
+        });
+    });
+}
 
 // ============================================================
 // REST API: Option okuma/yazma endpoint'leri
