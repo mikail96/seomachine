@@ -315,7 +315,10 @@ class WordPressPublisher:
         meta_title: str,
         meta_description: str,
         focus_keyphrase: str,
-        post_type: str = 'posts'
+        post_type: str = 'posts',
+        canonical_url: str = '',
+        og_title: str = '',
+        og_description: str = ''
     ) -> Dict:
         """
         Set Yoast SEO meta fields on a post, page, or custom post type
@@ -329,18 +332,28 @@ class WordPressPublisher:
             meta_description: Meta description
             focus_keyphrase: Focus keyphrase (target keyword)
             post_type: WordPress post type endpoint ('posts', 'pages', or custom type)
+            canonical_url: Canonical URL for the page
+            og_title: Open Graph title (defaults to meta_title if empty)
+            og_description: Open Graph description (defaults to meta_description if empty)
 
         Returns:
             Updated post response
         """
         # Use the yoast_seo field provided by our mu-plugin
-        yoast_data = {
-            'yoast_seo': {
-                'seo_title': meta_title,
-                'meta_description': meta_description,
-                'focus_keyphrase': focus_keyphrase
-            }
+        yoast_fields = {
+            'seo_title': meta_title,
+            'meta_description': meta_description,
+            'focus_keyphrase': focus_keyphrase,
         }
+
+        if canonical_url:
+            yoast_fields['canonical_url'] = canonical_url
+        if og_title:
+            yoast_fields['og_title'] = og_title
+        if og_description:
+            yoast_fields['og_description'] = og_description
+
+        yoast_data = {'yoast_seo': yoast_fields}
 
         response = self.session.post(
             f"{self.api_base}/{post_type}/{post_id}",
@@ -348,6 +361,81 @@ class WordPressPublisher:
         )
         response.raise_for_status()
         return response.json()
+
+    def get_all_content(self, post_type: str = 'posts') -> List[Dict]:
+        """
+        Get all published posts/pages with their Yoast SEO data
+
+        Args:
+            post_type: 'posts' or 'pages'
+
+        Returns:
+            List of post dicts with yoast_seo field
+        """
+        items = []
+        page = 1
+        while True:
+            response = self.session.get(
+                f"{self.api_base}/{post_type}",
+                params={'per_page': 100, 'page': page, 'status': 'publish'}
+            )
+            if response.status_code == 400:
+                break
+            response.raise_for_status()
+            batch = response.json()
+            if not batch:
+                break
+            items.extend(batch)
+            page += 1
+        return items
+
+    def audit_seo(self) -> Dict:
+        """
+        Audit all posts and pages for SEO issues
+
+        Returns:
+            Dict with 'issues' list and 'summary' counts
+        """
+        issues = []
+
+        for post_type in ['posts', 'pages']:
+            items = self.get_all_content(post_type)
+
+            for item in items:
+                url = item.get('link', '')
+                title = item.get('title', {}).get('rendered', '')
+                yoast = item.get('yoast_seo', {})
+
+                item_issues = []
+
+                if not yoast.get('meta_description'):
+                    item_issues.append('meta_description_missing')
+                if not yoast.get('seo_title'):
+                    item_issues.append('seo_title_missing')
+                if not yoast.get('focus_keyphrase'):
+                    item_issues.append('focus_keyphrase_missing')
+                if not yoast.get('canonical_url'):
+                    item_issues.append('canonical_missing')
+
+                if item_issues:
+                    issues.append({
+                        'id': item['id'],
+                        'type': post_type,
+                        'url': url,
+                        'title': title,
+                        'issues': item_issues,
+                        'current_yoast': yoast,
+                    })
+
+        summary = {
+            'total_issues': len(issues),
+            'meta_desc_missing': sum(1 for i in issues if 'meta_description_missing' in i['issues']),
+            'seo_title_missing': sum(1 for i in issues if 'seo_title_missing' in i['issues']),
+            'canonical_missing': sum(1 for i in issues if 'canonical_missing' in i['issues']),
+            'keyphrase_missing': sum(1 for i in issues if 'focus_keyphrase_missing' in i['issues']),
+        }
+
+        return {'issues': issues, 'summary': summary}
 
     def publish_draft(self, file_path: str, post_type: str = 'post') -> Dict:
         """
