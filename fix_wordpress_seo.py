@@ -68,6 +68,9 @@ FOCUS_KEYWORDS = {
     17: 'eşya depolama nasıl çalışır',
     18: 'eşya depolama sıkça sorulan sorular',
     8: 'depolama hizmetleri',
+    7: 'evidepo hakkımızda',
+    16: 'evidepo iletişim',
+    105: 'eşya depolama blog',
     # İlçe Sayfaları
     19: 'kadıköy eşya depolama',
     20: 'üsküdar eşya depolama',

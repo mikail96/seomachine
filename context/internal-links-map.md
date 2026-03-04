@@ -66,7 +66,7 @@ Bu belge, blog içeriklerinde stratejik iç bağlantılar için kullanılacak Ev
 - **Anchor Text Örnekleri**: "yurt dışı depolama", "yurt dışına çıkarken eşya depolama", "göç depolama"
 
 ### Nakliyat ve Depolama
-- **URL**: https://evidepo.com/hizmetlerimiz/nakliyat-ve-depolama/
+- **URL**: https://evidepo.com/hizmetlerimiz/nakliyat-depolama/
 - **Ne Zaman Linkle**: Entegre taşıma-depolama, tek elden hizmet konularında
 - **Anchor Text Örnekleri**: "nakliyat ve depolama", "taşıma ve depolama paketi", "tek elden çözüm"
 
@@ -167,7 +167,7 @@ Blog içeriklerinde iç bağlantı eklerken:
 - https://evidepo.com/esya-paketleme-rehberi/ - Paketleme rehberi
 
 **Taşınma/nakliyat yazarken**, şunlara linkle:
-- https://evidepo.com/hizmetlerimiz/nakliyat-ve-depolama/ - Nakliyat + depolama
+- https://evidepo.com/hizmetlerimiz/nakliyat-depolama/ - Nakliyat + depolama
 - https://evidepo.com/hizmetlerimiz/ev-esyasi-depolama/ - Ev eşyası depolama
 - https://evidepo.com/istanbul-esya-depolama-rehberi/ - Genel rehber
 
