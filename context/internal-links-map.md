@@ -1,224 +1,175 @@
-# Internal Links Map
+# Evidepo Internal Links Map
 
-<!-- INSTRUCTIONS: This document catalogs key pages on your website that should be referenced
-     in blog content for strategic internal linking.
-
-     Fill in all sections with your actual URLs and linking guidelines.
-     This helps Claude create relevant internal links while writing content.
-
-     Delete these instruction comments when done.
-     See examples/castos/internal-links-map.md for a complete real-world example. -->
-
-This document catalogs key [YOUR COMPANY] pages that should be referenced in blog content for strategic internal linking. Use this as your go-to reference when adding internal links to articles.
-
-## Instructions
-
-Fill in URLs and descriptions for all important pages on your website. Update as new content is created or pages are updated.
-
-For each page, include:
-- **URL**: The full URL to the page
-- **When to Link**: Context or topics where this link is relevant
-- **Anchor Text Examples**: Natural phrases to use when linking
+Bu belge, blog içeriklerinde stratejik iç bağlantılar için kullanılacak Evidepo sayfalarını kataloglar.
 
 ---
 
-## Homepage & Core Pages
+## Ana Sayfa & Temel Sayfalar
 
-### Homepage
-- **URL**: https://[yoursite.com]
-- **When to Link**: [e.g., "Rarely; only when referencing your company broadly"]
-- **Anchor Text Examples**: "[your company name]", "our platform", "[your product]"
+### Ana Sayfa
+- **URL**: https://evidepo.com
+- **Ne Zaman Linkle**: Evidepo'dan genel olarak bahsederken (nadiren, spesifik sayfaları tercih et)
+- **Anchor Text Örnekleri**: "Evidepo", "İstanbul eşya depolama", "evidepo.com"
 
-### About Page
-- **URL**: https://[yoursite.com/about]
-- **When to Link**: [e.g., "When discussing company mission, values, or team"]
-- **Anchor Text Examples**: "about [company]", "our mission", "our story"
+### Hakkımızda
+- **URL**: https://evidepo.com/hakkimizda
+- **Ne Zaman Linkle**: Şirket geçmişi, misyon, değerler veya ekipten bahsederken
+- **Anchor Text Örnekleri**: "Evidepo hakkında", "hikayemiz", "bizi tanıyın"
 
-### Contact Page
-- **URL**: https://[yoursite.com/contact]
-- **When to Link**: [e.g., "When inviting readers to reach out"]
-- **Anchor Text Examples**: "contact us", "get in touch", "reach out"
+### Fiyatlar
+- **URL**: https://evidepo.com/fiyatlar
+- **Ne Zaman Linkle**: Maliyet, fiyatlandırma, bütçe konuları işlenirken
+- **Anchor Text Örnekleri**: "depolama fiyatları", "güncel fiyat listesi", "fiyat teklifi alın"
 
-### Pricing Page
-- **URL**: https://[yoursite.com/pricing]
-- **When to Link**: [e.g., "When discussing costs, plans, or pricing"]
-- **Anchor Text Examples**: "[product] pricing", "pricing plans", "see pricing"
+### İletişim
+- **URL**: https://evidepo.com/iletisim
+- **Ne Zaman Linkle**: İletişim, randevu, teklif alma çağrısı yaparken
+- **Anchor Text Örnekleri**: "bize ulaşın", "iletişime geçin", "hemen arayın"
 
----
-
-## Product/Service Pages
-
-<!-- INSTRUCTIONS: Add your main product or service pages -->
-
-### [Product/Service Name 1]
-- **URL**: https://[yoursite.com/product-1]
-- **When to Link**: [Topics/contexts where this is relevant]
-- **Anchor Text Examples**: "[descriptive phrase]", "[benefit-focused phrase]", "[feature name]"
-
-### [Product/Service Name 2]
-- **URL**: https://[yoursite.com/product-2]
-- **When to Link**: [Topics/contexts where this is relevant]
-- **Anchor Text Examples**: "[descriptive phrase]", "[benefit-focused phrase]", "[feature name]"
-
-### [Product/Service Name 3]
-- **URL**: https://[yoursite.com/product-3]
-- **When to Link**: [Topics/contexts where this is relevant]
-- **Anchor Text Examples**: "[descriptive phrase]", "[benefit-focused phrase]", "[feature name]"
+### Nasıl Çalışır
+- **URL**: https://evidepo.com/nasil-calisir
+- **Ne Zaman Linkle**: Süreç, adımlar, hizmet akışından bahsederken
+- **Anchor Text Örnekleri**: "depolama süreci nasıl işliyor", "4 kolay adım", "nasıl çalıştığımızı öğrenin"
 
 ---
 
-## Feature Pages
+## Hizmet Sayfaları
 
-<!-- INSTRUCTIONS: Add pages for specific features or capabilities -->
+### Ev Eşyası Depolama
+- **URL**: https://evidepo.com/ev-esyasi-depolama
+- **Ne Zaman Linkle**: Ev eşyaları, mobilya, kişisel eşya depolama konularında
+- **Anchor Text Örnekleri**: "ev eşyası depolama", "mobilya depolama", "eşyalarınızı güvenle depolayın"
 
-### [Feature Name 1]
-- **URL**: https://[yoursite.com/feature-1]
-- **When to Link**: In articles about [relevant topics]
-- **Anchor Text Examples**: "[feature name]", "[what it does]", "[benefit phrase]"
+### Ofis & Kurumsal Depolama
+- **URL**: https://evidepo.com/ofis-kurumsal-depolama
+- **Ne Zaman Linkle**: Ofis taşıma, arşiv, kurumsal depolama konularında
+- **Anchor Text Örnekleri**: "ofis depolama", "kurumsal depolama çözümleri", "arşiv depolama"
 
-### [Feature Name 2]
-- **URL**: https://[yoursite.com/feature-2]
-- **When to Link**: In articles about [relevant topics]
-- **Anchor Text Examples**: "[feature name]", "[what it does]", "[benefit phrase]"
+### Tadilat Depolama
+- **URL**: https://evidepo.com/tadilat-depolama
+- **Ne Zaman Linkle**: Ev tadilatı, renovasyon, eşya koruma konularında
+- **Anchor Text Örnekleri**: "tadilat depolama", "tadilat sırasında eşya koruma", "tadilat deposu"
 
-### [Feature Name 3]
-- **URL**: https://[yoursite.com/feature-3]
-- **When to Link**: In articles about [relevant topics]
-- **Anchor Text Examples**: "[feature name]", "[what it does]", "[benefit phrase]"
+### Kentsel Dönüşüm Depolama
+- **URL**: https://evidepo.com/kentsel-donusum-depolama
+- **Ne Zaman Linkle**: Kentsel dönüşüm, bina yıkımı, yeniden inşa konularında
+- **Anchor Text Örnekleri**: "kentsel dönüşüm depolama", "kentsel dönüşümde eşya saklama", "uzun süreli depolama"
 
----
+### Yurt Dışı Depolama
+- **URL**: https://evidepo.com/yurt-disi-depolama
+- **Ne Zaman Linkle**: Yurt dışına çıkma, göç, uzun süreli yurt dışı konularında
+- **Anchor Text Örnekleri**: "yurt dışı depolama", "yurt dışına çıkarken eşya depolama", "göç depolama"
 
-## Use Case / Solution Pages
-
-<!-- INSTRUCTIONS: Add pages for specific use cases, industries, or customer segments -->
-
-### [Use Case 1]
-- **URL**: https://[yoursite.com/use-case-1]
-- **When to Link**: In articles targeting [audience segment] or discussing [problem/solution]
-- **Anchor Text Examples**: "[use case description]", "[for whom]", "[solution phrase]"
-
-### [Use Case 2]
-- **URL**: https://[yoursite.com/use-case-2]
-- **When to Link**: In articles targeting [audience segment] or discussing [problem/solution]
-- **Anchor Text Examples**: "[use case description]", "[for whom]", "[solution phrase]"
+### Nakliyat + Depolama
+- **URL**: https://evidepo.com/nakliyat-depolama
+- **Ne Zaman Linkle**: Entegre taşıma-depolama, tek elden hizmet konularında
+- **Anchor Text Örnekleri**: "nakliyat ve depolama", "taşıma ve depolama paketi", "tek elden çözüm"
 
 ---
 
-## Resource Pages
+## Blog Yazıları (Mevcut İçerikler)
 
-<!-- INSTRUCTIONS: Add links to guides, tools, templates, or other resources -->
+### İstanbul'da Eşya Depolama: 2026 Kapsamlı Rehber
+- **URL**: https://evidepo.com/blog/istanbul-esya-depolama-rehberi
+- **Birincil Konu**: İstanbul eşya depolama genel rehber
+- **Ne Zaman Linkle**: Depolama hakkında genel bilgi verilirken, İstanbul depolama
+- **Anchor Text Örnekleri**: "İstanbul eşya depolama rehberi", "kapsamlı depolama rehberimiz", "İstanbul'da depolama hakkında her şey"
 
-### [Resource Name 1]
-- **URL**: https://[yoursite.com/resources/resource-1]
-- **When to Link**: [When this resource would help the reader]
-- **Anchor Text Examples**: "[resource name]", "[what it provides]", "free [resource type]"
+### Eşya Depolama Fiyatları 2026: Kapsamlı Fiyat Rehberi
+- **URL**: https://evidepo.com/blog/esya-depolama-fiyatlari
+- **Birincil Konu**: Depolama fiyatları, maliyet karşılaştırması
+- **Ne Zaman Linkle**: Fiyat, maliyet, bütçe konuları yazılarında
+- **Anchor Text Örnekleri**: "depolama fiyatları rehberi", "2026 güncel fiyatlar", "eşya depolama maliyetleri"
 
-### [Resource Name 2]
-- **URL**: https://[yoursite.com/resources/resource-2]
-- **When to Link**: [When this resource would help the reader]
-- **Anchor Text Examples**: "[resource name]", "[what it provides]", "free [resource type]"
+### Depolama Firması Seçerken Dikkat Edilmesi Gereken 12 Kriter
+- **URL**: https://evidepo.com/blog/depolama-firmasi-secimi-kriterleri
+- **Birincil Konu**: Firma seçim kriterleri, karşılaştırma
+- **Ne Zaman Linkle**: Güvenilir firma seçimi, nelere dikkat edilmeli konularında
+- **Anchor Text Örnekleri**: "depolama firması seçim kriterleri", "güvenilir firma nasıl seçilir", "12 kritik kriter"
 
----
+### Eşya Paketleme Rehberi: Depolama Öncesi Adım Adım Kılavuz
+- **URL**: https://evidepo.com/blog/esya-paketleme-rehberi
+- **Birincil Konu**: Paketleme teknikleri, hazırlık
+- **Ne Zaman Linkle**: Paketleme, hazırlık, eşya koruma ipuçları
+- **Anchor Text Örnekleri**: "paketleme rehberi", "depolama öncesi hazırlık", "eşya paketleme kılavuzu"
 
-## Top-Performing Blog Posts
+### Yurt Dışına Çıkarken Eşya Depolama: Eksiksiz Rehber
+- **URL**: https://evidepo.com/blog/yurt-disina-cikarken-esya-depolama
+- **Birincil Konu**: Yurt dışı depolama
+- **Ne Zaman Linkle**: Yurt dışı, göç, uzun süreli depolama konularında
+- **Anchor Text Örnekleri**: "yurt dışı depolama rehberi", "yurt dışına çıkarken eşya depolama", "göç depolama kılavuzu"
 
-<!-- INSTRUCTIONS: Add your 10-20 best blog posts that get good traffic and conversions.
-     These are "pillar content" you want to link to frequently. -->
+### Tadilat Sırasında Eşyalarınızı Nasıl Korursunuz?
+- **URL**: https://evidepo.com/blog/tadilat-sirasinda-esya-koruma
+- **Birincil Konu**: Tadilat döneminde eşya güvenliği
+- **Ne Zaman Linkle**: Tadilat, renovasyon, eşya koruma konularında
+- **Anchor Text Örnekleri**: "tadilat sırasında eşya koruma", "tadilatda eşya güvenliği", "renovasyon depolama"
 
-### [Blog Post Title 1]
-- **URL**: https://[yoursite.com/blog/post-1]
-- **Primary Topic**: [Main topic/keyword]
-- **When to Link**: In articles about [related topics]
-- **Anchor Text Examples**: "[topic phrase]", "[how-to phrase]", "[question phrase]"
+### Kentsel Dönüşümde Eşya Depolama
+- **URL**: https://evidepo.com/blog/kentsel-donusumde-esya-depolama
+- **Birincil Konu**: Kentsel dönüşüm sürecinde depolama
+- **Ne Zaman Linkle**: Kentsel dönüşüm, bina yıkımı, uzun süreli depolama
+- **Anchor Text Örnekleri**: "kentsel dönüşüm depolama rehberi", "kentsel dönüşümde eşya depolama", "dönüşüm sürecinde depolama"
 
-### [Blog Post Title 2]
-- **URL**: https://[yoursite.com/blog/post-2]
-- **Primary Topic**: [Main topic/keyword]
-- **When to Link**: In articles about [related topics]
-- **Anchor Text Examples**: "[topic phrase]", "[how-to phrase]", "[question phrase]"
-
-### [Blog Post Title 3]
-- **URL**: https://[yoursite.com/blog/post-3]
-- **Primary Topic**: [Main topic/keyword]
-- **When to Link**: In articles about [related topics]
-- **Anchor Text Examples**: "[topic phrase]", "[how-to phrase]", "[question phrase]"
-
-### [Blog Post Title 4]
-- **URL**: https://[yoursite.com/blog/post-4]
-- **Primary Topic**: [Main topic/keyword]
-- **When to Link**: In articles about [related topics]
-- **Anchor Text Examples**: "[topic phrase]", "[how-to phrase]", "[question phrase]"
-
-### [Blog Post Title 5]
-- **URL**: https://[yoursite.com/blog/post-5]
-- **Primary Topic**: [Main topic/keyword]
-- **When to Link**: In articles about [related topics]
-- **Anchor Text Examples**: "[topic phrase]", "[how-to phrase]", "[question phrase]"
-
-<!-- Add 5-15 more of your top blog posts following the same format -->
+### Ofis Taşıma ve Depolama: İstanbul Kurumsal Rehber 2026
+- **URL**: https://evidepo.com/blog/ofis-tasima-depolama-rehberi
+- **Birincil Konu**: Kurumsal taşıma ve depolama
+- **Ne Zaman Linkle**: Ofis, kurumsal, iş yeri taşıma ve depolama
+- **Anchor Text Örnekleri**: "ofis taşıma rehberi", "kurumsal depolama kılavuzu", "ofis depolama çözümleri"
 
 ---
 
-## Comparison Pages
+## WhatsApp & Doğrudan İletişim Linkleri
 
-<!-- INSTRUCTIONS: If you have comparison or "vs" pages, add them here -->
-
-### [Your Product] vs [Competitor 1]
-- **URL**: https://[yoursite.com/vs/competitor-1]
-- **When to Link**: When mentioning [competitor] or discussing alternatives
-- **Anchor Text Examples**: "[your product] vs [competitor]", "comparison with [competitor]"
-
-### [Your Product] vs [Competitor 2]
-- **URL**: https://[yoursite.com/vs/competitor-2]
-- **When to Link**: When mentioning [competitor] or discussing alternatives
-- **Anchor Text Examples**: "[your product] vs [competitor]", "comparison with [competitor]"
+### WhatsApp
+- **URL**: https://wa.me/905355298192
+- **Ne Zaman Linkle**: CTA olarak, hemen iletişim çağrısı yaparken
+- **Anchor Text Örnekleri**: "WhatsApp'tan yazın", "hemen teklif alın", "ücretsiz danışmanlık"
 
 ---
 
-## Landing Pages
+## İç Bağlantı En İyi Uygulamaları
 
-<!-- INSTRUCTIONS: Add any campaign-specific or conversion-optimized landing pages -->
+Blog içeriklerinde iç bağlantı eklerken:
 
-### [Campaign/Offer Name]
-- **URL**: https://[yoursite.com/landing/offer-1]
-- **When to Link**: [Specific contexts for this offer]
-- **Anchor Text Examples**: "[offer description]", "[call to action]", "[benefit phrase]"
-
----
-
-## Internal Linking Best Practices
-
-When adding internal links to blog content:
-
-1. **Link Naturally**: Only link when genuinely relevant and helpful to the reader
-2. **Vary Anchor Text**: Use different phrases for the same destination URL
-3. **3-5 Links Per Post**: Aim for 3-5 strategic internal links in each blog post
-4. **Deep Linking**: Link to specific relevant pages, not just the homepage
-5. **Early Links Matter**: Links in the first few paragraphs carry more weight
-6. **Update This Map**: Add new pages as you create them, remove outdated URLs
+1. **Doğal bağlantı**: Yalnızca gerçekten ilgili ve okuyucuya faydalı olduğunda linkle
+2. **Anchor text çeşitlendir**: Aynı sayfa için farklı ifadeler kullan
+3. **Yazı başına 3-5 iç link**: Her blog yazısında 3-5 stratejik iç bağlantı hedefle
+4. **Derin bağlantı**: Ana sayfaya değil, spesifik hizmet ve blog sayfalarına linkle
+5. **Erken linkler önemli**: İlk paragraflardaki linkler daha fazla ağırlık taşır
+6. **Hizmet sayfalarına yönlendir**: Blog yazılarından ilgili hizmet sayfalarına doğal geçişler yap
 
 ---
 
-## Quick Reference by Topic
+## Konuya Göre Hızlı Referans
 
-<!-- INSTRUCTIONS: Create a quick topic-to-URL mapping for common themes you write about.
-     This helps Claude quickly find relevant links while writing. -->
+**Depolama fiyatları/maliyeti yazarken**, şunlara linkle:
+- https://evidepo.com/fiyatlar - Fiyat sayfası
+- https://evidepo.com/blog/esya-depolama-fiyatlari - Fiyat rehberi
+- https://evidepo.com/blog/depolama-firmasi-secimi-kriterleri - Firma seçimi
 
-**When writing about [Topic 1]**, link to:
-- [URL 1] - [Brief description]
-- [URL 2] - [Brief description]
-- [URL 3] - [Brief description]
+**Tadilat/renovasyon yazarken**, şunlara linkle:
+- https://evidepo.com/tadilat-depolama - Tadilat depolama hizmeti
+- https://evidepo.com/blog/tadilat-sirasinda-esya-koruma - Tadilat rehberi
+- https://evidepo.com/blog/esya-paketleme-rehberi - Paketleme rehberi
 
-**When writing about [Topic 2]**, link to:
-- [URL 1] - [Brief description]
-- [URL 2] - [Brief description]
-- [URL 3] - [Brief description]
+**Taşınma/nakliyat yazarken**, şunlara linkle:
+- https://evidepo.com/nakliyat-depolama - Nakliyat + depolama
+- https://evidepo.com/ev-esyasi-depolama - Ev eşyası depolama
+- https://evidepo.com/blog/istanbul-esya-depolama-rehberi - Genel rehber
 
-**When writing about [Topic 3]**, link to:
-- [URL 1] - [Brief description]
-- [URL 2] - [Brief description]
-- [URL 3] - [Brief description]
+**Kentsel dönüşüm yazarken**, şunlara linkle:
+- https://evidepo.com/kentsel-donusum-depolama - Kentsel dönüşüm hizmeti
+- https://evidepo.com/blog/kentsel-donusumde-esya-depolama - Kentsel dönüşüm rehberi
+
+**Yurt dışı/göç yazarken**, şunlara linkle:
+- https://evidepo.com/yurt-disi-depolama - Yurt dışı depolama hizmeti
+- https://evidepo.com/blog/yurt-disina-cikarken-esya-depolama - Yurt dışı rehberi
+
+**Kurumsal/ofis yazarken**, şunlara linkle:
+- https://evidepo.com/ofis-kurumsal-depolama - Kurumsal depolama hizmeti
+- https://evidepo.com/blog/ofis-tasima-depolama-rehberi - Ofis rehberi
 
 ---
 
-*Note: Keep this document updated as you publish new content or restructure your site. Accurate internal linking improves SEO and user experience.*
+*Not: Yeni içerik yayınlandıkça bu belgeyi güncelleyin. Doğru iç bağlantılar hem SEO'yu hem de kullanıcı deneyimini iyileştirir.*

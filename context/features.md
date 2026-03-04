@@ -1,253 +1,183 @@
-# [YOUR COMPANY] Features & Benefits
+# Evidepo Hizmetler & Özellikler
 
-<!-- INSTRUCTIONS: This document outlines your key features, benefits, and differentiators.
-     Use this to inform content creation that drives conversions and customer acquisition.
-     Fill in all [BRACKETED] sections with your specific information.
-     Delete these instruction comments when done.
-     See examples/castos/ for a complete real-world example. -->
+Bu belge, Evidepo'nun temel hizmetlerini, özelliklerini ve farklılaştırıcılarını tanımlar. İçerik üretiminde dönüşüm odaklı mesajlar oluşturmak için referans olarak kullanılır.
 
-This document outlines [YOUR COMPANY]'s key features, benefits, and differentiators to inform content creation that drives trial conversions and customer acquisition.
+## Temel Değer Önerileri
 
-## Core Value Propositions
+### 1. **Anahtar Sizde Modeli**
+- **Özellik**: Her müşteriye özel kilitli depolama odası tahsis edilir. Odanın anahtarı yalnızca müşteride kalır.
+- **Fayda**: Eşyalarınıza bizim dışımızda kimse erişemez. Tam kontrol sizde.
+- **Dönüşüm Açısı**: "Eşyalarınızın anahtarı yalnızca sizde. Başka kimse odanıza erişemez."
 
-<!-- INSTRUCTIONS: List 5-10 of your most important features/benefits.
-     For each one, include:
-     - Feature: What it is (technical description)
-     - Benefit: Why it matters (user outcome)
-     - Conversion Angle: How to pitch it (marketing copy)
--->
+### 2. **7/24 Kamera Güvenliği**
+- **Özellik**: Tüm depolama tesisi 7 gün 24 saat kamera sistemiyle izlenir ve kayıt altına alınır.
+- **Fayda**: Eşyalar gece gündüz gözetim altında, herhangi bir anormallikte anında müdahale.
+- **Dönüşüm Açısı**: "Deponuz 7/24 kameralarla izleniyor. Gece gündüz güvende."
 
-### 1. **[FEATURE NAME]**
-- **Feature**: [Technical description of what this feature does]
-- **Benefit**: [The outcome or value this provides to users]
-- **Conversion Angle**: "[One-sentence pitch that makes someone want to sign up]"
+### 3. **Entegre Nakliyat + Depolama**
+- **Özellik**: Sanat Evden Eve Nakliyat altyapısıyla nakliyat, paketleme ve depolama tek elden sunulur.
+- **Fayda**: Ayrı nakliyeci aramanıza gerek yok. Eşyalarınızı alıp depoya taşıyoruz, ihtiyaç olduğunda geri getiriyoruz.
+- **Dönüşüm Açısı**: "Nakliyattan depoya her şey tek elden. Eşyalarınızı biz alıyor, biz getiriyoruz."
 
-### 2. **[FEATURE NAME]**
-- **Feature**: [Technical description]
-- **Benefit**: [User outcome]
-- **Conversion Angle**: "[Marketing pitch]"
+### 4. **Ücretsiz Ekspertiz**
+- **Özellik**: Uzman ekip eşyaları yerinde değerlendirerek en uygun oda boyutunu ve fiyatı belirler.
+- **Fayda**: Fazla alan için gereksiz ödeme yapmaz, az alan nedeniyle sıkışmazsınız. İhtiyacınıza tam uyan çözüm.
+- **Dönüşüm Açısı**: "Ücretsiz ekspertiz ile tam ihtiyacınıza uygun depolama alanı ve net fiyat teklifi alın."
 
-### 3. **[FEATURE NAME]**
-- **Feature**: [Technical description]
-- **Benefit**: [User outcome]
-- **Conversion Angle**: "[Marketing pitch]"
+### 5. **Şeffaf Fiyatlandırma**
+- **Özellik**: Gizli ücret yok. Fiyat; alan büyüklüğü, süre ve ek hizmetlere göre net olarak belirlenir.
+- **Fayda**: Ne ödeyeceğinizi baştan bilirsiniz, sürpriz maliyet çıkmaz.
+- **Dönüşüm Açısı**: "Gizli ücret yok. Fiyatımız şeffaf ve net."
 
-### 4. **[FEATURE NAME]**
-- **Feature**: [Technical description]
-- **Benefit**: [User outcome]
-- **Conversion Angle**: "[Marketing pitch]"
+### 6. **Profesyonel Paketleme**
+- **Özellik**: Eğitimli ekip tarafından eşyalar özenle paketlenir ve depolama alanına yerleştirilir.
+- **Fayda**: Kırılacak eşyalar, mobilyalar ve hassas malzemeler profesyonelce korunur.
+- **Dönüşüm Açısı**: "Eşyalarınız profesyonel ekip tarafından özenle paketlenip depolanır."
 
-### 5. **[FEATURE NAME]**
-- **Feature**: [Technical description]
-- **Benefit**: [User outcome]
-- **Conversion Angle**: "[Marketing pitch]"
+### 7. **Randevulu Erişim**
+- **Özellik**: Müşteriler randevu alarak istedikleri zaman depolama alanlarına gidip eşyalarına ulaşabilir.
+- **Fayda**: İhtiyaç duyduğunuzda eşyalarınıza erişebilirsiniz, tamamen kilitli ve ulaşılamaz değil.
+- **Dönüşüm Açısı**: "Randevu alın, istediğiniz zaman eşyalarınıza ulaşın."
 
-### 6. **[FEATURE NAME]** (Optional)
-- **Feature**: [Technical description]
-- **Benefit**: [User outcome]
-- **Conversion Angle**: "[Marketing pitch]"
+### 8. **Sözleşme Güvencesi**
+- **Özellik**: Tüm hizmetler resmi sözleşme ile güvence altına alınır. Sigorta kapsamı dahil.
+- **Fayda**: Yasal koruma ve sigorta ile eşyalarınız her koşulda teminat altında.
+- **Dönüşüm Açısı**: "Sözleşme ve sigorta güvencesiyle eşyalarınız tam koruma altında."
 
-### 7. **[FEATURE NAME]** (Optional)
-- **Feature**: [Technical description]
-- **Benefit**: [User outcome]
-- **Conversion Angle**: "[Marketing pitch]"
+## Hizmet Kategorileri
 
-### 8. **[FEATURE NAME]** (Optional)
-- **Feature**: [Technical description]
-- **Benefit**: [User outcome]
-- **Conversion Angle**: "[Marketing pitch]"
+### Ev Eşyası Depolama
+- **Kilitli özel oda**: Her aileye ayrı oda
+- **Profesyonel paketleme**: Mobilya, elektronik, kırılacak eşyalar
+- **Nakliyat dahil**: Evden depoya, depodan eve
+- **Esnek süre**: Kısa veya uzun süreli seçenekler
+- **Sigorta**: Eşya sigortası mevcut
 
-## Technical Features
+### Ofis & Kurumsal Depolama
+- **Arşiv depolama**: Dosya, evrak, belgeler
+- **Ofis mobilyası**: Masa, sandalye, dolap
+- **Kurumsal malzeme**: Stok, promosyon malzemesi
+- **Toplu depolama**: Büyük hacimli kurumsal çözümler
+- **Faturalı hizmet**: Kurumsal faturalama
 
-<!-- INSTRUCTIONS: Group your technical features into logical categories.
-     Use bullet points for quick reference. -->
+### Tadilat Depolama
+- **Kısa süreli**: Tadilat süresince geçici depolama
+- **Paketleme + taşıma**: Evden depoya, tadilatsonrası geri
+- **Hızlı çözüm**: Acil tadilat durumlarında hızlı hizmet
+- **Esnek alan**: Tüm evi veya sadece bir odayı depolama
 
-### [CATEGORY NAME - e.g., "Hosting & Distribution"]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
+### Kentsel Dönüşüm Depolama
+- **Uzun süreli**: Yıkım ve yeniden inşa süreci boyunca
+- **Özel fiyatlar**: Uzun süre için avantajlı fiyatlandırma
+- **Nakliyat entegrasyonu**: Eski evden depoya, yeni eve taşıma
+- **Esnek sözleşme**: Bitiş tarihi belirsiz projelere uyum
 
-### [CATEGORY NAME - e.g., "Content Management"]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
+### Yurt Dışı Depolama
+- **Uzun süreli güvenli saklama**: Aylarca hatta yıllarca
+- **Anahtarlı erişim**: Yakınlarınız da randevuyla erişebilir
+- **Uzaktan yönetim**: WhatsApp/telefon üzerinden iletişim
+- **Dönüş nakliyatı**: Döndüğünüzde eşyalarınızı teslim
 
-### [CATEGORY NAME - e.g., "Analytics & Insights"]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
+### Nakliyat + Depolama Paketi
+- **Tek elden hizmet**: Sanat Nakliyat ile entegre
+- **Paketleme + taşıma + depolama**: Hepsi bir arada
+- **Asansörlü taşıma**: Yüksek katlarda da hizmet
+- **Tüm İstanbul**: İstanbul'un her noktasından hizmet
 
-### [CATEGORY NAME - e.g., "Integrations"]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
-- **[Feature name]**: [Brief description]
+## Rekabet Avantajları
 
-## Integrations & Ecosystem
+### vs. Büyük Zincir Depolar (PratikDepo, Shurgard tarzı)
+- **Kişisel hizmet** (Zincirler standart self-servis sunar, Evidepo kişiye özel ilgi gösterir)
+- **Entegre nakliyat** (Zincirlerde nakliyat ayrıca organize edilmeli)
+- **Daha uygun fiyat** (Büyük markaların premium fiyatı yok)
+- **Türkçe ve yerli iletişim** (WhatsApp'tan hızlı dönüş, yüz yüze ilişki)
 
-<!-- INSTRUCTIONS: List tools, platforms, and services you integrate with. -->
+### vs. Küçük Nakliyat Firmaları
+- **Profesyonel tesis** (Garaj veya bodrum değil, kameralı güvenli depo)
+- **Sigorta ve sözleşme** (Kayıt dışı çalışma yok)
+- **Kilitli özel oda** (Ortak alana eşya yığma yok)
+- **Uzun vadeli güvenilirlik** (Sanat Nakliyat gibi köklü firma altyapısı)
 
-### Direct Integrations
-- **[Tool/Platform name]**: [What the integration does]
-- **[Tool/Platform name]**: [What the integration does]
-- **[Tool/Platform name]**: [What the integration does]
-- **[Tool/Platform name]**: [What the integration does]
-- **[Tool/Platform name]**: [What the integration does]
+### vs. Self-Storage (Kendin Getir-Götür)
+- **Tam hizmet** (Nakliyat + paketleme dahil, sadece depo değil)
+- **Profesyonel paketleme** (Eşyalar düzgün korunur)
+- **Ekspertiz hizmeti** (Doğru alan seçimi için danışmanlık)
+- **Esneklik** (İstediğiniz zaman geri getirme hizmeti)
 
-### Distribution Partners (if applicable)
-- [Partner 1]
-- [Partner 2]
-- [Partner 3]
-- [Partner 4]
-- [Partner 5]
+## Müşteri Segmentleri
 
-## Competitive Differentiators
+### Taşınma Sürecindeki Bireyler
+- Yeni eve geçiş sürecinde geçici depolama
+- Eşyaların bir kısmını yeni eve sığdıramama
+- Taşınma gününde eşya akışını yönetme
 
-<!-- INSTRUCTIONS: Define how you're different from competitors.
-     Group by competitor type or category. -->
+### Tadilat Yapan Ev Sahipleri
+- Mobilyaları ve eşyaları tadilat süresince koruma
+- Tozdan, boyadan, hasardan koruma
+- Tadilat bittiğinde eşyaları geri alma
 
-### vs. [COMPETITOR 1 or COMPETITOR TYPE]
-- **[Your advantage 1]** ([Explain what competitors lack])
-- **[Your advantage 2]** ([Explain what competitors lack])
-- **[Your advantage 3]** ([Explain what competitors lack])
-- **[Your advantage 4]** ([Explain what competitors lack])
+### Kentsel Dönüşüm Sakinleri
+- Bina yıkımı öncesi eşyaları taşıma
+- Yeniden inşa süreci boyunca (12-24 ay) depolama
+- Yeni daireye taşınma koordinasyonu
 
-### vs. [COMPETITOR 2 or COMPETITOR TYPE]
-- **[Your advantage 1]** ([Explain what competitors lack])
-- **[Your advantage 2]** ([Explain what competitors lack])
-- **[Your advantage 3]** ([Explain what competitors lack])
-- **[Your advantage 4]** ([Explain what competitors lack])
+### Yurt Dışına Çıkanlar
+- Kısa süreli (iş gezisi, tatil) veya uzun süreli (göç, eğitim) yurt dışı
+- Eşyaları satmadan güvenle saklama
+- Dönüşte eşyalara hızlı erişim
 
-### vs. [COMPETITOR 3 or COMPETITOR TYPE]
-- **[Your advantage 1]** ([Explain what competitors lack])
-- **[Your advantage 2]** ([Explain what competitors lack])
-- **[Your advantage 3]** ([Explain what competitors lack])
-- **[Your advantage 4]** ([Explain what competitors lack])
+### Kurumsal Müşteriler
+- Ofis taşıma sırasında geçici depolama
+- Arşiv ve belge depolama
+- Sezonluk stok veya malzeme saklama
+- Fuar/etkinlik malzemeleri depolama
 
-## Use Cases by Customer Segment
+## İletişim Kanalları ve CTA'lar
 
-<!-- INSTRUCTIONS: Describe your key customer segments and what they need. -->
+### WhatsApp (Ana İletişim)
+- **Numara**: 0535 529 81 92
+- **CTA**: "WhatsApp'tan hemen yazın", "Ücretsiz teklif alın"
 
-### [SEGMENT 1 NAME]
-- [Need 1]
-- [Need 2]
-- [Need 3]
-- [Need 4]
+### Telefon
+- **Numara**: 0535 529 81 92
+- **CTA**: "Hemen arayın", "Ücretsiz danışmanlık için arayın"
 
-### [SEGMENT 2 NAME]
-- [Need 1]
-- [Need 2]
-- [Need 3]
-- [Need 4]
+### Web Sitesi
+- **URL**: evidepo.com
+- **CTA**: "Ücretsiz ekspertiz talep edin", "Fiyat teklifi alın"
 
-### [SEGMENT 3 NAME]
-- [Need 1]
-- [Need 2]
-- [Need 3]
-- [Need 4]
+## Sık Sorulan Sorular & İtiraz Yanıtları
 
-### [SEGMENT 4 NAME] (Optional)
-- [Need 1]
-- [Need 2]
-- [Need 3]
-- [Need 4]
+### "Eşyalarım zarar görür mü?"
+**Yanıt**: Eşyalarınız profesyonel ekip tarafından paketlenir, kilitli ve kameralı özel odanızda korunur. Sigorta güvencemiz de mevcut.
 
-### [SEGMENT 5 NAME] (Optional)
-- [Need 1]
-- [Need 2]
-- [Need 3]
-- [Need 4]
+### "Fiyatlar ne kadar?"
+**Yanıt**: Fiyatlarımız oda boyutu ve süreye göre değişir. Ücretsiz ekspertiz ile tam ihtiyacınıza uygun net fiyat teklifi alırsınız. Gizli ücret yok.
 
-## Pricing & Plan Benefits
+### "İstediğim zaman eşyalarıma ulaşabilir miyim?"
+**Yanıt**: Evet. Randevu alarak istediğiniz zaman depolama alanınıza gelebilir, eşyalarınıza erişebilirsiniz. Anahtarınız sizde.
 
-<!-- INSTRUCTIONS: Outline what's included in each pricing tier.
-     This helps AI understand value propositions for different customer segments. -->
+### "Minimum süre var mı?"
+**Yanıt**: Kısa ve uzun süreli seçeneklerimiz var. İhtiyacınıza uygun esnek sözleşme sunuyoruz.
 
-### [PLAN NAME 1] Benefits
-- [Benefit 1]
-- [Benefit 2]
-- [Benefit 3]
-- [Benefit 4]
-- [Benefit 5]
+### "Nakliyat dahil mi?"
+**Yanıt**: Nakliyat + depolama paketimiz mevcut. Eşyalarınızı biz alıp depoya getiriyoruz, ihtiyaç duyduğunuzda geri götürüyoruz.
 
-### [PLAN NAME 2] Benefits
-- Everything in [Plan 1], plus:
-- [Additional benefit 1]
-- [Additional benefit 2]
-- [Additional benefit 3]
-- [Additional benefit 4]
+### "Hangi bölgelere hizmet veriyorsunuz?"
+**Yanıt**: İstanbul'un Avrupa ve Anadolu yakasındaki tüm ilçelere hizmet veriyoruz.
 
-### [PLAN NAME 3] Benefits (Optional)
-- Everything in [Plan 2], plus:
-- [Additional benefit 1]
-- [Additional benefit 2]
-- [Additional benefit 3]
-- [Additional benefit 4]
+## İçerik Oluşturma Kuralları
 
-## Key Messaging for Conversions
+Evidepo özellikleri hakkında yazarken:
 
-<!-- INSTRUCTIONS: Pre-write effective marketing messages for common conversion points. -->
-
-### Trial Conversion Messages
-- "[CTA message 1]"
-- "[CTA message 2]"
-- "[CTA message 3]"
-- "[CTA message 4]"
-
-### Pain Point Solutions
-<!-- Format: **"[Common objection or concern]"** → "[Your solution]" -->
-- **"[Customer pain point/concern]"** → "[How your product solves it]"
-- **"[Customer pain point/concern]"** → "[How your product solves it]"
-- **"[Customer pain point/concern]"** → "[How your product solves it]"
-- **"[Customer pain point/concern]"** → "[How your product solves it]"
-- **"[Customer pain point/concern]"** → "[How your product solves it]"
-
-### Social Proof Elements
-<!-- INSTRUCTIONS: Add specific numbers and achievements -->
-- "[Number] of [customers/users] [geographic scope]"
-- "[Impressive metric about usage or scale]"
-- "[Customer rating/review score]"
-- "[Press mentions or awards]"
-
-## Common Questions & Objections
-
-<!-- INSTRUCTIONS: List frequent customer questions and your best answers.
-     This helps AI address objections in content. -->
-
-### "[Common question 1]?"
-**Answer**: [Your clear, benefit-focused answer]
-
-### "[Common question 2]?"
-**Answer**: [Your clear, benefit-focused answer]
-
-### "[Common question 3]?"
-**Answer**: [Your clear, benefit-focused answer]
-
-### "[Common question 4]?"
-**Answer**: [Your clear, benefit-focused answer]
-
-### "[Common question 5]?"
-**Answer**: [Your clear, benefit-focused answer]
-
-## Content Creation Guidelines
-
-When writing about [YOUR COMPANY] features:
-
-1. **Lead with benefits, not features**: Don't just say "[feature name]"—explain "[the outcome it delivers]"
-2. **Use specific examples**: Show how features solve real problems
-3. **Include proof points**: Stats, testimonials, certifications
-4. **Address objections proactively**: Answer concerns before they ask
-5. **Create clear CTAs**: Make next steps obvious (start trial, see pricing, contact sales)
-6. **Emphasize uniqueness**: Highlight what makes [YOUR COMPANY] different from competitors
-7. **Match audience to use case**: Tailor messaging to segment ([segment 1] vs. [segment 2] vs. [segment 3])
+1. **Fayda ile başla**: "Kilitli oda" deme, "Sadece sizin anahtarınızla açılan kilitli oda" de
+2. **Somut örnekler kullan**: Gerçek senaryolar göster (tadilat, taşınma, yurt dışı)
+3. **Kanıt noktaları ekle**: 7/24 kamera, sözleşme, sigorta gibi somut güvenceler
+4. **İtirazları önceden yanıtla**: Fiyat, güvenlik, erişim endişelerini proaktif karşıla
+5. **Net CTA koy**: WhatsApp, telefon, ücretsiz ekspertiz - her zaman bir sonraki adım
+6. **Farklılığı vurgula**: Evidepo'yu rakiplerden ayıran "Anahtar Sizde" modelini öne çıkar
+7. **Segmente göre mesaj**: Tadilat yapan ile yurt dışına çıkan farklı mesaj alır
 
 ---
 
-*Note: Update this document as new features launch or positioning changes. Keep messaging aligned with current marketing campaigns and homepage copy.*
+*Not: Yeni hizmetler eklendikçe veya fiyatlandırma değiştikçe bu belgeyi güncelleyin.*

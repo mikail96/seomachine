@@ -1,351 +1,304 @@
-# Competitor Analysis
+# Evidepo Rakip Analizi
 
-This document tracks key competitors in the podcast hosting and podcasting content space, analyzing their content strategies to identify opportunities for Castos.
-
-## Instructions
-Fill in this template with your main competitors' information. Update quarterly or when significant competitive shifts occur.
+Bu belge, İstanbul eşya depolama sektöründeki rakipleri ve içerik stratejilerini analiz eder.
 
 ---
 
-## Primary Competitors
+## Birincil Rakipler
 
-### Competitor 1: [Name]
+### Rakip 1: PratikDepo
 
-**Company Overview**:
-- **Website**: [URL]
-- **Primary Offering**: [Podcast hosting / All-in-one / Specific niche]
-- **Target Audience**: [Beginners / Pro / Enterprise / etc.]
-- **Pricing**: [Brief pricing overview]
-- **Market Position**: [Leader / Challenger / Niche player]
+**Şirket Genel Bakışı**:
+- **Web Sitesi**: https://www.pratikdepo.com
+- **Birincil Teklif**: Bireysel ve kurumsal self-storage hizmeti
+- **Hedef Kitle**: Bireysel ve kurumsal, orta-üst segment
+- **Fiyatlandırma**: Premium fiyatlandırma, m³ bazında
+- **Pazar Konumu**: Pazar lideri / en bilinen marka
+- **Ortaklar**: Ali Sabancı, Özcan Tahincioğlu, Haluk Emiroğlu gibi iş insanları
+- **Kuruluş**: 2007
 
-**Content Strategy**:
-- **Blog URL**: [URL]
-- **Publishing Frequency**: [X posts per week/month]
-- **Content Types**: [How-tos, guides, news, case studies, etc.]
-- **Average Article Length**: [words]
-- **Content Quality**: [Assessment]
+**İçerik Stratejisi**:
+- **Blog URL**: https://www.pratikdepo.com/blog
+- **Yayın Sıklığı**: Aylık 2-4 yazı
+- **İçerik Türleri**: Rehberler, karşılaştırmalar, sektör haberleri
+- **Ortalama Makale Uzunluğu**: 1.500-2.500 kelime
+- **İçerik Kalitesi**: İyi - profesyonel, SEO odaklı
 
-**Top Performing Content** (highest traffic/rankings):
-1. [Article Title] - [URL]
-   - Keyword: [primary keyword]
-   - Estimated Traffic: [monthly visitors]
-   - Why It Works: [brief analysis]
+**SEO Güçlü Yönleri**:
+- Yüksek domain otoritesi (uzun süredir aktif)
+- Kapsamlı pillar içerikler
+- Güçlü marka bilinirliği
+- Yatırımcı güvenilirliği
 
-2. [Article Title] - [URL]
-   [Continue with top 5-10 articles]
+**SEO Zayıf Yönleri**:
+- Premium fiyatlandırma odaklı (uygun fiyat arayanları kaçırabilir)
+- Self-storage odaklı (tam hizmet nakliyat+depolama yok)
+- Kişisel dokunuş eksik (kurumsal ton)
 
-**SEO Strengths**:
-- [Strength 1: e.g., "Strong domain authority (DR 75)"]
-- [Strength 2: e.g., "Comprehensive pillar content on all major topics"]
-- [Strength 3: e.g., "Regular content updates and freshness"]
-
-**SEO Weaknesses**:
-- [Weakness 1: e.g., "Thin content on advanced topics"]
-- [Weakness 2: e.g., "Poor internal linking structure"]
-- [Weakness 3: e.g., "Outdated articles (1-2 years old)"]
-
-**Content Gaps** (Topics they don't cover well):
-- [Gap 1: Topic Castos could own]
-- [Gap 2: Underserved keyword area]
-- [Gap 3: Missing perspective or angle]
-
-**Differentiation Opportunities**:
-- [How Castos can stand out vs. this competitor]
-- [Unique angle or approach to take]
-- [Topics to focus on to win against them]
+**Evidepo Farklılaşma Fırsatları**:
+- "Nakliyat + depolama tek elden" avantajını öne çıkar
+- Daha uygun fiyat mesajı ver
+- Daha samimi, kişisel marka sesi kullan
+- "Anahtar Sizde" modeliyle güven oluştur
 
 ---
 
-### Competitor 2: [Name]
+### Rakip 2: Depola.com.tr (Level Taşımacılık)
 
-[Follow same format as above]
+**Şirket Genel Bakışı**:
+- **Web Sitesi**: https://depola.com.tr
+- **Birincil Teklif**: Kişiye özel kilitli eşya depolama odaları
+- **Hedef Kitle**: Bireysel kullanıcılar, taşınan aileler
+- **Fiyatlandırma**: Orta segment
+- **Pazar Konumu**: Güçlü rakip
+- **Kuruluş**: 2003 (Level Taşımacılık bünyesinde)
 
----
+**İçerik Stratejisi**:
+- **Blog**: Mevcut ama sınırlı içerik
+- **İçerik Türleri**: Hizmet açıklamaları, genel bilgi
+- **İçerik Kalitesi**: Orta
 
-### Competitor 3: [Name]
+**SEO Güçlü Yönleri**:
+- Alan adı çok güçlü (depola.com.tr - tam eşleşme domain)
+- 20+ yıllık domain geçmişi
+- 444'lü telefon numarası (kurumsal algı)
 
-[Follow same format as above]
+**SEO Zayıf Yönleri**:
+- Blog içeriği sınırlı ve eski
+- Modern SEO pratikleri eksik
+- İçerik derinliği az
 
----
-
-### Competitor 4: [Name]
-
-[Follow same format as above]
-
----
-
-### Competitor 5: [Name]
-
-[Follow same format as above]
-
----
-
-## Secondary Competitors / Content Publishers
-
-These may not be direct product competitors but compete for content visibility:
-
-### Publisher 1: [Name]
-- **Website**: [URL]
-- **Focus**: [Podcast education / Industry news / etc.]
-- **Why They Matter**: [Authority in space, ranks for key terms, etc.]
-- **Content Approach**: [Brief description]
-- **Opportunity vs. Them**: [How to compete]
-
-### Publisher 2: [Name]
-[Continue]
+**Evidepo Farklılaşma Fırsatları**:
+- Daha zengin, güncel blog içeriği üret
+- Detaylı rehberler ve karşılaştırmalar yayınla
+- Modern web deneyimi ve içerik kalitesi ile öne çık
 
 ---
 
-## Competitive Keyword Analysis
+### Rakip 3: Turuncu Depo
 
-### Keywords Competitors Dominate (Castos doesn't rank top 10):
+**Şirket Genel Bakışı**:
+- **Web Sitesi**: https://turuncudepolama.com
+- **Birincil Teklif**: Eşya depolama, sigortalı hizmet
+- **Hedef Kitle**: Bireysel ve kurumsal
+- **Fiyatlandırma**: Orta segment
+- **Pazar Konumu**: Köklü firma
+- **Ortaklık**: Allianz sigorta işbirliği
+- **Kuruluş**: Köklü aile şirketi
 
-**Keyword**: [keyword]
-- **Difficulty**: [score]
-- **Volume**: [monthly searches]
-- **Who Ranks**:
-  1. [Competitor] - Position 1
-  2. [Competitor] - Position 2
-  3. [Competitor] - Position 3
-- **Castos Position**: [rank or "Not ranking"]
-- **Their Content Type**: [Guide / Comparison / How-to / etc.]
-- **What They Do Well**: [Analysis of why they rank]
-- **Castos Strategy**: [How to compete - new content, optimize existing, etc.]
+**İçerik Stratejisi**:
+- **Blog**: Sınırlı içerik
+- **İçerik Kalitesi**: Temel düzeyde
 
-[List 10-15 high-priority competitive keywords]
+**SEO Güçlü Yönleri**:
+- Köklü marka (onlarca yıl deneyim)
+- 444'lü telefon (kurumsal algı)
+- Allianz sigorta ortaklığı (güven)
 
----
+**SEO Zayıf Yönleri**:
+- İçerik stratejisi zayıf
+- Blog az güncelleniyor
+- Modern SEO tekniklerine uzak
 
-## Competitive Content Patterns
-
-### Common Topics All Competitors Cover:
-1. [Topic 1 - e.g., "How to start a podcast"]
-   - Standard approach: [How most competitors handle it]
-   - Castos differentiation: [How we can be different/better]
-
-2. [Topic 2]
-   [Continue]
-
-### Emerging Topics Some Competitors Cover:
-- [Topic]: Covered by [Competitor names]
-  - Opportunity: [Early adopter advantage / Wait and see / etc.]
-
-### Unique Topics Only One Competitor Covers:
-- [Topic]: Only [Competitor name]
-  - Why they own it: [Analysis]
-  - Should Castos pursue?: [Yes/No and why]
+**Evidepo Farklılaşma Fırsatları**:
+- İçerik pazarlamasında büyük avantaj var
+- Sigorta konusunu içeriklerde daha güçlü işle
+- Dijital deneyimde fark yarat
 
 ---
 
-## Content Quality Benchmarks
+### Rakip 4: Üçeller Depolama
 
-### Word Count Analysis:
-- **Competitor Average**: [X words]
-- **Top Ranking Articles**: [X words]
-- **Castos Target**: [X words to compete]
+**Şirket Genel Bakışı**:
+- **Web Sitesi**: https://www.ucellerdepolama.com
+- **Birincil Teklif**: Kiralık eşya deposu, sigortalı depolama
+- **Hedef Kitle**: Bireysel
+- **Pazar Konumu**: Orta düzey
+- **Kuruluş**: 1990
 
-### Content Depth:
-- **Comprehensive Guides**: [Which competitors do this well]
-- **Tactical How-Tos**: [Who excels at this]
-- **Quick Tips**: [Who focuses here]
-- **Castos Sweet Spot**: [Where we should focus]
+**SEO Güçlü Yönleri**:
+- Uzun süreli domain geçmişi
+- Sözleşmeli ve sigortalı hizmet vurgusu
 
-### Visual Content:
-- **Screenshots**: [Who uses extensively]
-- **Custom Graphics**: [Who creates these]
-- **Videos**: [Who embeds video]
-- **Charts/Data Viz**: [Who visualizes data well]
-- **Castos Opportunity**: [Where we can excel]
+**SEO Zayıf Yönleri**:
+- İçerik stratejisi minimal
+- Modern web tasarımı eksik
+- Blog neredeyse yok
 
-### Update Frequency:
-- **Regular Updates**: [Competitors who update old content]
-- **Publication Dates**: [Who shows dates prominently]
-- **Content Freshness**: [Who keeps content current]
-- **Castos Approach**: [Our update strategy]
+**Evidepo Farklılaşma Fırsatları**:
+- İçerik pazarlamasıyla kolayca geçilebilir
+- Daha modern ve güven veren web deneyimi
 
 ---
 
-## Link Building & Authority
+### Rakip 5: DepoFox
 
-### Domain Authority Comparison:
-- **Castos**: DR [score]
-- **[Competitor 1]**: DR [score]
-- **[Competitor 2]**: DR [score]
-- **[Competitor 3]**: DR [score]
-- **[Competitor 4]**: DR [score]
+**Şirket Genel Bakışı**:
+- **Web Sitesi**: https://www.depofox.com.tr
+- **Birincil Teklif**: Merkezi lokasyonlarda modern self-storage
+- **Hedef Kitle**: Bireysel ve kurumsal
+- **Fiyatlandırma**: Orta-üst segment
+- **Pazar Konumu**: Modern rakip
 
-### Backlink Strategies They Use:
-- **[Competitor]**: [Guest posting / Original research / Tools / etc.]
-- **[Competitor]**: [Their link building approach]
-- **Castos Opportunity**: [Link building tactics to pursue]
+**SEO Güçlü Yönleri**:
+- Modern web sitesi
+- Merkezi lokasyonlar (İstanbul şehir merkezi)
+- 1 m²'den 50 m²'ye değişen seçenekler
+- İklimlendirme vurgusu
 
-### Content Formats That Earn Links:
-- [Format 1: e.g., "Original surveys and data"]
-  - Who does it: [Competitors]
-  - Castos potential: [Could we do this?]
+**SEO Zayıf Yönleri**:
+- Blog içeriği sınırlı
+- Niş odaklı (self-storage), nakliyat yok
 
-- [Format 2: e.g., "Free tools and calculators"]
-  - Who does it: [Competitors]
-  - Castos potential: [Assessment]
-
----
-
-## User Experience & Engagement
-
-### Content Presentation:
-- **Table of Contents**: [Who uses them well]
-- **Jump Links**: [Who implements]
-- **Formatting**: [Who has best readability]
-- **CTAs**: [Who has compelling calls-to-action]
-- **Castos Benchmark**: [What we should emulate/avoid]
-
-### On-Page Engagement:
-- **Comments**: [Who has active comment sections]
-- **Social Sharing**: [Who optimizes for shares]
-- **Related Content**: [Who does internal linking well]
-- **Castos Focus**: [Our engagement strategy]
+**Evidepo Farklılaşma Fırsatları**:
+- Nakliyat entegrasyonu avantajı
+- Daha kapsamlı içerik stratejisi
+- Kişisel hizmet yaklaşımı
 
 ---
 
-## Competitive SERP Features
+## İkincil Rakipler / İçerik Yayıncıları
 
-### Featured Snippets:
-**Keywords with Snippets**:
-- [Keyword]: Held by [Competitor]
-  - Format: [Paragraph / List / Table]
-  - Castos Strategy: [How to win it]
+### Armut.com
+- **Web Sitesi**: https://armut.com/istanbul-esya-depolama
+- **Odak**: Hizmet karşılaştırma platformu
+- **Neden Önemli**: "İstanbul eşya depolama" aramaları için güçlü sıralama
+- **İçerik Yaklaşımı**: Firma listesi, kullanıcı yorumları
+- **Fırsatımız**: Armut'ta da listelenme + kendi içeriklerimizle doğrudan arama sonuçlarında rekabet
 
-### People Also Ask (PAA):
-- Common questions: [List questions that appear frequently]
-- Who answers them: [Which competitors appear in PAA]
-- Castos opportunities: [Questions we should target]
+### Depolama Sepeti
+- **Web Sitesi**: https://depolamasepeti.com
+- **Odak**: Uygun fiyatlı depolama
+- **İçerik**: Temel düzeyde
+- **Fırsatımız**: İçerik kalitesiyle kolayca geçilebilir
 
-### Video Results:
-- [Keyword]: [Competitor] has video
-  - Should Castos create video?: [Assessment]
-
----
-
-## Competitive Moats & Advantages
-
-### Their Unfair Advantages:
-**[Competitor 1]**:
-- [Advantage: e.g., "Market leader brand recognition"]
-- [Advantage: e.g., "10+ years of content and backlinks"]
-- [How Castos can compete anyway]: [Strategy]
-
-**[Competitor 2]**:
-- [Their advantages]
-- [Our counter-strategy]
-
-### Castos's Unique Advantages:
-- [Advantage 1: e.g., "WordPress integration expertise"]
-- [Advantage 2: e.g., "Focus on serious creators vs. hobbyists"]
-- [Advantage 3: e.g., "Private podcasting specialization"]
-- [How to leverage]: [Content strategy to amplify these]
+### İstanbul Emanet Depo
+- **Web Sitesi**: https://www.istanbulemanetdepo.com
+- **Odak**: Anadolu ve Avrupa yakası self-storage
+- **İçerik**: Minimal
+- **Fırsatımız**: İçerik stratejisi avantajı büyük
 
 ---
 
-## Content Opportunity Matrix
+## Rekabet Anahtar Kelime Analizi
 
-### High Opportunity (Low competition, high value):
-1. [Topic/Keyword]
-   - Why opportunity: [Competitors don't cover well]
-   - Business value: [Why it matters for Castos]
-   - Action: [Create priority content]
+### Rakiplerin Hakim Olduğu Anahtar Kelimeler:
 
-[List top opportunities]
+**eşya depolama**
+- **Kim Sıralanıyor**: PratikDepo, Depola.com.tr, Armut
+- **Evidepo Konumu**: Geliştirilmeli
+- **Strateji**: Kapsamlı pillar içerik + blog ağı oluştur
 
-### Medium Opportunity (Moderate competition, good value):
-[List opportunities]
+**İstanbul eşya depolama**
+- **Kim Sıralanıyor**: Armut, PratikDepo, Depola.com.tr
+- **Evidepo Konumu**: İyileştirilmeli
+- **Strateji**: Lokasyon bazlı içerikler + İstanbul odaklı rehberler
 
-### Long-term Play (High competition, high value):
-[Topics to tackle with comprehensive, superior content over time]
+**eşya depolama fiyatları**
+- **Kim Sıralanıyor**: PratikDepo, çeşitli bloglar
+- **Evidepo Konumu**: Mevcut içerik var, optimize et
+- **Strateji**: Mevcut fiyat rehberini güçlendir, güncel tut
 
----
-
-## Quarterly Competitive Review
-
-### Q[X] 20[XX] Review
-
-**Date**: [Date of review]
-
-**Major Competitive Shifts**:
-- [Change 1: New competitor emerged, competitor launched new feature, etc.]
-- [Change 2]
-
-**Content Strategy Changes Observed**:
-- [Change 1: Competitor increased publishing frequency, shifted focus, etc.]
-- [Change 2]
-
-**New Topics Competitors Are Covering**:
-- [Topic 1] - Should Castos cover?: [Yes/No]
-- [Topic 2]
-
-**Ranking Changes**:
-- Keywords Castos gained: [List]
-- Keywords Castos lost: [List]
-- Keywords competitors gained: [List]
-
-**Action Items from This Review**:
-1. [Action item]
-2. [Action item]
-3. [Action item]
+**kiralık eşya deposu**
+- **Kim Sıralanıyor**: Depola.com.tr, Üçeller, çeşitli firmalar
+- **Evidepo Konumu**: İçerik oluşturulmalı
+- **Strateji**: Yeni odaklı içerik oluştur
 
 ---
 
-## Competitive Watching List
+## Rekabet İçerik Kalıpları
 
-### Monitor Regularly:
-- [ ] [Competitor 1] blog RSS feed
-- [ ] [Competitor 2] new content alerts
-- [ ] [Competitor 3] ranking changes for key terms
-- [ ] Industry news sites for competitive announcements
+### Tüm Rakiplerin Kapsadığı Yaygın Konular:
+1. **Eşya depolama nedir / nasıl yapılır**
+   - Standart yaklaşım: Genel bilgi sayfası
+   - Evidepo farklılaşması: İstanbul'a özgü, pratik örneklerle zenginleştirilmiş rehber
 
-### Tools for Monitoring:
-- **Rank Tracking**: [Tool name - track competitors' rankings]
-- **Content Alerts**: [Tool - get notified of new competitor content]
-- **Backlink Monitoring**: [Tool - see where competitors get links]
-- **Topic Discovery**: [Tool - find trending topics in space]
+2. **Depolama fiyatları**
+   - Standart yaklaşım: Genel fiyat aralığı
+   - Evidepo farklılaşması: Şeffaf, detaylı, oda boyutuna göre karşılaştırmalı tablo
 
----
+3. **Güvenli depolama nasıl seçilir**
+   - Standart yaklaşım: Genel kriterler
+   - Evidepo farklılaşması: Somut kontrol listesi + "Anahtar Sizde" modeli vurgusu
 
-## Usage Guidelines
-
-### When Planning Content:
-1. Check what competitors have already created on topic
-2. Identify gaps or weaknesses in their coverage
-3. Plan how to create superior, differentiated content
-4. Note their keyword strategy
-5. Assess competitive difficulty
-
-### When Writing Content:
-1. Reference competitor articles to ensure comprehensiveness
-2. Don't copy - identify what's missing and add it
-3. Find unique angle or perspective
-4. Aim to create the definitive resource on topic
-5. Differentiate with Castos-specific insights
-
-### When Analyzing Performance:
-1. Compare Castos rankings to competitor rankings
-2. Identify which competitors won rankings we wanted
-3. Analyze why their content outperformed ours
-4. Adapt strategy based on what's working for them
-5. Double down on areas where Castos has unique advantage
+### Rakiplerin Zayıf Kaldığı Konular (Fırsat):
+- **Tadilat depolama** detaylı rehberi (çoğu rakipte yok)
+- **Kentsel dönüşüm depolama** kapsamlı içeriği (niş ama yüksek değer)
+- **Yurt dışı depolama** uzun vadeli rehberi
+- **İlçe bazlı depolama rehberleri** (Kadıköy, Beşiktaş, Ataşehir vb.)
+- **Eşya paketleme** video/detaylı kılavuz
+- **Depolama sigortası** kapsamlı açıklama
+- **Sezonluk depolama** ipuçları (yaz/kış)
 
 ---
 
-## Maintenance Schedule
+## İçerik Kalite Karşılaştırması
 
-- **Weekly**: Monitor top 3 competitors for new content
-- **Monthly**: Check ranking changes for key terms
-- **Quarterly**: Full competitive audit and strategy review
-- **Annually**: Comprehensive competitor landscape assessment
+### Kelime Sayısı Analizi:
+- **Rakip Ortalaması**: 1.000-1.500 kelime
+- **İlk Sıradaki Makaleler**: 2.000-3.000 kelime
+- **Evidepo Hedefi**: 2.000-2.500 kelime (standart), 3.000-4.000 (pillar)
 
-**Last Updated**: [Date]
-**Next Review**: [Date]
-**Reviewer**: [Person responsible]
+### İçerik Derinliği:
+- **Kapsamlı Rehberler**: PratikDepo iyi, diğerleri zayıf
+- **Taktiksel Nasıl Yapılır**: Genel olarak zayıf sektörde
+- **Fiyat Karşılaştırma**: PratikDepo var, diğerleri yok
+- **Evidepo Stratejisi**: Her kategoride en kapsamlı içerik ol
+
+### Görsel İçerik:
+- **Profesyonel fotoğraf**: PratikDepo ve DepoFox'ta var
+- **Infografik**: Hiçbir rakipte yok (büyük fırsat!)
+- **Video**: Çoğu rakipte yok
+- **Evidepo Fırsatı**: Infografik ve video içerikle fark yarat
 
 ---
 
-**Note**: Competitive analysis isn't about copying - it's about understanding the landscape so Castos can create better, more differentiated content that serves podcast creators in unique ways. Always filter competitive insights through "What would best serve our audience?"
+## Evidepo'nun Benzersiz Avantajları
+
+1. **Nakliyat + Depolama Entegrasyonu**: Sanat Nakliyat altyapısı, rakiplerin çoğunda yok
+2. **Anahtar Sizde Modeli**: Güçlü güven mesajı, farklılaştırıcı
+3. **İçerik Stratejisi**: Mevcut 9 blog yazısı, rakiplerin çoğundan ileride
+4. **Şeffaf Fiyatlandırma**: Gizli ücret yok mesajı, sektörde nadir
+5. **Ücretsiz Ekspertiz**: Kişiye özel danışmanlık, self-storage'da yok
+
+**İçerik Stratejisiyle Kaldıraç**:
+- Rakiplerin içerik boşluklarını doldur (tadilat, kentsel dönüşüm, yurt dışı)
+- Her konuda en kapsamlı ve güncel içerik ol
+- "Anahtar Sizde" modelini tüm içeriklerde vurgula
+- İstanbul'a özgü, lokasyon bazlı içerikler üret
+
+---
+
+## İçerik Fırsat Matrisi
+
+### Yüksek Fırsat (Düşük rekabet, yüksek değer):
+1. **Tadilat depolama rehberleri** - Rakiplerde detaylı içerik yok, dönüşüm potansiyeli yüksek
+2. **Kentsel dönüşüm depolama** - Niş ama İstanbul'da çok aranıyor
+3. **İlçe bazlı depolama sayfaları** - Lokal SEO fırsatı büyük
+4. **Depolama karşılaştırma rehberleri** - Firma seçimi içerikleri
+
+### Orta Fırsat (Orta rekabet, iyi değer):
+- Eşya depolama genel rehberler (mevcut içeriği güçlendir)
+- Fiyat rehberleri ve hesaplayıcılar
+- Paketleme ve hazırlık içerikleri
+
+### Uzun Vadeli (Yüksek rekabet, yüksek değer):
+- "eşya depolama" ana anahtar kelime sıralaması
+- "İstanbul eşya depolama" ilk sayfa
+- Genel depolama bilgi kaynağı olma
+
+---
+
+## Bakım Takvimi
+
+- **Haftalık**: İlk 3 rakibin yeni içeriklerini izle
+- **Aylık**: Anahtar kelime sıralama değişikliklerini kontrol et
+- **Çeyreklik**: Tam rekabet denetimi ve strateji gözden geçirme
+- **Yıllık**: Kapsamlı rakip manzarası değerlendirmesi
+
+**Son Güncelleme**: Mart 2026
+**Sonraki İnceleme**: Haziran 2026
+
+---
+
+**Not**: Rakip analizi kopyalamak için değil - manzarayı anlayarak Evidepo'nun daha iyi, daha farklılaştırılmış içerik üretmesi için yapılır. Her zaman "Müşterilerimize en iyi nasıl hizmet ederiz?" filtresinden geçir.

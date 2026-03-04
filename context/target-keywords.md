@@ -1,375 +1,382 @@
-# Target Keywords & Topic Clusters
+# Evidepo Hedef Anahtar Kelimeler & Konu Kümeleri
 
-This document organizes Castos's target keywords by topic cluster for strategic content planning and SEO optimization.
-
-## Instructions
-Fill in this template with your target keywords organized by topic cluster. Update regularly based on keyword research and content performance.
+Bu belge, Evidepo'nun hedef anahtar kelimelerini konu kümelerine göre düzenler. Stratejik içerik planlaması ve SEO optimizasyonu için kullanılır.
 
 ---
 
-## Topic Cluster Structure
+## Konu Kümesi Yapısı
 
-Each topic cluster should have:
-- **Pillar Keyword**: Main, high-volume keyword (typically competitive)
-- **Cluster Keywords**: 5-10 related keywords (subtopics)
-- **Long-Tail Keywords**: 10-15 specific, lower-volume phrases
-- **Search Intent**: What users want (informational, commercial, transactional)
-
----
-
-## Cluster 1: Podcast Hosting
-
-### Pillar Keyword
-- **Keyword**: podcast hosting
-- **Search Volume**: [monthly searches]
-- **Difficulty**: [competition level]
-- **Intent**: Commercial
-- **Current Ranking**: [position if known]
-- **Pillar Content URL**: [URL of main guide]
-
-### Cluster Keywords (Subtopics)
-1. **best podcast hosting**
-   - Volume: [searches]
-   - Difficulty: [level]
-   - Content: [URL if exists, or "Not yet created"]
-
-2. **podcast hosting platform**
-   - Volume: [searches]
-   - Difficulty: [level]
-   - Content: [URL or status]
-
-3. **podcast hosting comparison**
-   - Volume: [searches]
-   - Difficulty: [level]
-   - Content: [URL or status]
-
-4. **free podcast hosting**
-   - Volume: [searches]
-   - Difficulty: [level]
-   - Content: [URL or status]
-
-5. **podcast hosting pricing**
-   - Volume: [searches]
-   - Difficulty: [level]
-   - Content: [URL or status]
-
-[Add 5-10 cluster keywords total]
-
-### Long-Tail Keywords
-- how to choose a podcast host
-- podcast hosting for beginners
-- podcast hosting with unlimited bandwidth
-- podcast hosting that includes a website
-- difference between podcast hosting and website hosting
-- what to look for in a podcast host
-- podcast hosting for multiple shows
-- [Add 10-15 long-tail variations]
-
-### Related Questions (People Also Ask)
-- What is podcast hosting?
-- Do I need podcast hosting?
-- How much does podcast hosting cost?
-- Can I host my podcast for free?
-- [Add questions from PAA boxes]
+Her konu kümesinde:
+- **Pillar Anahtar Kelime**: Ana, yüksek hacimli anahtar kelime
+- **Küme Anahtar Kelimeleri**: 5-10 ilgili anahtar kelime (alt konular)
+- **Uzun Kuyruk Anahtar Kelimeler**: 10-15 spesifik, düşük hacimli ifadeler
+- **Arama Niyeti**: Kullanıcının ne istediği (bilgisel, ticari, işlemsel)
 
 ---
 
-## Cluster 2: Podcast Analytics
+## Küme 1: Eşya Depolama (Ana Küme)
 
-### Pillar Keyword
-- **Keyword**: podcast analytics
-- **Search Volume**: [monthly searches]
-- **Difficulty**: [competition level]
-- **Intent**: Informational
-- **Current Ranking**: [position if known]
-- **Pillar Content URL**: [URL or "To create"]
+### Pillar Anahtar Kelime
+- **Anahtar Kelime**: eşya depolama
+- **Arama Niyeti**: Ticari
+- **Pillar İçerik URL**: https://evidepo.com/blog/istanbul-esya-depolama-rehberi
 
-### Cluster Keywords (Subtopics)
-1. **podcast metrics**
-2. **podcast download statistics**
-3. **podcast listener data**
-4. **podcast performance tracking**
-5. **podcast growth metrics**
-[Continue with 5-10 cluster keywords]
+### Küme Anahtar Kelimeleri (Alt Konular)
+1. **İstanbul eşya depolama**
+   - Niyet: Ticari/Yerel
+   - İçerik: https://evidepo.com/blog/istanbul-esya-depolama-rehberi
 
-### Long-Tail Keywords
-- how to track podcast analytics
-- understanding podcast download numbers
-- most important podcast metrics
-- how to measure podcast success
-- podcast analytics tools
-[Add 10-15 long-tail variations]
+2. **eşya depolama fiyatları**
+   - Niyet: Ticari
+   - İçerik: https://evidepo.com/blog/esya-depolama-fiyatlari
 
-### Related Questions
-[Add PAA questions]
+3. **ev eşyası depolama**
+   - Niyet: Ticari
+   - İçerik: https://evidepo.com/ev-esyasi-depolama
 
----
+4. **güvenli eşya depolama**
+   - Niyet: Ticari
+   - İçerik: Henüz oluşturulmadı
 
-## Cluster 3: Podcast Growth
+5. **kilitli depolama odası**
+   - Niyet: Ticari
+   - İçerik: Henüz oluşturulmadı
 
-### Pillar Keyword
-- **Keyword**: grow podcast audience
-- **Search Volume**: [monthly searches]
-- **Difficulty**: [competition level]
-- **Intent**: Informational
-- **Current Ranking**: [position]
-- **Pillar Content URL**: [URL or status]
+6. **kiralık eşya deposu**
+   - Niyet: İşlemsel
+   - İçerik: Henüz oluşturulmadı
 
-### Cluster Keywords
-1. **podcast growth strategies**
-2. **increase podcast downloads**
-3. **podcast marketing**
-4. **podcast promotion**
-5. **podcast audience development**
-[Continue with cluster keywords]
+7. **eşya depolama firması**
+   - Niyet: Ticari
+   - İçerik: https://evidepo.com/blog/depolama-firmasi-secimi-kriterleri
 
-### Long-Tail Keywords
-- how to get more podcast listeners
-- promote your podcast free
-- grow podcast audience fast
-- podcast growth tips for beginners
-[Add long-tail variations]
+### Uzun Kuyruk Anahtar Kelimeler
+- İstanbul'da en uygun eşya depolama
+- eşya depolama nasıl yapılır
+- eşya depolarken dikkat edilecekler
+- aylık eşya depolama ücreti
+- eşya depolama sözleşmesi nelere dikkat
+- İstanbul Avrupa yakası eşya depolama
+- İstanbul Anadolu yakası eşya depolama
+- sigortalı eşya depolama
+- kısa süreli eşya depolama
+- uzun süreli eşya depolama fiyatları
+- eşya depolama güvenli mi
+- eşya depolama firması nasıl seçilir
+- en yakın eşya deposu
 
-### Related Questions
-[Add PAA questions]
-
----
-
-## Cluster 4: Podcast Monetization
-
-### Pillar Keyword
-- **Keyword**: podcast monetization
-- **Search Volume**: [monthly searches]
-- **Difficulty**: [competition level]
-- **Intent**: Commercial/Informational
-- **Current Ranking**: [position]
-- **Pillar Content URL**: [URL or status]
-
-### Cluster Keywords
-1. **how to monetize a podcast**
-2. **podcast advertising**
-3. **podcast sponsorships**
-4. **make money podcasting**
-5. **podcast revenue streams**
-[Continue]
-
-### Long-Tail Keywords
-[Add 10-15 variations]
-
-### Related Questions
-[Add PAA questions]
+### İlgili Sorular (İnsanlar Şunu da Soruyor)
+- Eşya depolama nedir?
+- Eşya depolama ne kadar?
+- Eşya deposunda eşyalar zarar görür mü?
+- Eşya depolama sigortası var mı?
+- İstanbul'da en güvenilir eşya deposu neresi?
+- Eşya deposuna nasıl erişilir?
 
 ---
 
-## Cluster 5: Starting a Podcast
+## Küme 2: Tadilat Depolama
 
-### Pillar Keyword
-- **Keyword**: how to start a podcast
-- **Search Volume**: [monthly searches]
-- **Difficulty**: [competition level]
-- **Intent**: Informational
-- **Current Ranking**: [position]
-- **Pillar Content URL**: [URL or status]
+### Pillar Anahtar Kelime
+- **Anahtar Kelime**: tadilat depolama
+- **Arama Niyeti**: Ticari
+- **Pillar İçerik URL**: https://evidepo.com/tadilat-depolama
 
-### Cluster Keywords
-1. **podcast equipment**
-2. **podcast recording software**
-3. **podcast editing**
-4. **podcast launch checklist**
-5. **podcast setup**
-[Continue]
+### Küme Anahtar Kelimeleri
+1. **tadilat sırasında eşya depolama**
+   - İçerik: https://evidepo.com/blog/tadilat-sirasinda-esya-koruma
 
-### Long-Tail Keywords
-[Add variations]
+2. **tadilat depolama fiyatları**
+   - İçerik: Henüz oluşturulmadı
 
-### Related Questions
-[Add PAA questions]
+3. **ev tadilatında eşya koruma**
+   - İçerik: https://evidepo.com/blog/tadilat-sirasinda-esya-koruma
 
----
+4. **tadilat süresince depo kiralama**
+   - İçerik: Henüz oluşturulmadı
 
-## Cluster 6: [Additional Cluster]
+5. **tadilat nakliyat depolama**
+   - İçerik: Henüz oluşturulmadı
 
-[Follow same format for:]
-- Podcast SEO
-- Podcast Distribution
-- Podcast Equipment
-- Podcast Editing
-- Podcast Formats
-- Private Podcasting
-- Podcast for Business
-- etc.
+### Uzun Kuyruk Anahtar Kelimeler
+- tadilat yaparken eşyalar nereye konur
+- ev tadilatında mobilya koruma yöntemleri
+- tadilat depolama ne kadar sürer
+- tadilat için geçici eşya deposu
+- mutfak tadilatında eşya depolama
+- banyo tadilatında eşyalar nereye
+- komple tadilatta eşya depolama maliyeti
+- tadilat öncesi eşya paketleme
+- tadilat sonrası eşya geri taşıma
 
----
-
-## Seasonal/Trending Keywords
-
-### Q1 Keywords (Jan-Mar)
-- New year podcast goals
-- Podcast trends 2025
-- [Add seasonal opportunities]
-
-### Q2 Keywords (Apr-Jun)
-[Add seasonal keywords]
-
-### Q3 Keywords (Jul-Sep)
-[Add seasonal keywords]
-
-### Q4 Keywords (Oct-Dec)
-[Add seasonal keywords]
+### İlgili Sorular
+- Tadilat sırasında eşyalarımı nereye koyabilirim?
+- Tadilat depolama ne kadar tutar?
+- Tadilatta eşyalar ne kadar süre depolanır?
+- Tadilat bitince eşyaları geri getiriyorlar mı?
 
 ---
 
-## Competitor Keyword Gaps
+## Küme 3: Kentsel Dönüşüm Depolama
 
-Track keywords where competitors rank but Castos doesn't:
+### Pillar Anahtar Kelime
+- **Anahtar Kelime**: kentsel dönüşüm depolama
+- **Arama Niyeti**: Ticari
+- **Pillar İçerik URL**: https://evidepo.com/kentsel-donusum-depolama
 
-### Competitor: [Name]
-- **Keyword**: [keyword they rank for]
-  - Their Position: [rank]
-  - Castos Position: [rank or "Not ranking"]
-  - Opportunity: [High/Medium/Low]
-  - Action: [Create content, optimize existing, etc.]
+### Küme Anahtar Kelimeleri
+1. **kentsel dönüşümde eşya depolama**
+   - İçerik: https://evidepo.com/blog/kentsel-donusumde-esya-depolama
 
-[Add more competitors and gaps]
+2. **kentsel dönüşüm eşya deposu**
+   - İçerik: Henüz oluşturulmadı
 
----
+3. **kentsel dönüşüm nakliyat**
+   - İçerik: Henüz oluşturulmadı
 
-## Keyword Opportunity Pipeline
+4. **kentsel dönüşüm depolama fiyatları**
+   - İçerik: Henüz oluşturulmadı
 
-### High Priority (Create Soon)
-Keywords with high volume, achievable difficulty, strong business value:
+5. **uzun süreli depolama**
+   - İçerik: Henüz oluşturulmadı
 
-1. **Keyword**: [keyword]
-   - Volume: [searches]
-   - Difficulty: [score]
-   - Intent: [type]
-   - Why Priority: [strategic reason]
-   - Action: [Create pillar content / cluster article / etc.]
+### Uzun Kuyruk Anahtar Kelimeler
+- kentsel dönüşümde eşyalar nereye konur
+- kentsel dönüşüm sürecinde eşya koruma
+- kentsel dönüşüm ne kadar sürer eşya depolama
+- kentsel dönüşüm depolama indirimi
+- bina yıkılırken eşyalar ne olur
+- kentsel dönüşüm hakları eşya depolama
+- 2 yıllık eşya depolama fiyatı
+- kentsel dönüşüm sürecinde nakliyat ve depolama
 
-[List 5-10 high-priority keywords]
-
-### Medium Priority (Next Quarter)
-[List keywords to target in next 3 months]
-
-### Low Priority (Future Consideration)
-[List keywords for future content planning]
-
----
-
-## Keyword Tracking & Performance
-
-### Top Performing Keywords
-Keywords where Castos ranks in positions 1-10:
-
-1. **Keyword**: [keyword]
-   - Position: [current rank]
-   - Volume: [searches]
-   - URL: [ranking page]
-   - Trend: [↑ Rising / → Stable / ↓ Declining]
-
-[List current winners]
-
-### Keywords to Improve
-Keywords ranking 11-20 (page 2) with opportunity:
-
-1. **Keyword**: [keyword]
-   - Position: [current rank]
-   - Volume: [searches]
-   - URL: [ranking page]
-   - Action Needed: [Update content, build links, etc.]
-
-[List improvement opportunities]
+### İlgili Sorular
+- Kentsel dönüşümde eşyalar nereye konur?
+- Kentsel dönüşüm depolama ne kadar sürer?
+- Kentsel dönüşüm için uzun süreli depolama var mı?
+- Kentsel dönüşüm depolama fiyatları ne kadar?
 
 ---
 
-## Keyword Cannibalization Check
+## Küme 4: Yurt Dışı Depolama
 
-Track multiple pages targeting same/similar keywords:
+### Pillar Anahtar Kelime
+- **Anahtar Kelime**: yurt dışına çıkarken eşya depolama
+- **Arama Niyeti**: Ticari
+- **Pillar İçerik URL**: https://evidepo.com/yurt-disi-depolama
 
-### Potential Cannibalization Issues
+### Küme Anahtar Kelimeleri
+1. **yurt dışı eşya depolama**
+   - İçerik: https://evidepo.com/blog/yurt-disina-cikarken-esya-depolama
 
-**Keyword**: [keyword]
-- Page 1: [URL] - Position [rank]
-- Page 2: [URL] - Position [rank]
-- **Issue**: Both pages competing for same keyword
-- **Solution**: [Consolidate, differentiate, redirect, etc.]
+2. **yurt dışına giderken eşya saklama**
+   - İçerik: Henüz oluşturulmadı
 
-[Monitor and document conflicts]
+3. **uzun süreli eşya depolama**
+   - İçerik: Henüz oluşturulmadı
 
----
+4. **göç ederken eşya depolama**
+   - İçerik: Henüz oluşturulmadı
 
-## LSI & Semantic Keywords
+### Uzun Kuyruk Anahtar Kelimeler
+- yurt dışına çıkarken eşyalar ne yapılır
+- yurt dışında yaşarken eşya depolama
+- 1 yıllık eşya depolama fiyatı
+- yurt dışı eğitim eşya deposu
+- eşyaları satmadan yurt dışına çıkma
+- yurt dışı dönüşünde eşya teslimatı
+- yurt dışındayken eşyalara erişim
 
-Common related terms to include across podcasting content:
-
-### Podcast Industry Terms
-- RSS feed
-- podcast directory
-- podcast app
-- podcast player
-- episode
-- show notes
-- audio content
-- podcast network
-[Add more]
-
-### Podcast Creation Terms
-- recording
-- editing
-- post-production
-- audio quality
-- microphone
-- podcast equipment
-[Add more]
-
-### Podcast Growth Terms
-- downloads
-- listeners
-- audience
-- subscribers
-- engagement
-- retention
-[Add more]
+### İlgili Sorular
+- Yurt dışına çıkarken eşyalarımı nereye koyabilirim?
+- Yurt dışı depolama ne kadar tutar?
+- Yurt dışındayken eşyalarıma ulaşabilir miyim?
 
 ---
 
-## Usage Guidelines
+## Küme 5: Nakliyat ve Depolama
 
-### When Writing New Content
-1. Check which cluster the topic belongs to
-2. Target the appropriate cluster or long-tail keyword
-3. Reference pillar content in that cluster
-4. Include LSI keywords naturally
-5. Link to related cluster articles
+### Pillar Anahtar Kelime
+- **Anahtar Kelime**: nakliyat ve depolama
+- **Arama Niyeti**: Ticari
+- **Pillar İçerik URL**: https://evidepo.com/nakliyat-depolama
 
-### When Optimizing Existing Content
-1. Verify content targets the right keyword
-2. Check for cannibalization with other pages
-3. Ensure keyword appears in critical locations
-4. Update if search intent has shifted
-5. Add internal links to/from related cluster content
+### Küme Anahtar Kelimeleri
+1. **evden eve nakliyat depolama**
+   - İçerik: Henüz oluşturulmadı
 
-### When Planning Content Calendar
-1. Review keyword opportunity pipeline
-2. Prioritize high-value, achievable keywords
-3. Build out topic clusters systematically
-4. Balance pillar content with cluster articles
-5. Track keyword performance over time
+2. **taşınma sırasında depolama**
+   - İçerik: Henüz oluşturulmadı
 
----
+3. **nakliyat firması depolama**
+   - İçerik: Henüz oluşturulmadı
 
-## Maintenance
+4. **İstanbul nakliyat depolama**
+   - İçerik: Henüz oluşturulmadı
 
-**Last Updated**: [Date]
-**Next Review**: [Date - quarterly recommended]
-
-**Regular Updates**:
-- Add new keyword opportunities monthly
-- Track ranking changes monthly
-- Update volumes/difficulty quarterly
-- Review competitor gaps quarterly
-- Refine clusters based on performance
+### Uzun Kuyruk Anahtar Kelimeler
+- taşınırken eşya depolama
+- evden eve nakliyat ve geçici depo
+- nakliyat ve depolama tek elden
+- İstanbul'da nakliyatlı depolama hizmeti
+- eşya taşıma ve saklama hizmeti
+- taşınma günü eşya deposu
 
 ---
 
-**Note**: This is a living document. As you conduct keyword research, track performance, and identify new opportunities, update this file to keep your SEO strategy aligned with your content creation.
+## Küme 6: Ofis ve Kurumsal Depolama
+
+### Pillar Anahtar Kelime
+- **Anahtar Kelime**: ofis depolama
+- **Arama Niyeti**: Ticari
+- **Pillar İçerik URL**: https://evidepo.com/ofis-kurumsal-depolama
+
+### Küme Anahtar Kelimeleri
+1. **ofis taşıma depolama**
+   - İçerik: https://evidepo.com/blog/ofis-tasima-depolama-rehberi
+
+2. **kurumsal depolama hizmeti**
+   - İçerik: Henüz oluşturulmadı
+
+3. **arşiv depolama**
+   - İçerik: Henüz oluşturulmadı
+
+4. **ofis mobilya depolama**
+   - İçerik: Henüz oluşturulmadı
+
+### Uzun Kuyruk Anahtar Kelimeler
+- ofis taşırken eşya depolama
+- kurumsal arşiv depolama İstanbul
+- ofis mobilyası geçici depo
+- şirket depolama çözümleri
+- ofis renovasyonu sırasında depolama
+
+---
+
+## Küme 7: Eşya Paketleme ve Hazırlık
+
+### Pillar Anahtar Kelime
+- **Anahtar Kelime**: eşya paketleme
+- **Arama Niyeti**: Bilgisel
+- **Pillar İçerik URL**: https://evidepo.com/blog/esya-paketleme-rehberi
+
+### Küme Anahtar Kelimeleri
+1. **depolama öncesi paketleme**
+2. **kırılacak eşya paketleme**
+3. **mobilya paketleme**
+4. **elektronik eşya paketleme**
+5. **profesyonel paketleme hizmeti**
+
+### Uzun Kuyruk Anahtar Kelimeler
+- eşya depolamadan önce ne yapılmalı
+- buzdolabı depolama öncesi hazırlık
+- çamaşır makinesi depolamaya hazırlama
+- kıyafet depolama yöntemleri
+- kitap depolama en iyi yöntem
+- antika mobilya paketleme
+- elektronik eşya nem koruması
+
+---
+
+## Küme 8: Depolama Fiyatları ve Maliyet
+
+### Pillar Anahtar Kelime
+- **Anahtar Kelime**: eşya depolama fiyatları
+- **Arama Niyeti**: Ticari
+- **Pillar İçerik URL**: https://evidepo.com/blog/esya-depolama-fiyatlari
+
+### Küme Anahtar Kelimeleri
+1. **depolama fiyat listesi 2026**
+2. **aylık depolama ücreti**
+3. **depolama maliyeti hesaplama**
+4. **ucuz eşya depolama**
+5. **depolama fiyat karşılaştırma**
+
+### Uzun Kuyruk Anahtar Kelimeler
+- İstanbul eşya depolama aylık ne kadar
+- 1+1 ev eşyası depolama fiyatı
+- 2+1 ev eşyası depolama maliyeti
+- depolama fiyatları neye göre belirlenir
+- en uygun eşya deposu İstanbul
+- depolama fiyatlarını etkileyen faktörler
+- uzun süreli depolama indirimi
+
+---
+
+## Sezonluk / Trend Anahtar Kelimeler
+
+### Q1 (Ocak-Mart)
+- Yeni yılda taşınma planları
+- Bahar tadilatı depolama
+- Kentsel dönüşüm 2026 haberleri
+
+### Q2 (Nisan-Haziran)
+- Yaz taşınma sezonu depolama
+- Yurt dışı eğitim depolama
+- Ev tadilatı yaz sezonu
+
+### Q3 (Temmuz-Eylül)
+- Taşınma sezonu pik dönem
+- Okul dönemi taşınma
+- Yaz tatili eşya depolama
+
+### Q4 (Ekim-Aralık)
+- Kış tadilatı depolama
+- Yılbaşı taşınma planları
+- Yeni yıl öncesi depolama
+
+---
+
+## Anahtar Kelime Fırsat Hattı
+
+### Yüksek Öncelik (Yakında Oluştur)
+1. **güvenli eşya depolama İstanbul** - Doğrudan dönüşüm potansiyeli yüksek
+2. **tadilat depolama fiyatları** - Ticari niyet, mevcut sayfa yok
+3. **kentsel dönüşüm depolama fiyatları** - Uzun süreli müşteri potansiyeli
+4. **kiralık eşya deposu İstanbul** - Yüksek hacim, işlemsel niyet
+5. **uzun süreli eşya depolama** - Yurt dışı + kentsel dönüşüm kesişimi
+
+### Orta Öncelik (Gelecek Çeyrek)
+- evden eve nakliyat ve depolama
+- ofis depolama çözümleri
+- eşya depolama sigortası
+- depolama öncesi hazırlık rehberi (genişletilmiş)
+- İstanbul ilçe bazlı depolama rehberleri
+
+### Düşük Öncelik (Gelecekte)
+- mini depo kiralama
+- parça eşya depolama
+- depolama sektörü trendleri
+- akıllı depolama çözümleri
+
+---
+
+## Kullanım Kılavuzu
+
+### Yeni İçerik Yazarken
+1. Konunun hangi kümeye ait olduğunu kontrol et
+2. Uygun küme veya uzun kuyruk anahtar kelimeyi hedefle
+3. O kümedeki pillar içeriğe referans ver
+4. LSI anahtar kelimelerini doğal olarak dahil et
+5. İlgili küme makalelerine iç bağlantı ver
+
+### Mevcut İçeriği Optimize Ederken
+1. İçeriğin doğru anahtar kelimeyi hedeflediğini doğrula
+2. Diğer sayfalarla kannibalizasyon kontrol et
+3. Anahtar kelimenin kritik yerlerde göründüğünden emin ol
+4. Arama niyeti değiştiyse güncelle
+5. İlgili küme içeriklerine iç bağlantı ekle/güncelle
+
+---
+
+## Bakım
+
+**Son Güncelleme**: Mart 2026
+**Sonraki İnceleme**: Haziran 2026 (çeyreklik önerilir)
+
+**Düzenli Güncellemeler**:
+- Aylık: Yeni anahtar kelime fırsatları ekle
+- Aylık: Sıralama değişikliklerini izle
+- Çeyreklik: Hacimleri/zorlukları güncelle
+- Çeyreklik: Rakip boşluklarını gözden geçir
+- Performansa göre kümeleri rafine et

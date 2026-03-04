@@ -1,6 +1,6 @@
-# CRO Best Practices for Landing Pages
+# Evidepo CRO En İyi Uygulamaları
 
-Conversion Rate Optimization guidelines for landing pages.
+Evidepo landing sayfaları ve hizmet sayfaları için Dönüşüm Oranı Optimizasyonu (CRO) kılavuzu. Ana dönüşüm hedefi: WhatsApp mesajı, telefon araması veya ücretsiz ekspertiz talebi.
 
 ---
 
@@ -137,24 +137,24 @@ Examples:
 
 ## Risk Reversal Tactics
 
-### For Free Trial
-- "No credit card required"
-- "Cancel anytime"
-- "Full access for [X] days"
-- "No commitment"
-- "Set up in under 5 minutes"
+### Ücretsiz Ekspertiz İçin
+- "Ücretsiz, zorunluluk yok"
+- "Sadece 15 dakikanızı alır"
+- "Net fiyat teklifi alın"
+- "Gizli ücret yok"
+- "Sözleşme güvencesi"
 
-### For Demo Requests
-- "No pressure, no hard sell"
-- "Just [X] minutes of your time"
-- "Get your questions answered"
-- "See if we're a fit"
+### WhatsApp/Telefon İçin
+- "Hemen yanıt alın"
+- "Uzman danışmanlık ücretsiz"
+- "Sorularınızı anında cevaplayalım"
+- "Baskı yok, sadece bilgi"
 
-### For Lead Capture
-- "No spam, ever"
-- "Unsubscribe anytime"
-- "Instant download"
-- "Free, no strings attached"
+### Blog İçerik CTA İçin
+- "Ücretsiz ekspertiz talep edin"
+- "WhatsApp'tan hemen yazın"
+- "Fiyat teklifi alın, karar sizin"
+- "Ücretsiz danışmanlık"
 
 ### Risk Reversal Placement
 Always place risk reversal **directly below or beside the CTA button**.

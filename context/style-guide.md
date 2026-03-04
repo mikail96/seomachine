@@ -1,419 +1,305 @@
-# Castos Style Guide
+# Evidepo Stil Kılavuzu
 
-This guide defines writing conventions, formatting standards, and editorial guidelines for all Castos content.
-
-## Instructions
-Fill in this template with Castos-specific style preferences. Update as the style guide evolves.
+Bu kılavuz, tüm Evidepo içerikleri için yazım kurallarını, formatlama standartlarını ve editöryal kuralları tanımlar.
 
 ---
 
-## Grammar & Mechanics
+## Dil & Dilbilgisi
 
-### Capitalization
+### Dil
+- **İçerik dili**: Türkçe
+- **Hedef kitle**: Türkiye'de yaşayan, İstanbul merkezli bireyler ve kurumlar
+- **Yabancı terimler**: Türkçe karşılığı varsa Türkçesini tercih et
+  - "self-storage" yerine "kişiye özel depolama" veya "kiralık depo"
+  - "feedback" yerine "geri bildirim"
+  - SEO, CTA gibi teknik pazarlama terimleri İngilizce kalabilir
 
-**Headlines & Subheadings**:
-- [ ] Title Case (Capitalize Major Words)
-- [ ] Sentence case (Only capitalize first word)
-- **Decision**: [Choose one and document here]
+### Büyük/Küçük Harf
 
-**Product Names**:
-- Castos: [Always capitalized]
-- Seriously Simple Podcasting: [Capitalization style]
-- [Other Castos products]: [Style]
+**Başlıklar & Alt Başlıklar**:
+- Cümle düzeni kullan (Yalnızca ilk kelimeyi büyük yaz)
+- Örnek: "Eşya depolama fiyatları nasıl belirlenir?"
 
-**Industry Terms**:
-- podcast / Podcast: [Choose one]
-- podcaster / Podcaster: [Choose one]
-- RSS / rss: [RSS (always caps)]
-- [Add other common terms]
+**Marka İsimleri**:
+- Evidepo: Her zaman "Evidepo" (büyük E)
+- Sanat Evden Eve Nakliyat: Tam isim kullanıldığında her kelime büyük
 
-### Numbers
+**Sektör Terimleri**:
+- depolama / Depolama: küçük harf (cümle başı hariç)
+- nakliyat / Nakliyat: küçük harf (cümle başı hariç)
+- İstanbul: Her zaman büyük I
 
-**When to Spell Out**:
-- Spell out: One through nine
-- Use numerals: 10 and above
-- Exceptions:
-  - Percentages: Always use numerals (5%, 50%)
-  - Money: Always use numerals ($5, $500)
-  - Measurements: Always use numerals (5 GB, 50 MB)
-  - Lists/stats: Always use numerals for scannability
+### Sayılar
 
-**Large Numbers**:
-- 1,000+ (use comma)
-- 1 million (spell out million, billion, etc.)
-- $5,000 or $5K? [Choose convention]
+**Ne Zaman Yazıyla Yaz**:
+- Bir'den dokuza kadar yazıyla
+- 10 ve üstü rakamla
 
-### Punctuation
+**İstisnalar**:
+- Yüzdeler: Her zaman rakam (%5, %50)
+- Para: Her zaman rakam (500 TL, 1.000 TL)
+- Ölçüler: Her zaman rakam (5 m², 10 m³)
+- Listeler/istatistikler: Taranabilirlik için rakam
 
-**Oxford Comma**:
-- [ ] Yes (A, B, and C)
-- [ ] No (A, B and C)
-- **Decision**: [Choose and document]
+**Büyük Sayılar**:
+- 1.000+ (nokta ile ayır - Türkçe format)
+- 1 milyon (milyon, milyar yazıyla)
+- Para: 5.000 TL veya 5 bin TL
 
-**Em Dashes**:
-- Style: — (em dash, no spaces) or - - (hyphens with spaces)
-- Usage: For parenthetical statements or emphasis
-- Example: "Podcast analytics—when used correctly—drive better content decisions."
+### Noktalama
 
-**Quotation Marks**:
-- "Straight quotes" or "Curly quotes"?
-- **Decision**: [Choose one]
+**Virgül (Oxford virgülü)**:
+- Hayır (Türkçede standart: A, B ve C)
 
-**Ellipses**:
-- Three dots: ...
-- Spacing: no spaces before or after
-- Use sparingly: Primarily for omitted text in quotes
+**Kısa Çizgi / Uzun Çizgi**:
+- Kısa çizgi (-): Birleşik kelimelerde (eşya-depolama)
+- Uzun çizgi (—): Parantez ifadeler için, boşluksuz
+- Örnek: "Depolama hizmeti—doğru seçildiğinde—hayat kurtarır."
 
-### Abbreviations & Acronyms
+**Tırnak İşaretleri**:
+- Çift tırnak: "Düz tırnak"
 
-**First Use**:
-- Spell out on first use, acronym in parentheses
-- Example: "Really Simple Syndication (RSS) feeds distribute..."
-- Exceptions for universally known: SEO, URL, CTA
+### Kısaltmalar
 
-**Common Podcasting Acronyms**:
-- RSS: Really Simple Syndication
-- DAI: Dynamic Ad Insertion
-- SEO: Search Engine Optimization
-- IAB: Interactive Advertising Bureau
-- [Add others as needed]
-
-**Latin Abbreviations**:
-- e.g. (for example): [Use or avoid?]
-- i.e. (that is): [Use or avoid?]
-- etc. (and so forth): [Use or avoid?]
-- **Decision**: [Generally avoid in favor of plain English]
+**İlk Kullanım**:
+- İlk kullanımda açıkla, parantez içinde kısaltma
+- Örnek: "Kentsel dönüşüm alanları (KDA) belirlendi..."
+- Evrensel bilinenlere istisna: SEO, WhatsApp, İstanbul
 
 ---
 
-## Word Choice & Usage
+## Kelime Seçimi & Kullanımı
 
-### Preferred Terms
+### Tercih Edilen Terimler
 
-**Say This** → **Not That**:
-- podcast creators → podcasters
-- podcast hosting → podcast storage
-- listeners → subscribers
-- audio quality → sound quality
-- show notes → episode notes / shownotes
-- podcast episode → podcast show (episode is unit, show is series)
-- analytics → stats
-- monetize → monetise (US spelling)
-- [Add Castos-specific preferences]
+**Bunu Kullan** → **Bunu Kullanma**:
+- eşya depolama → eşya saklama
+- kilitli oda → depo ünitesi / storage unit
+- anahtar sizde → self-storage / kendin depola
+- depolama alanı → depo birimi
+- ekspertiz → keşif / inceleme
+- randevulu erişim → ziyaret saati
+- profesyonel paketleme → ambalajlama
+- nakliyat → taşımacılık (nakliyat daha yaygın)
+- tadilat → renovasyon (tadilat daha anlaşılır)
+- kentsel dönüşüm → şehir yenileme
+- tesis → depo binası (tesis daha profesyonel)
 
-### Words to Avoid
-- Avoid jargon without explanation
-- Avoid "very", "really", "actually" (usually unnecessary)
-- Avoid passive constructions when active is clearer
-- Avoid "click here" or "read more" (use descriptive links)
-- [Add other words/phrases to avoid]
+### Kaçınılacak Kelimeler
+- Jargon açıklama yapmadan kullanma
+- "Çok", "gerçekten", "aslında" (genellikle gereksiz)
+- Aktif yapı daha net olduğunda pasif yapılar kullanma
+- "Buraya tıklayın" veya "devamını okuyun" (tanımlayıcı linkler kullan)
+- "En iyi", "en güvenilir" gibi ispatlanamayan üstünlük iddiaları
 
-### Inclusive Language
-- Use gender-neutral language ("they" instead of "he/she")
-- "Podcast creator" or "podcaster" instead of gendered terms
-- Avoid idioms that may not translate globally
-- Be mindful of accessibility in descriptions
+### Kapsayıcı Dil
+- Cinsiyet nötr dil kullan
+- "Müşterilerimiz" veya "siz" hitabı tercih et
+- Herkesin anlayabileceği sade Türkçe kullan
 
 ---
 
-## Formatting Standards
+## Formatlama Standartları
 
-### Text Formatting
+### Metin Formatlama
 
-**Bold**:
-- Use for: Key concepts, important takeaways, emphasis
-- Don't overuse: If everything is bold, nothing stands out
-- Example: "**Keyword density** should be 1-2% for optimal results."
+**Kalın**:
+- Kullan: Önemli kavramlar, ana çıkarımlar, vurgu
+- Aşırı kullanma: Her şey kalınsa hiçbir şey öne çıkmaz
+- Örnek: "**Anahtar Sizde** modeli ile eşyalarınız tam kontrolünüzde."
 
-**Italics**:
-- Use for: Emphasis (sparingly), titles of works, foreign phrases
-- Example: "The term *podcast* combines 'iPod' and 'broadcast'."
+**İtalik**:
+- Kullan: Vurgu (az kullan), yabancı terimler
+- Örnek: "Evidepo, *self-storage* sektöründe fark yaratan bir yaklaşım sunuyor."
 
-**Underline**:
-- Generally avoid (reserve for links)
+**Altını Çiz**:
+- Genellikle kaçın (bağlantılar için ayrılmış)
 
-**ALL CAPS**:
-- Avoid except for standard acronyms (RSS, SEO, URL)
+**BÜYÜK HARF**:
+- Standart kısaltmalar hariç kaçın (SEO, CTA, WhatsApp)
 
-### Lists
+### Listeler
 
-**Bulleted Lists**:
-- Use for: Non-sequential items, features, benefits
-- Capitalization: [Sentence case or Title Case?]
-- Punctuation: [Period at end of each item or no punctuation?]
-- **Decision**:
-  - Capitalize first word
-  - Period if complete sentence, no period if fragment
-  - Parallel structure (all sentences or all fragments)
+**Madde İşaretli Listeler**:
+- Kullan: Sıralı olmayan maddeler, özellikler, faydalar
+- İlk kelimeyi büyük yaz
+- Tam cümleyse nokta, değilse nokta yok
+- Paralel yapı (hepsi cümle veya hepsi madde)
 
-**Numbered Lists**:
-- Use for: Sequential steps, rankings, ordered priorities
-- Format: 1. 2. 3. (with period after number)
-- Same capitalization and punctuation rules as bullets
+**Numaralı Listeler**:
+- Kullan: Sıralı adımlar, sıralamalar, öncelikler
+- Format: 1. 2. 3. (noktayla)
 
-**Nested Lists**:
-- Maximum 2 levels deep for readability
-- Use different markers for sub-items
+**İç İçe Listeler**:
+- Okunabilirlik için maksimum 2 seviye derinlik
 
-### Links
+### Bağlantılar
 
 **Anchor Text**:
-- Descriptive (tell reader where they're going)
-- Keyword-rich when possible
-- 2-5 words typically
-- ✅ "Learn more about podcast SEO"
-- ❌ "Click here"
-
-**Link Formatting**:
-- Color: [Default blue or Castos brand color?]
-- Underline: [Yes/No]
-- Open in new tab: [Only for external links]
-
-### Code & Technical Elements
-
-**Inline Code**:
-- Use backticks for: URLs, file names, code snippets
-- Example: "Your RSS feed URL is `https://feeds.castos.com/...`"
-
-**Code Blocks**:
-- Use for: Multi-line code, configuration examples
-- Include language identifier for syntax highlighting
-
-### Callout Boxes / Asides
-
-**When to Use**:
-- Important notes or warnings
-- Pro tips or expert insights
-- Key takeaways or summaries
-
-**Format**:
-- [Define how to format: blockquote, box, highlighted section?]
-- Example style to be determined
+- Tanımlayıcı (okuyucuya nereye gideceğini söyle)
+- Mümkünse anahtar kelime zengin
+- Genellikle 2-5 kelime
+- ✅ "Depolama fiyatları hakkında detaylı bilgi"
+- ❌ "Buraya tıklayın"
 
 ---
 
-## Content Structure
+## İçerik Yapısı
 
-### Article Introduction
-**Standard Structure** (150-250 words):
-1. **Hook** (1-2 sentences): Grab attention with question, statistic, or bold statement
-2. **Problem** (2-3 sentences): What challenge or question does this address?
-3. **Promise** (2-3 sentences): What will reader learn/achieve?
-4. **Credibility** (optional, 1-2 sentences): Why trust this source?
+### Makale Girişi
+**Standart Yapı** (150-250 kelime):
+1. **Kanca** (1-2 cümle): Soru, istatistik veya cesur ifadeyle dikkat çek
+2. **Sorun** (2-3 cümle): Bu hangi zorluğu ele alıyor?
+3. **Vaat** (2-3 cümle): Okuyucu ne öğrenecek/başaracak?
+4. **Güvenilirlik** (opsiyonel, 1-2 cümle): Neden bu kaynağa güvenilmeli?
 
-**Keyword Placement**:
-- Must include primary keyword in first 100 words
-- Natural integration, not forced
+**Anahtar Kelime Yerleşimi**:
+- İlk 100 kelimede birincil anahtar kelime olmalı
+- Doğal entegrasyon, zorlama değil
 
-### Section Length
-- **Minimum**: 150 words per section
-- **Maximum**: 500 words per section (break into subsections if longer)
-- **Ideal**: 250-350 words per main section
+### Bölüm Uzunluğu
+- **Minimum**: Bölüm başına 150 kelime
+- **Maksimum**: 500 kelime (daha uzunsa alt bölümlere böl)
+- **İdeal**: Ana bölüm başına 250-350 kelime
 
-### Conclusion
-**Standard Structure** (150-250 words):
-1. **Recap** (3-5 bullet points or paragraph): Key takeaways
-2. **Action** (1-2 sentences): What should reader do next?
-3. **CTA** (1-2 sentences): Call-to-action (trial, resource, related content)
-4. **Forward-looking** (optional, 1 sentence): Encouraging final thought
-
----
-
-## SEO-Specific Style
-
-### Meta Titles
-- 50-60 characters including spaces
-- Include primary keyword
-- Include "| Castos" if space allows
-- No ending punctuation
-
-### Meta Descriptions
-- 150-160 characters including spaces
-- Include primary keyword
-- Include call-to-action
-- End with complete thought
-
-### URL Slugs
-- Lowercase only
-- Hyphens between words
-- Include primary keyword
-- 3-5 words ideal
-- Format: `/blog/primary-keyword-phrase`
-
-### Alt Text
-- Describe what image shows
-- Include keyword naturally if relevant
-- 125 characters or less
-- No "image of" or "picture of" (implied)
+### Sonuç
+**Standart Yapı** (150-250 kelime):
+1. **Özet** (3-5 madde veya paragraf): Ana çıkarımlar
+2. **Eylem** (1-2 cümle): Okuyucu sonra ne yapmalı?
+3. **CTA** (1-2 cümle): WhatsApp, telefon veya ücretsiz ekspertiz çağrısı
+4. **İleriye dönük** (opsiyonel, 1 cümle): Teşvik edici kapanış
 
 ---
 
-## Dates & Time
+## SEO Özel Stili
 
-**Date Format**:
-- Month DD, YYYY (January 15, 2025)
-- Or: DD Month YYYY (15 January 2025)
-- **Decision**: [Choose one]
+### Meta Başlıklar
+- Boşluklar dahil 50-60 karakter
+- Birincil anahtar kelime dahil
+- Yer varsa "| Evidepo" ekle
+- Sonda noktalama işareti yok
 
-**Time**:
-- 12-hour format with a.m./p.m.: 3:00 p.m.
-- Or: 24-hour format: 15:00
-- **Decision**: [Choose one]
+### Meta Açıklamalar
+- Boşluklar dahil 150-160 karakter
+- Birincil anahtar kelime dahil
+- Harekete geçirici mesaj dahil
+- Tam düşünceyle bitir
 
-**Time Zones**:
-- Specify when relevant: "3:00 p.m. EST"
-- Or use: "3:00 p.m. Eastern Time"
+### URL Slugları
+- Yalnızca küçük harf
+- Kelimeler arası tire
+- Birincil anahtar kelime dahil
+- 3-5 kelime ideal
+- Format: `/blog/birincil-anahtar-kelime`
 
----
-
-## Statistics & Data
-
-### Citing Sources
-- Always cite statistics with sources
-- Format: "According to [Source], [statistic]."
-- Link to original source when possible
-- Include year of data: "In 2024, podcast listeners reached..."
-
-### Presenting Numbers
-- Round large numbers for readability: "1.2 million" not "1,234,567"
-- Use % symbol: 15% (not "percent")
-- Use $ for money: $500 (not "dollars")
-- Include commas: 10,000 not 10000
+### Alt Text (Görsel)
+- Görselin ne gösterdiğini tanımla
+- Uygunsa doğal olarak anahtar kelime ekle
+- 125 karakter veya daha az
+- "Resim" veya "görsel" ile başlama (zaten belli)
 
 ---
 
-## Images & Media
+## Tarih & Zaman
 
-### Image Captions
-- [ ] Required for all images
-- [ ] Optional, only when needed for context
-- **Decision**: [Choose one]
+**Tarih Formatı**:
+- GG Ay YYYY (4 Mart 2026)
+- Veya: Ay YYYY (Mart 2026) - ay bazında referans
 
-**Caption Style**:
-- Sentence case
-- End with period if complete sentence
-- Placement: Below image
-
-### Screenshots
-- Include relevant screenshots when helpful
-- Crop to show only relevant portion
-- Add arrows/highlights if needed to draw attention
-- Alt text should describe what's shown
-
-### Charts & Graphs
-- Include data visualization when it helps understanding
-- Keep design simple and clean
-- Always provide context in surrounding text
-- Alt text should describe the key finding, not just "chart"
+**Zaman**:
+- 24 saat formatı: 14:00
+- Saat dilimi: Gerektiğinde belirt (TSİ)
 
 ---
 
-## Brand-Specific Guidelines
+## İstatistik & Veri
 
-### Castos Product References
+### Kaynak Belirtme
+- İstatistikleri her zaman kaynakla belirt
+- Format: "[Kaynağa] göre, [istatistik]."
+- Mümkünse orijinal kaynağa linkle
+- Verinin yılını ekle: "2025 yılında İstanbul'da..."
 
-**Castos Platform**:
-- "Castos" (not "the Castos platform" unless needed for clarity)
-- "Castos analytics dashboard"
-- [Add other product-specific terms]
-
-**Features**:
-- [List how to refer to specific features]
-- [Capitalization conventions for features]
-
-### Competitor References
-- [ ] Name competitors directly when relevant
-- [ ] Use generic terms ("other podcast hosts")
-- **Decision**: [Choose approach]
-
-**If Naming Competitors**:
-- Be fair and factual
-- No disparaging language
-- Focus on differentiation, not criticism
+### Sayı Gösterimi
+- Büyük sayıları yuvarlayarak göster: "1,2 milyon" (1.234.567 değil)
+- Yüzde sembolü kullan: %15 ("yüzde" değil)
+- Para birimi: 500 TL ("lira" değil)
+- Nokta ile ayır: 10.000 (10000 değil)
 
 ---
 
-## Accessibility
+## Marka Özel Kuralları
 
-### Screen Reader Friendly
-- Descriptive link text (not "click here")
-- Image alt text for all images
-- Proper heading hierarchy (H1→H2→H3, no skipping)
-- Descriptive link previews
+### Evidepo Ürün Referansları
+- "Evidepo" (tek başına, "Evidepo platformu" gerekmedikçe)
+- "Evidepo depolama hizmeti"
+- "Anahtar Sizde modeli" (büyük A ve S)
 
-### Plain Language
-- Write at 8th-10th grade level
-- Define technical terms on first use
-- Use short sentences and paragraphs
-- Break complex ideas into digestible chunks
-
----
-
-## Voice & Tone Reminders
-
-### Core Voice Characteristics
-1. Professional yet approachable
-2. Educational and empowering
-3. Podcast creator advocate
-4. Technically accurate but accessible
-5. Results and growth-focused
-
-### Tone Variations
-- **How-to content**: Instructive, step-by-step, encouraging
-- **Strategic content**: Authoritative, experienced, actionable
-- **Industry news**: Insightful, analytical, forward-looking
-- **Product content**: Benefit-focused, clear, honest
+### Rakip Referansları
+- Gerektiğinde rakipleri doğrudan adlandır
+- Adil ve olgusal ol
+- Aşağılayıcı dil kullanma
+- Eleştiri değil, farklılaşma odaklı
 
 ---
 
-## Editing Checklist
+## Erişilebilirlik
 
-Before publishing any content:
+### Ekran Okuyucu Dostu
+- Tanımlayıcı bağlantı metni ("buraya tıklayın" değil)
+- Tüm görseller için alt text
+- Doğru başlık hiyerarşisi (H1→H2→H3, atlama yok)
 
-**Grammar & Mechanics**:
-- [ ] Spelling checked
-- [ ] Grammar checked
-- [ ] Punctuation correct (Oxford comma, em dashes, etc.)
-- [ ] Numbers formatted consistently
-- [ ] Dates formatted correctly
+### Sade Dil
+- Lise düzeyinde yaz
+- Teknik terimleri ilk kullanımda tanımla
+- Kısa cümleler ve paragraflar kullan
+- Karmaşık fikirleri sindirilebilir parçalara böl
 
-**Style**:
-- [ ] Follows capitalization guidelines
-- [ ] Uses preferred terminology
-- [ ] Consistent formatting (bold, italics, lists)
-- [ ] Links are descriptive
-- [ ] Voice and tone appropriate
+---
 
-**Structure**:
-- [ ] Strong introduction (hook, problem, promise)
-- [ ] Logical section flow
-- [ ] Proper heading hierarchy
-- [ ] Effective conclusion with CTA
-- [ ] Appropriate section lengths
+## Düzenleme Kontrol Listesi
+
+Her içerik yayınlanmadan önce:
+
+**Dilbilgisi & Mekanik**:
+- [ ] Yazım kontrol edildi
+- [ ] Dilbilgisi kontrol edildi
+- [ ] Noktalama doğru
+- [ ] Sayılar tutarlı formatlanmış
+- [ ] Tarihler doğru formatlanmış
+
+**Stil**:
+- [ ] Büyük/küçük harf kurallarına uygun
+- [ ] Tercih edilen terminoloji kullanılmış
+- [ ] Tutarlı formatlama (kalın, italik, listeler)
+- [ ] Bağlantılar tanımlayıcı
+- [ ] Ses ve ton uygun
+
+**Yapı**:
+- [ ] Güçlü giriş (kanca, sorun, vaat)
+- [ ] Mantıksal bölüm akışı
+- [ ] Doğru başlık hiyerarşisi
+- [ ] CTA'lı etkili sonuç
+- [ ] Uygun bölüm uzunlukları
 
 **SEO**:
-- [ ] Keyword integrated naturally
-- [ ] Meta elements optimized
-- [ ] Internal and external links included
-- [ ] Images have alt text
-- [ ] URL slug optimized
+- [ ] Anahtar kelime doğal entegre edilmiş
+- [ ] Meta elementleri optimize edilmiş
+- [ ] İç ve dış bağlantılar dahil
+- [ ] Görsellerde alt text var
+- [ ] URL slug optimize edilmiş
 
-**Quality**:
-- [ ] Factually accurate
-- [ ] Sources cited
-- [ ] No broken links
-- [ ] Provides genuine value
-- [ ] Ready for publication
+**Kalite**:
+- [ ] Olgusal olarak doğru
+- [ ] Kaynaklar belirtilmiş
+- [ ] Kırık bağlantı yok
+- [ ] Gerçek değer sunuyor
+- [ ] Yayına hazır
 
 ---
 
-## Updates & Maintenance
+**Stil Kılavuzu Versiyonu**: 1.0
+**Son Güncelleme**: Mart 2026
 
-**Style Guide Version**: 1.0
-**Last Updated**: [Date]
-**Next Review**: [Date]
-
-This style guide is a living document. Update as Castos brand and voice evolve.
-
-**Questions or Additions?**
-If you encounter a style question not covered here, make a decision, document it, and add it to this guide for future reference.
+Bu stil kılavuzu yaşayan bir belgedir. Evidepo markası ve sesi evrildikçe güncelleyin.
