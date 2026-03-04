@@ -10,9 +10,23 @@
  */
 
 // ============================================================
+// Browser Cache Headers - statik kaynaklar için cache süreleri
+// ============================================================
+if (!is_admin()) {
+    add_action('send_headers', function () {
+        if (!is_user_logged_in()) {
+            header('Cache-Control: public, max-age=3600, s-maxage=86400');
+            header_remove('Pragma');
+            header_remove('Expires');
+        }
+    });
+}
+
+// ============================================================
 // FIX: Duplike LocalBusiness schema bloklarını output buffer ile kaldır
 // Block 1 (@graph) kalır, Block 2 ve Block 3 kaldırılır
 // Birleştirilmiş schema WPCode header üzerinden enjekte edilir
+// + SSS sayfasına FAQPage schema, Nasıl Çalışır'a HowTo schema
 // ============================================================
 if (!is_admin()) {
     add_action('template_redirect', function () {
@@ -24,7 +38,7 @@ if (!is_admin()) {
                 $html
             );
 
-            // 2. Birleştirilmiş tek schema'yı </head> öncesine enjekte et
+            // 2. Birleştirilmiş LocalBusiness schema'yı </head> öncesine enjekte et
             $schema = '<script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -79,6 +93,131 @@ if (!is_admin()) {
 }
 </script>';
             $html = str_replace('</head>', $schema . "\n</head>", $html);
+
+            // 3. SSS sayfasına FAQPage schema ekle (zengin snippet için)
+            if (strpos($_SERVER['REQUEST_URI'], '/sikca-sorulan-sorular') !== false) {
+                $faq_schema = '<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Eşyalarıma nasıl ulaşabilirim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Randevu alarak eşyalarınıza ulaşabilirsiniz. Randevu saatlerimiz hafta içi ve hafta sonu esnek şekilde ayarlanabilir. Alanınızın anahtarı sadece sizde olduğu için eşyalarınıza güvenle erişirsiniz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Depolama alanları ne kadar güvenli?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tüm depolama alanlarımız 7/24 kamera güvenlik sistemi ile izlenmektedir. Her alan ayrı kilitlidir ve anahtarı sadece müşterimizde bulunur. Biz dahil kimse izniniz olmadan alanınıza erişemez."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Eşyalarım sigortalı mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet, tüm depolanan eşyalar sözleşme kapsamında sigorta güvencesi altındadır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Minimum depolama süresi ne kadar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Minimum depolama süremiz 1 aydır. Aylık olarak kiralama yapabilir, istediğiniz süre boyunca depolama hizmetinden yararlanabilirsiniz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Nakliyat hizmeti de veriyor musunuz?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet! Sanat Evden Eve Nakliyat iştiraki olarak evden eve taşıma ve depolama hizmetini tek elden sunuyoruz. İstanbul genelinde nakliyat hizmeti veriyoruz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Fiyatlar neye göre belirleniyor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fiyatlar alan büyüklüğüne ve depolama süresine göre belirlenir. Ücretsiz ekspertiz ile en uygun fiyatı belirleriz. Gizli ücret yoktur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hangi eşyaları depolayabilirim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ev eşyaları, ofis mobilyaları, beyaz eşya, elektronik aletler, kişisel eşyalar, mevsimlik ürünler, arşiv dosyaları ve daha birçok eşyanızı güvenle depolayabilirsiniz. Yanıcı, patlayıcı ve yasal olmayan maddeler kabul edilmez."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Depolama alanları temiz mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet, tüm alanlarımız düzenli olarak temizlenir ve bakımı yapılır. Eşyalarınız hijyenik bir ortamda muhafaza edilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sözleşme yapılıyor mu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet, tüm depolama hizmetlerimiz resmi sözleşme ile güvence altına alınır."
+      }
+    }
+  ]
+}
+</script>';
+                $html = str_replace('</head>', $faq_schema . "\n</head>", $html);
+            }
+
+            // 4. Nasıl Çalışır sayfasına HowTo schema ekle
+            if (strpos($_SERVER['REQUEST_URI'], '/nasil-calisir') !== false) {
+                $howto_schema = '<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Eşya Depolama Nasıl Çalışır?",
+  "description": "Evidepo ile eşyalarınızı depolamak sadece 4 adımda tamamlanır.",
+  "totalTime": "PT2H",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Bize Ulaşın",
+      "text": "Telefon, WhatsApp veya web sitemiz üzerinden bize ulaşın. Depolama ve nakliyat ihtiyacınız hakkında bilgi verin. Ekibimiz size uygun çözüm önerileri sunacak ve sorularınızı yanıtlayacaktır."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Ücretsiz Ekspertiz",
+      "text": "Uzman ekibimiz eşyalarınızı yerinde değerlendirir. Eşya miktarınıza göre en uygun alan boyutunu belirler ve net fiyat teklifini sunar. Ekspertiz hizmetimiz tamamen ücretsizdir."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Paketleme ve Taşıma",
+      "text": "Anlaşma sağlandıktan sonra Sanat Evden Eve Nakliyat ekibimiz devreye girer. Eşyalarınız profesyonel ekip tarafından özenle paketlenir ve depolama tesisimize güvenle taşınır."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Anahtar Teslim",
+      "text": "Eşyalarınız kişiye özel kilitli alanınıza yerleştirilir. Alanınızın anahtarı size teslim edilir. Artık anahtarınız sizde, eşyalarınız güvende. Randevu alarak istediğiniz zaman eşyalarınıza ulaşabilirsiniz."
+    }
+  ]
+}
+</script>';
+                $html = str_replace('</head>', $howto_schema . "\n</head>", $html);
+            }
 
             return $html;
         });
