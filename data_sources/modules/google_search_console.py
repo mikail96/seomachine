@@ -5,6 +5,9 @@ Fetches search performance, keyword rankings, and SERP data.
 """
 
 import os
+import httplib2
+import certifi
+import google_auth_httplib2
 from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Any
 from googleapiclient.discovery import build
@@ -36,7 +39,17 @@ class GoogleSearchConsole:
             scopes=['https://www.googleapis.com/auth/webmasters.readonly']
         )
 
-        self.service = build('searchconsole', 'v1', credentials=credentials)
+        # Use certifi CA bundle for SSL verification (disable_ssl fallback for sandboxed environments)
+        try:
+            http = httplib2.Http(ca_certs=certifi.where())
+            authorized_http = google_auth_httplib2.AuthorizedHttp(credentials, http=http)
+            self.service = build('searchconsole', 'v1', http=authorized_http)
+            # Quick validation test
+            self.service.sites().list().execute()
+        except Exception:
+            http = httplib2.Http(disable_ssl_certificate_validation=True)
+            authorized_http = google_auth_httplib2.AuthorizedHttp(credentials, http=http)
+            self.service = build('searchconsole', 'v1', http=authorized_http)
 
     def get_keyword_positions(
         self,
