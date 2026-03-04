@@ -10,16 +10,17 @@
  */
 
 // ============================================================
-// FIX: Bozuk ld+json schema bloklarını output buffer ile düzelt
-// "description":"description": pattern'ini düzeltir
+// FIX: Duplike LocalBusiness schema bloklarını output buffer ile kaldır
+// Block 1 (@graph) kalır, Block 2 ve Block 3 kaldırılır
+// Birleştirilmiş schema WPCode header üzerinden enjekte edilir
 // ============================================================
 if (!is_admin()) {
     add_action('template_redirect', function () {
         ob_start(function ($html) {
-            // Bozuk description pattern'ini düzelt: "description":"description": "value" → "description": "value"
+            // SelfStorage/LocalBusiness içeren ld+json bloklarını kaldır (Rank Math duplikeleri)
             $html = preg_replace(
-                '/"description"\s*:\s*"description"\s*:\s*"/',
-                '"description": "',
+                '/<script[^>]*type=["\']application\/ld\+json["\'][^>]*>\s*\{[^}]*"@type"\s*:\s*(\["SelfStorage"[^<]*|"LocalBusiness"[^<]*)<\/script>/s',
+                '',
                 $html
             );
             return $html;
