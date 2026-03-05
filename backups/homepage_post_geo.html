@@ -1,0 +1,355 @@
+<!-- wp:html -->
+<style>
+.ev-hero{position:relative;overflow:hidden;background:linear-gradient(165deg,#0F1A2E 0%,#1B2D4F 40%,#2A4170 100%);padding:80px 24px 60px;display:flex;align-items:center}
+.ev-hero::before{content:'';position:absolute;top:-30%;right:-10%;width:700px;height:700px;background:radial-gradient(circle,rgba(232,97,77,0.15) 0%,transparent 70%);border-radius:50%}
+.ev-hero-inner{max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:2}
+.ev-hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);padding:8px 16px;border-radius:50px;font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:600;color:rgba(255,255,255,0.9);margin-bottom:24px}
+.ev-hero-dot{width:8px;height:8px;background:#2ECC71;border-radius:50%;animation:evPulse 2s infinite}
+@keyframes evPulse{0%,100%{opacity:1}50%{opacity:0.4}}
+.ev-hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:48px;font-weight:800;line-height:1.12;color:#fff;margin-bottom:24px;letter-spacing:-1px}
+.ev-hero h1 em{font-style:normal;color:#E8614D}
+.ev-hero-desc{font-family:'DM Sans',sans-serif;font-size:18px;line-height:1.7;color:rgba(255,255,255,0.75);margin-bottom:32px}
+.ev-hero-btns{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:40px}
+.ev-btn-wa{display:inline-flex;align-items:center;gap:10px;background:#25D366;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;padding:14px 28px;border-radius:12px;text-decoration:none;box-shadow:0 4px 16px rgba(37,211,102,0.3);transition:all .3s}
+.ev-btn-wa:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(37,211,102,0.4);color:#fff}
+.ev-btn-tel{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;padding:14px 28px;border-radius:12px;border:2px solid rgba(255,255,255,0.25);text-decoration:none;transition:all .3s}
+.ev-btn-tel:hover{border-color:#E8614D;color:#E8614D}
+.ev-hero-stats{display:flex;gap:32px}
+.ev-stat{text-align:center}
+.ev-stat-num{font-family:'Plus Jakarta Sans',sans-serif;font-size:28px;font-weight:800;color:#fff}
+.ev-stat-label{font-size:13px;color:rgba(255,255,255,0.6);margin-top:2px}
+.ev-hero-card{background:rgba(255,255,255,0.06);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:32px;position:relative}
+.ev-float-badge{position:absolute;top:-12px;right:20px;background:#2ECC71;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:700;padding:6px 16px;border-radius:50px}
+.ev-card-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:700;color:#fff;margin-bottom:20px;text-align:center}
+.ev-room-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:20px}
+.ev-room{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:16px 12px;text-align:center;transition:all .3s;cursor:pointer}
+.ev-room:hover,.ev-room.active{background:rgba(232,97,77,0.15);border-color:rgba(232,97,77,0.4)}
+.ev-room-icon{font-size:28px;margin-bottom:6px}
+.ev-room-size{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:800;color:#fff}
+.ev-room-label{font-size:12px;color:rgba(255,255,255,0.6);margin-top:2px}
+.ev-card-price{text-align:center;padding:16px;background:rgba(255,255,255,0.04);border-radius:12px;margin-bottom:16px}
+.ev-card-price-label{font-size:13px;color:rgba(255,255,255,0.5)}
+.ev-card-price-val{font-family:'Plus Jakarta Sans',sans-serif;font-size:22px;font-weight:800;color:#E8614D}
+.ev-card-btn{display:block;text-align:center;background:#E8614D;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;padding:12px;border-radius:10px;text-decoration:none;transition:all .3s}
+.ev-card-btn:hover{background:#D4543F;color:#fff}
+
+/* Trust Bar */
+.ev-trust{background:#fff;border-bottom:1px solid rgba(0,0,0,0.06);padding:20px 24px}
+.ev-trust-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:center;gap:48px;flex-wrap:wrap}
+.ev-trust-item{display:flex;align-items:center;gap:10px;font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:600;color:#1B2D4F}
+.ev-trust-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px}
+.ev-trust-icon.lock{background:rgba(232,97,77,0.1)}
+.ev-trust-icon.cam{background:rgba(27,45,79,0.08)}
+.ev-trust-icon.key{background:rgba(245,166,35,0.1)}
+.ev-trust-icon.doc{background:rgba(46,204,113,0.1)}
+
+/* Section genel */
+.ev-section{padding:80px 24px}
+.ev-section-header{text-align:center;margin-bottom:56px}
+.ev-tag{display:inline-block;font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:700;color:#E8614D;text-transform:uppercase;letter-spacing:2px;margin-bottom:16px;position:relative;padding:0 20px}
+.ev-tag::before,.ev-tag::after{content:'';position:absolute;top:50%;width:30px;height:2px;background:linear-gradient(to right,#E8614D,transparent)}
+.ev-tag::before{right:100%}
+.ev-tag::after{left:100%;background:linear-gradient(to left,#E8614D,transparent)}
+.ev-section-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:36px;font-weight:800;color:#1B2D4F;margin-bottom:16px;line-height:1.2}
+.ev-section-desc{font-family:'DM Sans',sans-serif;font-size:17px;color:#6B6560;max-width:600px;margin:0 auto;line-height:1.7}
+
+/* Hizmetler */
+.ev-services-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.ev-service{background:#fff;border-radius:16px;padding:32px;border:1px solid rgba(0,0,0,0.04);box-shadow:0 4px 20px rgba(0,0,0,0.06);transition:all .3s;text-align:left}
+.ev-service:hover{transform:translateY(-6px);box-shadow:0 12px 40px rgba(0,0,0,0.1)}
+.ev-service-icon{width:56px;height:56px;border-radius:14px;background:linear-gradient(135deg,#FFF0ED,#FFE0DB);display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:20px}
+.ev-service h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:700;color:#1B2D4F;margin-bottom:10px}
+.ev-service p{font-family:'DM Sans',sans-serif;font-size:15px;color:#6B6560;line-height:1.6;margin-bottom:16px}
+.ev-service-link{font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:600;color:#E8614D;text-decoration:none}
+
+/* Nasıl Çalışır */
+.ev-how{background:#fff}
+.ev-how-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+.ev-step{text-align:center;padding:24px 16px;position:relative}
+.ev-step-num{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#E8614D,#D4543F);color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-size:20px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;box-shadow:0 4px 16px rgba(232,97,77,0.3)}
+.ev-step h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;font-weight:700;color:#1B2D4F;margin-bottom:8px}
+.ev-step p{font-family:'DM Sans',sans-serif;font-size:14px;color:#6B6560;line-height:1.6}
+
+/* Neden Evidepo */
+.ev-features-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.ev-feature{display:flex;gap:16px;background:#fff;padding:24px;border-radius:14px;border:1px solid rgba(0,0,0,0.04);box-shadow:0 2px 12px rgba(0,0,0,0.04);transition:all .3s}
+.ev-feature:hover{box-shadow:0 8px 32px rgba(0,0,0,0.08);transform:translateY(-2px)}
+.ev-feature-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0}
+.ev-feature h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:700;color:#1B2D4F;margin-bottom:6px}
+.ev-feature p{font-family:'DM Sans',sans-serif;font-size:14px;color:#6B6560;line-height:1.6}
+
+/* Fiyatlar */
+.ev-pricing{background:#fff}
+.ev-pricing-grid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.ev-price-card{background:#F8F6F3;border-radius:16px;padding:32px;border:2px solid transparent;text-align:center;transition:all .3s}
+.ev-price-card.popular{border-color:#E8614D;background:#fff;box-shadow:0 8px 32px rgba(232,97,77,0.15);position:relative}
+.ev-price-card.popular::before{content:'En Popüler';position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#E8614D,#D4543F);color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:700;padding:4px 16px;border-radius:50px}
+.ev-price-icon{font-size:36px;margin-bottom:12px}
+.ev-price-name{font-family:'Plus Jakarta Sans',sans-serif;font-size:20px;font-weight:800;color:#1B2D4F;margin-bottom:4px}
+.ev-price-size{font-size:14px;color:#6B6560;margin-bottom:16px}
+.ev-price-val{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:700;color:#E8614D;margin-bottom:20px}
+.ev-price-features{list-style:none;padding:0;margin:0 0 24px;text-align:left}
+.ev-price-features li{font-size:14px;color:#4A4640;padding:6px 0;padding-left:24px;position:relative}
+.ev-price-features li::before{content:'✓';position:absolute;left:0;color:#2ECC71;font-weight:700}
+.ev-price-btn{display:block;width:100%;padding:12px;border-radius:10px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;text-align:center;text-decoration:none;transition:all .3s;border:2px solid #1B2D4F;color:#1B2D4F;background:transparent}
+.ev-price-btn:hover{background:#1B2D4F;color:#fff}
+.ev-price-btn.primary{background:#E8614D;color:#fff;border-color:#E8614D}
+.ev-price-btn.primary:hover{background:#D4543F;border-color:#D4543F;color:#fff}
+
+/* SSS */
+.ev-faq{max-width:800px;margin:0 auto}
+.ev-faq-item{background:#fff;border-radius:12px;margin-bottom:12px;border:1px solid rgba(0,0,0,0.06);overflow:hidden}
+.ev-faq-q{font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:600;color:#1B2D4F;padding:20px 24px;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.ev-faq-q::after{content:'+';font-size:22px;color:#E8614D;font-weight:700;transition:transform .3s}
+.ev-faq-item.open .ev-faq-q::after{transform:rotate(45deg)}
+.ev-faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease;padding:0 24px}
+.ev-faq-item.open .ev-faq-a{max-height:200px;padding:0 24px 20px}
+.ev-faq-a p{font-family:'DM Sans',sans-serif;font-size:15px;color:#6B6560;line-height:1.7}
+
+/* CTA */
+.ev-cta{background:linear-gradient(165deg,#0F1A2E 0%,#1B2D4F 50%,#2A4170 100%);padding:80px 24px;text-align:center;position:relative;overflow:hidden}
+.ev-cta::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(232,97,77,0.12) 0%,transparent 70%);border-radius:50%}
+.ev-cta-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:40px;font-weight:800;color:#fff;margin-bottom:16px;position:relative;z-index:2}
+.ev-cta-desc{font-family:'DM Sans',sans-serif;font-size:18px;color:rgba(255,255,255,0.7);margin-bottom:32px;position:relative;z-index:2}
+.ev-cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative;z-index:2}
+
+/* Responsive */
+@media(max-width:1024px){
+.ev-hero-inner{grid-template-columns:1fr;text-align:center}
+.ev-hero h1{font-size:38px}
+.ev-hero-btns{justify-content:center}
+.ev-hero-stats{justify-content:center}
+.ev-hero-card{max-width:420px;margin:0 auto}
+.ev-services-grid{grid-template-columns:repeat(2,1fr)}
+.ev-how-grid{grid-template-columns:repeat(2,1fr)}
+.ev-pricing-grid{grid-template-columns:1fr}
+.ev-price-card{max-width:400px;margin:0 auto}
+}
+@media(max-width:768px){
+.ev-hero{padding:60px 16px 40px}
+.ev-hero h1{font-size:30px}
+.ev-hero-desc{font-size:16px}
+.ev-services-grid{grid-template-columns:1fr}
+.ev-features-grid{grid-template-columns:1fr}
+.ev-how-grid{grid-template-columns:repeat(2,1fr)}
+.ev-trust-inner{gap:24px}
+.ev-section{padding:60px 16px}
+.ev-section-title{font-size:28px}
+.ev-cta-title{font-size:30px}
+.ev-room-grid{grid-template-columns:1fr 1fr 1fr}
+}
+@media(max-width:480px){
+.ev-hero h1{font-size:26px}
+.ev-how-grid{grid-template-columns:1fr}
+.ev-hero-stats{flex-direction:column;gap:16px}
+.ev-section-title{font-size:24px}
+}
+</style>
+
+<!-- HERO -->
+<div class="ev-hero">
+<div class="ev-hero-inner">
+<div>
+<div class="ev-hero-badge"><div class="ev-hero-dot"></div> Randevulu Erişim &bull; Anahtar Sizde</div>
+<!-- SEO DEĞİŞİKLİK 1: H1'e keyword eklendi -->
+<h2>İstanbul Eşya Depolama:<br><em>Kilitli Depolama</em> Odaları</h2>
+<!-- SEO DEĞİŞİKLİK 2: İlk paragrafa keyword eklendi -->
+<p class="ev-hero-desc">İstanbul eşya depolama hizmeti arıyorsanız doğru yerdesiniz. Kişiye özel, kameralı, tertemiz depolama odaları. Anahtarınız sizde, eşyalarınız eviniz kadar güvende.</p>
+<div class="ev-hero-btns">
+<a href="https://wa.me/905355298192" class="ev-btn-wa" style="color:#fff !important;" target="_blank">&#x1f4ac; WhatsApp ile Teklif Al</a>
+<a href="tel:+905355298192" class="ev-btn-tel" style="color:#fff !important;">&#x1f4de; 0535 529 81 92</a>
+</div>
+<div class="ev-hero-stats">
+<div class="ev-stat"><div class="ev-stat-num">500+</div><div class="ev-stat-label">Mutlu Müşteri</div></div>
+<div class="ev-stat"><div class="ev-stat-num">7/24</div><div class="ev-stat-label">Kamera Güvenlik</div></div>
+<div class="ev-stat"><div class="ev-stat-num">%100</div><div class="ev-stat-label">Memnuniyet</div></div>
+</div>
+</div>
+<div>
+<div class="ev-hero-card">
+<div class="ev-float-badge">✓ Anahtar Sizde</div>
+<div class="ev-card-title">Oda Boyutu Seçin</div>
+<div class="ev-room-grid">
+<div class="ev-room"><div class="ev-room-icon">&#x1f4e6;</div><div class="ev-room-size">5 m²</div><div class="ev-room-label">Küçük Oda</div></div>
+<div class="ev-room active"><div class="ev-room-icon">&#x1f3e0;</div><div class="ev-room-size">10 m²</div><div class="ev-room-label">Orta Oda</div></div>
+<div class="ev-room"><div class="ev-room-icon">&#x1f3e2;</div><div class="ev-room-size">20 m²</div><div class="ev-room-label">Büyük Oda</div></div>
+</div>
+<div class="ev-card-price"><div class="ev-card-price-label">Aylık kira</div><div class="ev-card-price-val">Teklif İçin Arayın</div></div>
+<a href="https://wa.me/905355298192" class="ev-card-btn" style="color:#fff !important;" target="_blank">Ücretsiz Teklif Al →</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- GEO: Entity Definition - AI arama motorları için -->
+<div class="ev-entity-definition" style="max-width:900px;margin:0 auto;padding:32px 24px;text-align:center;">
+<p style="font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.8;color:#4A4640;margin:0;">Evidepo, İstanbul Pendik'te bulunan kişiye özel kilitli oda kiralama sistemiyle çalışan bir eşya depolama firmasıdır. Sanat Evden Eve Nakliyat iştiraki olarak nakliyat ve depolama hizmetini tek elden sunar. Her müşteriye ayrı kilitli oda tahsis edilir, anahtar yalnızca müşteride kalır. Tüm depolama alanları 7/24 güvenlik kamerası ile izlenir ve düzenli olarak temizlenir.</p>
+</div>
+
+<!-- TRUST BAR -->
+<div class="ev-trust">
+<div class="ev-trust-inner">
+<div class="ev-trust-item"><div class="ev-trust-icon lock">&#x1f512;</div> Kilitli Odalar</div>
+<div class="ev-trust-item"><div class="ev-trust-icon cam">&#x1f4f9;</div> 7/24 Kamera</div>
+<div class="ev-trust-item"><div class="ev-trust-icon key">&#x1f511;</div> Anahtar Sizde</div>
+<div class="ev-trust-item"><div class="ev-trust-icon doc">&#x1f4cb;</div> Sözleşmeli Hizmet</div>
+</div>
+</div>
+
+<!-- HİZMETLER -->
+<div class="ev-section" style="background:#F8F6F3;">
+<div class="ev-section-header">
+<div class="ev-tag">Hizmetlerimiz</div>
+<!-- SEO DEĞİŞİKLİK 3: H2'ye keyword eklendi -->
+<h2 class="ev-section-title">İstanbul'da Hangi Depolama Hizmetlerini Sunuyoruz?</h2>
+<p class="ev-section-desc">Evidepo olarak ev eşyası, ofis, tadilat, kentsel dönüşüm, yurt dışı ve nakliyat+depolama olmak üzere 6 farklı depolama hizmeti sunuyoruz. Tüm hizmetlerimizde kişiye özel kilitli oda, 7/24 kamera güvenliği ve Sanat Nakliyat güvencesi mevcuttur.</p>
+</div>
+<div class="ev-services-grid">
+<!-- SEO DEĞİŞİKLİK 4: İlk servis açıklamasına keyword eklendi -->
+<div class="ev-service"><div class="ev-service-icon">&#x1f3e0;</div><h3>Ev Eşyası Depolama</h3><p>İstanbul'da ev eşyası depolama hizmeti ile mobilya, beyaz eşya ve kişisel eşyalarınız kilitli odalarda güvenle saklanır.</p><a href="/ev-esyasi-depolama/" class="ev-service-link">Detaylı Bilgi →</a></div>
+<div class="ev-service"><div class="ev-service-icon">&#x1f3e2;</div><h3>Ofis & Kurumsal Depolama</h3><p>Ofis mobilyaları, arşiv dosyaları ve kurumsal ekipmanlar için güvenli çözümler.</p><a href="/ofis-depolama/" class="ev-service-link">Detaylı Bilgi →</a></div>
+<div class="ev-service"><div class="ev-service-icon">&#x1f528;</div><h3>Tadilat Depolama</h3><p>Tadilat süresince eşyalarınız toz ve hasardan korunsun, biz saklayalım.</p><a href="/tadilat-depolama/" class="ev-service-link">Detaylı Bilgi →</a></div>
+<div class="ev-service"><div class="ev-service-icon">&#x1f3d7;&#xfe0f;</div><h3>Kentsel Dönüşüm</h3><p>Uzun süreli depolamada özel fiyat avantajları ile eşyalarınız güvende.</p><a href="/kentsel-donusum-depolama/" class="ev-service-link">Detaylı Bilgi →</a></div>
+<div class="ev-service"><div class="ev-service-icon">&#x2708;&#xfe0f;</div><h3>Yurt Dışı Depolama</h3><p>Yurt dışına giderken eşyalarınızı güvenle bırakın, döndüğünüzde teslim alın.</p><a href="/yurt-disi-depolama/" class="ev-service-link">Detaylı Bilgi →</a></div>
+<div class="ev-service"><div class="ev-service-icon">&#x1f69a;</div><h3>Nakliyat + Depolama</h3><p>Sanat Nakliyat güvencesiyle taşıma ve depolama tek elden çözüm.</p><a href="/nakliyat-depolama/" class="ev-service-link">Detaylı Bilgi →</a></div>
+</div>
+</div>
+
+<!-- NASIL ÇALIŞIR -->
+<div class="ev-section ev-how">
+<div class="ev-section-header">
+<div class="ev-tag">Nasıl Çalışır</div>
+<h2 class="ev-section-title">Eşya Depolama Nasıl Çalışır?</h2>
+<p class="ev-section-desc">Evidepo'da eşya depolama 4 basit adımda tamamlanır: Bize ulaşın, ücretsiz ekspertiz ile oda boyutunuzu belirleyin, Sanat Nakliyat ekibimiz eşyalarınızı taşısın ve kilitli odanızın anahtarını teslim alın. Tüm süreç profesyonel ekibimiz tarafından yönetilir.</p>
+</div>
+<div class="ev-how-grid">
+<div class="ev-step"><div class="ev-step-num">1</div><h3>Bize Ulaşın</h3><p>Telefon veya WhatsApp ile ücretsiz bilgi ve teklif alın.</p></div>
+<div class="ev-step"><div class="ev-step-num">2</div><h3>Ekspertiz</h3><p>Eşyalarınıza uygun oda boyutunu birlikte belirleyelim.</p></div>
+<div class="ev-step"><div class="ev-step-num">3</div><h3>Taşıma</h3><p>Nakliyat ekibimiz eşyalarınızı güvenle depoya taşır.</p></div>
+<div class="ev-step"><div class="ev-step-num">4</div><h3>Anahtar Sizde</h3><p>Odanızın anahtarını alın, eşyalarınız güvende!</p></div>
+</div>
+</div>
+
+<!-- NEDEN EVİDEPO -->
+<div class="ev-section" style="background:#F8F6F3;">
+<div class="ev-section-header">
+<div class="ev-tag">Neden Evidepo</div>
+<!-- SEO DEĞİŞİKLİK 5: H2'ye keyword eklendi -->
+<h2 class="ev-section-title">Eşyalarınız Neden Evidepo'da Güvende?</h2>
+<p class="ev-section-desc">Evidepo'da her müşteriye özel kilitli oda tahsis edilir ve anahtar yalnızca müşteride kalır. 7/24 kamera güvenliği, düzenli temizlik, randevulu erişim ve Sanat Evden Eve Nakliyat'ın yıllara dayanan deneyimi ile eşyalarınız eviniz kadar güvende.</p>
+</div>
+<div class="ev-features-grid">
+<div class="ev-feature"><div class="ev-feature-icon" style="background:rgba(232,97,77,0.1)">&#x1f512;</div><div><h3>Kişiye Özel Kilitli Odalar</h3><p>Her müşteriye ayrı oda. Anahtarı yalnızca sizde, biz dahil kimse erişemez.</p></div></div>
+<div class="ev-feature"><div class="ev-feature-icon" style="background:rgba(27,45,79,0.08)">&#x1f4f9;</div><div><h3>7/24 Kamera Güvenliği</h3><p>Tüm depolama alanları kesintisiz kamera sistemiyle izlenir.</p></div></div>
+<div class="ev-feature"><div class="ev-feature-icon" style="background:rgba(46,204,113,0.1)">&#x1f9f9;</div><div><h3>Temiz & Bakımlı Alanlar</h3><p>Odalarımız düzenli olarak temizlenir. Hijyenik ortamda saklama.</p></div></div>
+<div class="ev-feature"><div class="ev-feature-icon" style="background:rgba(245,166,35,0.1)">&#x1f4c5;</div><div><h3>Randevulu Erişim</h3><p>Önceden randevu alarak eşyalarınıza istediğiniz zaman ulaşın.</p></div></div>
+<div class="ev-feature"><div class="ev-feature-icon" style="background:rgba(232,97,77,0.1)">&#x1f69a;</div><div><h3>Entegre Nakliyat</h3><p>Sanat Nakliyat iştiraki olarak taşıma ve depolamayı tek noktadan sunuyoruz.</p></div></div>
+<div class="ev-feature"><div class="ev-feature-icon" style="background:rgba(27,45,79,0.08)">&#x1f4b0;</div><div><h3>Şeffaf Fiyatlandırma</h3><p>Gizli ücret yok. Net fiyatlar, bütçenize uygun depolama çözümleri.</p></div></div>
+</div>
+</div>
+
+<!-- FİYATLAR -->
+<div class="ev-section ev-pricing">
+<div class="ev-section-header">
+<div class="ev-tag">Fiyatlar</div>
+<!-- SEO DEĞİŞİKLİK 6: H2'ye keyword eklendi -->
+<h2 class="ev-section-title">Eşya Depolama Fiyatları Ne Kadar?</h2>
+<p class="ev-section-desc">Evidepo eşya depolama fiyatları oda büyüklüğüne ve kiralama süresine göre belirlenir. Küçük (5-8 m²), orta (10-15 m²) ve büyük (20+ m²) oda seçenekleri mevcuttur. Gizli ücret yoktur, ücretsiz ekspertiz ile size en uygun fiyat teklifi sunulur.</p>
+</div>
+<div class="ev-pricing-grid">
+<div class="ev-price-card">
+<div class="ev-price-icon">&#x1f4e6;</div>
+<div class="ev-price-name">Küçük Oda</div>
+<div class="ev-price-size">5-8 m² — 1+1 ev eşyası</div>
+<div class="ev-price-val">Teklif İçin Arayın</div>
+<ul class="ev-price-features"><li>Kilitli oda + anahtar sizde</li><li>7/24 kamera güvenliği</li><li>Düzenli temizlik</li><li>Sözleşme güvencesi</li></ul>
+<a href="https://wa.me/905355298192" class="ev-price-btn" style="color:#1B2D4F !important;">Teklif Al</a>
+</div>
+<div class="ev-price-card popular">
+<div class="ev-price-icon">&#x1f3e0;</div>
+<div class="ev-price-name">Orta Oda</div>
+<div class="ev-price-size">10-15 m² — 2+1 ev eşyası</div>
+<div class="ev-price-val">Teklif İçin Arayın</div>
+<ul class="ev-price-features"><li>Kilitli oda + anahtar sizde</li><li>7/24 kamera güvenliği</li><li>Düzenli temizlik</li><li>Sözleşme güvencesi</li><li>Nakliyat dahil seçeneği</li></ul>
+<a href="https://wa.me/905355298192" class="ev-price-btn primary" style="color:#fff !important;">Teklif Al</a>
+</div>
+<div class="ev-price-card">
+<div class="ev-price-icon">&#x1f3e2;</div>
+<div class="ev-price-name">Büyük Oda</div>
+<div class="ev-price-size">20+ m² — 3+1 ev eşyası</div>
+<div class="ev-price-val">Teklif İçin Arayın</div>
+<ul class="ev-price-features"><li>Kilitli oda + anahtar sizde</li><li>7/24 kamera güvenliği</li><li>Düzenli temizlik</li><li>Sözleşme güvencesi</li><li>Nakliyat dahil seçeneği</li><li>Uzun süreli indirim</li></ul>
+<a href="https://wa.me/905355298192" class="ev-price-btn" style="color:#1B2D4F !important;">Teklif Al</a>
+</div>
+</div>
+</div>
+
+<!-- SSS -->
+<div class="ev-section" style="background:#F8F6F3;">
+<div class="ev-section-header">
+<div class="ev-tag">Sık Sorulan Sorular</div>
+<h2 class="ev-section-title">Eşya Depolama Hakkında Sıkça Sorulan Sorular</h2>
+</div>
+<div class="ev-faq">
+<div class="ev-faq-item open"><div class="ev-faq-q" onclick="this.parentElement.classList.toggle('open')">Eşyalarıma ne zaman ulaşabilirim?</div><div class="ev-faq-a"><p>Önceden randevu alarak hafta içi ve hafta sonu eşyalarınıza ulaşabilirsiniz.</p></div></div>
+<div class="ev-faq-item"><div class="ev-faq-q" onclick="this.parentElement.classList.toggle('open')">Anahtar gerçekten sadece bende mi kalıyor?</div><div class="ev-faq-a"><p>Evet. Odanızın anahtarı sadece size teslim edilir. Biz dahil kimse odanıza erişemez.</p></div></div>
+<div class="ev-faq-item"><div class="ev-faq-q" onclick="this.parentElement.classList.toggle('open')">Nakliyat hizmeti dahil mi?</div><div class="ev-faq-a"><p>Sanat Evden Eve Nakliyat iştiraki olarak nakliyat hizmetini de sunuyoruz.</p></div></div>
+<div class="ev-faq-item"><div class="ev-faq-q" onclick="this.parentElement.classList.toggle('open')">Minimum depolama süresi var mı?</div><div class="ev-faq-a"><p>Esneklik bizim önceliğimiz. Detaylar için bizimle iletişime geçin.</p></div></div>
+<div class="ev-faq-item"><div class="ev-faq-q" onclick="this.parentElement.classList.toggle('open')">Eşyalarım sigortalı mı?</div><div class="ev-faq-a"><p>Sözleşme kapsamında eşyalarınız güvence altındadır.</p></div></div>
+<div class="ev-faq-item"><div class="ev-faq-q" onclick="this.parentElement.classList.toggle('open')">Fiyatlar neye göre belirleniyor?</div><div class="ev-faq-a"><p>Fiyatlar oda boyutu ve depolama süresine göre belirlenir. Gizli ücret yoktur.</p></div></div>
+</div>
+</div>
+
+<!-- CTA -->
+<div class="ev-cta">
+<!-- SEO DEĞİŞİKLİK 7: CTA'ya keyword eklendi -->
+<h2 class="ev-cta-title" style="color:#fff !important;">İstanbul Eşya Depolama Bizimle Çok Kolay</h2>
+<p class="ev-cta-desc" style="color:rgba(255,255,255,0.75) !important;">Hemen ücretsiz teklif alın, eşyalarınız güvende olsun.</p>
+<div class="ev-cta-btns">
+<a href="https://wa.me/905355298192" class="ev-btn-wa" style="color:#fff !important;" target="_blank">&#x1f4ac; WhatsApp ile Teklif Al</a>
+<a href="tel:+905355298192" class="ev-btn-tel" style="color:#fff !important;">&#x1f4de; 0535 529 81 92 — Hemen Arayın</a>
+</div>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:image {"id":165,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://evidepo.com/wp-content/uploads/2026/03/depo-gorsel.webp" alt="istanbul eşya depolama kilitli oda evidepo" class="wp-image-165"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+<div style="background:#f8fafc;padding:40px;border-radius:16px;margin:40px 0">
+<h2 style="text-align:center;color:#1B2D4F;margin-bottom:10px">Hizmet Verdiğimiz İlçeler</h2>
+<p style="text-align:center;color:#64748b;margin-bottom:30px">İstanbul'un Avrupa ve Anadolu yakasındaki tüm ilçelere eşya depolama ve nakliyat hizmeti sunuyoruz.</p>
+
+<h3 style="color:#1B2D4F;margin-bottom:12px">&#x1f30a; Anadolu Yakası</h3>
+<div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:25px">
+<a href="/kadikoy-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Kadıköy</a>
+<a href="/uskudar-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Üsküdar</a>
+<a href="/atasehir-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Ataşehir</a>
+<a href="/umraniye-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Ümraniye</a>
+<a href="/kartal-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Kartal</a>
+<a href="/pendik-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Pendik</a>
+<a href="/maltepe-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Maltepe</a>
+<a href="/tuzla-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Tuzla</a>
+<a href="/sancaktepe-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Sancaktepe</a>
+<a href="/sultanbeyli-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Sultanbeyli</a>
+</div>
+
+<h3 style="color:#1B2D4F;margin-bottom:12px">&#x1f309; Avrupa Yakası</h3>
+<div style="display:flex;flex-wrap:wrap;gap:10px">
+<a href="/besiktas-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Beşiktaş</a>
+<a href="/sisli-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Şişli</a>
+<a href="/sariyer-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Sarıyer</a>
+<a href="/beylikduzu-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Beylikdüzü</a>
+<a href="/esenyurt-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Esenyurt</a>
+<a href="/bakirkoy-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Bakırköy</a>
+<a href="/bahcelievler-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Bahçelievler</a>
+<a href="/kucukcekmece-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Küçükçekmece</a>
+<a href="/basaksehir-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Başakşehir</a>
+<a href="/fatih-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Fatih</a>
+<a href="/bagcilar-esya-depolama/" style="display:inline-block;padding:8px 16px;background:#fff;border-radius:8px;text-decoration:none;color:#1B2D4F;border:1px solid #e2e8f0;font-size:14px;transition:all 0.2s">Bağcılar</a>
+</div>
+</div>
