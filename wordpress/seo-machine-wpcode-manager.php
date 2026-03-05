@@ -172,6 +172,62 @@ if (!is_admin()) {
         "@type": "Answer",
         "text": "Evet, tüm depolama hizmetlerimiz resmi sözleşme ile güvence altına alınır."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "İstanbul\'da eşya depolama fiyatları ne kadar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eşya depolama fiyatları oda boyutuna ve kiralama süresine göre değişir. Evidepo\'da 5m², 10m² ve 20m² oda seçenekleri mevcuttur. Ücretsiz ekspertiz hizmetimizle eşyalarınıza en uygun oda boyutunu ve fiyatı birlikte belirleriz. Gizli ücret uygulamıyoruz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pendik dışındaki ilçelerden de hizmet alabilir miyim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet. Depomuz Pendik\'te bulunmakla birlikte, Sanat Evden Eve Nakliyat ekibimiz İstanbul\'un Anadolu ve Avrupa yakasındaki tüm ilçelerden eşya alıp depoya taşır. Kadıköy, Ataşehir, Beşiktaş, Bakırköy dahil tüm ilçelere hizmet veriyoruz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Depolama alanları nemli veya rutubetli mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hayır. Depolama odalarımız kuru, temiz ve bakımlı alanlardır. Düzenli temizlik ve havalandırma yapılır. Eşyalarınız nem, toz ve haşereden korunarak saklanır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kentsel dönüşüm için uzun süreli depolama yapıyor musunuz?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet. Kentsel dönüşüm süreçleri için özel uzun süreli depolama paketlerimiz mevcuttur. Uzun süreli kiralamada avantajlı fiyatlar sunuyoruz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Evidepo ile diğer depolama firmaları arasındaki fark nedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evidepo\'da her müşteriye kişiye özel kilitli oda tahsis edilir ve anahtar yalnızca müşteride kalır. Firma dahil kimse odanıza erişemez. Ayrıca Sanat Evden Eve Nakliyat iştiraki olarak nakliyat ve depolama tek elden sunulur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Taşınma sırasında eşyalarım zarar görür mü?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sanat Evden Eve Nakliyat\'ın profesyonel ekibi eşyalarınızı özenle paketler ve taşır. Eşyalarınız sözleşme kapsamında güvence altındadır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Depo alanını görebilir miyim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet. Randevu alarak depomuzu ziyaret edebilir, odaları yerinde görebilirsiniz. Ücretsiz ekspertiz hizmetimiz kapsamında ekibimiz size depolama alanlarını tanıtır."
+      }
     }
   ]
 }
