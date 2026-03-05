@@ -2,7 +2,7 @@
 /**
  * Plugin Name: SEO Machine - WPCode Manager
  * Description: WPCode header/footer script'lerini REST API üzerinden okuma/yazma endpoint'i
- * Version: 1.0
+ * Version: 1.1
  * Author: SEO Machine
  *
  * Kurulum: wp-content/mu-plugins/ klasörüne yükleyin
@@ -31,6 +31,30 @@ if (!is_admin()) {
 if (!is_admin()) {
     add_action('template_redirect', function () {
         ob_start(function ($html) {
+            // 0. CSS düzeltmeleri: hero h2, "En Popüler" badge, footer kontrast
+            $css_fixes = '<style id="ev-css-fixes">
+/* FIX: Hero bölümünde h2 kullanılıyor ama CSS h1 hedefliyor */
+.ev-hero h2{font-family:"Plus Jakarta Sans",sans-serif;font-size:48px;font-weight:800;line-height:1.12;color:#fff;margin-bottom:24px;letter-spacing:-1px}
+.ev-hero h2 em{font-style:normal;color:#E8614D}
+@media(max-width:1024px){.ev-hero h2{font-size:38px}}
+@media(max-width:768px){.ev-hero h2{font-size:30px}}
+@media(max-width:480px){.ev-hero h2{font-size:26px}}
+
+/* FIX: "En Popüler" badge taşma sorunu */
+.ev-pricing-grid{overflow:visible}
+.ev-price-card.popular{overflow:visible;margin-top:16px}
+
+/* FIX: Footer - koyu arka plan üzerinde koyu metin görünmüyor */
+.site-footer{background:#0F1A2E !important}
+.site-footer,.site-footer p,.site-footer .copyright-bar{color:rgba(255,255,255,0.7) !important}
+.site-footer a{color:rgba(255,255,255,0.85) !important}
+.site-footer a:hover{color:#E8614D !important}
+.site-footer h2,.site-footer h3,.site-footer h4,.site-footer .footer-widget-title{color:#fff !important}
+.site-footer .site-info{color:rgba(255,255,255,0.5) !important}
+.site-footer .site-info a{color:rgba(255,255,255,0.65) !important}
+</style>';
+            $html = str_replace('</head>', $css_fixes . "\n</head>", $html);
+
             // 1. Rank Math'ın ürettiği duplike LocalBusiness/SelfStorage bloklarını kaldır
             $html = preg_replace(
                 '/<script[^>]*type=["\']application\/ld\+json["\'][^>]*>\s*\{[^}]*"@type"\s*:\s*(\["SelfStorage"[^<]*|"LocalBusiness"[^<]*)<\/script>/s',
