@@ -33,16 +33,23 @@ if (!is_admin()) {
         ob_start(function ($html) {
             // 0. CSS düzeltmeleri: hero h2, "En Popüler" badge, footer kontrast
             $css_fixes = '<style id="ev-css-fixes">
-/* FIX: Hero bölümünde h2 kullanılıyor ama CSS h1 hedefliyor */
-.ev-hero h2{font-family:"Plus Jakarta Sans",sans-serif;font-size:48px;font-weight:800;line-height:1.12;color:#fff;margin-bottom:24px;letter-spacing:-1px}
-.ev-hero h2 em{font-style:normal;color:#E8614D}
-@media(max-width:1024px){.ev-hero h2{font-size:38px}}
-@media(max-width:768px){.ev-hero h2{font-size:30px}}
-@media(max-width:480px){.ev-hero h2{font-size:26px}}
+/* FIX: Hero h2 - global h2{color:var(--ev-navy)!important} override ediyor, !important gerekli */
+.ev-hero h2,.ev-hero h2 *{color:#fff !important;font-family:"Plus Jakarta Sans",sans-serif}
+.ev-hero h2{font-size:48px !important;font-weight:800 !important;line-height:1.12 !important;margin-bottom:24px;letter-spacing:-1px}
+.ev-hero h2 em,.ev-hero h2 em *{color:#E8614D !important;font-style:normal}
+@media(max-width:1024px){.ev-hero h2{font-size:38px !important}}
+@media(max-width:768px){.ev-hero h2{font-size:30px !important}}
+@media(max-width:480px){.ev-hero h2{font-size:26px !important}}
 
-/* FIX: "En Popüler" badge taşma sorunu */
-.ev-pricing-grid{overflow:visible}
-.ev-price-card.popular{overflow:visible;margin-top:16px}
+/* FIX: Header tagline - 0.4 opacity cok soluk, daha okunabilir yap */
+.ev-brand-tagline{color:rgba(255,255,255,0.85) !important;font-size:10px !important;font-weight:600 !important;letter-spacing:0.8px !important}
+@media(min-width:769px) and (max-width:1024px){.ev-brand-tagline{font-size:9px !important}}
+@media(min-width:1025px){.ev-brand-tagline{font-size:11px !important}}
+
+/* FIX: "En Popüler" badge - parent .ev-price-card overflow:hidden!important kesiyor */
+.ev-pricing-grid{overflow:visible !important}
+.ev-pricing{overflow:visible !important}
+.ev-price-card.popular{overflow:visible !important;margin-top:16px;position:relative !important}
 
 /* FIX: Footer - koyu arka plan üzerinde koyu metin görünmüyor */
 .site-footer{background:#0F1A2E !important}
