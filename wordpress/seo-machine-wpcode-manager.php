@@ -311,6 +311,131 @@ if (!is_admin()) {
                 $html = str_replace('</head>', $howto_schema . "\n</head>", $html);
             }
 
+            // 5. SEO: Twitter Card meta tag'leri ekle (OG varsa ondan türet)
+            if (strpos($html, 'twitter:card') === false) {
+                $twitter_tags = '';
+                // OG title'dan Twitter title türet
+                if (preg_match('/<meta\s+property="og:title"\s+content="([^"]+)"/i', $html, $m)) {
+                    $twitter_tags .= '<meta name="twitter:card" content="summary_large_image" />' . "\n";
+                    $twitter_tags .= '<meta name="twitter:title" content="' . $m[1] . '" />' . "\n";
+                }
+                // OG description'dan Twitter description türet
+                if (preg_match('/<meta\s+property="og:description"\s+content="([^"]+)"/i', $html, $m)) {
+                    $twitter_tags .= '<meta name="twitter:description" content="' . $m[1] . '" />' . "\n";
+                }
+                // OG image'dan Twitter image türet
+                if (preg_match('/<meta\s+property="og:image"\s+content="([^"]+)"/i', $html, $m)) {
+                    $twitter_tags .= '<meta name="twitter:image" content="' . $m[1] . '" />' . "\n";
+                }
+                $twitter_tags .= '<meta name="twitter:site" content="@evidepo" />' . "\n";
+                if ($twitter_tags) {
+                    $html = str_replace('</head>', $twitter_tags . '</head>', $html);
+                }
+            }
+
+            // 6. SEO: Explicit canonical tag (Rank Math yoksa ekle)
+            if (strpos($html, 'rel="canonical"') === false) {
+                $canonical_url = 'https://evidepo.com' . strtok($_SERVER['REQUEST_URI'], '?');
+                $canonical_url = rtrim($canonical_url, '/') . '/';
+                if ($canonical_url === 'https://evidepo.com//') {
+                    $canonical_url = 'https://evidepo.com/';
+                }
+                $canonical_tag = '<link rel="canonical" href="' . esc_url($canonical_url) . '" />' . "\n";
+                $html = str_replace('</head>', $canonical_tag . '</head>', $html);
+            }
+
+            // 7. SEO: Robots meta tag (Rank Math yoksa ekle)
+            if (strpos($html, 'name="robots"') === false) {
+                $robots_tag = '<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />' . "\n";
+                $html = str_replace('</head>', $robots_tag . '</head>', $html);
+            }
+
+            // 8. SEO: Fiyatlar sayfasına Service + AggregateOffer schema
+            if (strpos($_SERVER['REQUEST_URI'], '/fiyat') !== false) {
+                $pricing_schema = '<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://evidepo.com/#depolama-hizmeti",
+  "name": "Eşya Depolama Hizmeti",
+  "provider": {"@id": "https://evidepo.com/#localbusiness"},
+  "serviceType": "Self Storage",
+  "areaServed": {"@type": "City", "name": "İstanbul"},
+  "description": "İstanbul Pendik\'te kilitli oda sistemiyle güvenli eşya depolama. 5m², 10m² ve 20m² oda seçenekleri.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Depolama Oda Seçenekleri",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "5m² Depolama Odası",
+        "description": "Küçük ev eşyaları ve kişisel eşyalar için ideal",
+        "priceCurrency": "TRY",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "unitCode": "MON",
+          "referenceQuantity": {"@type": "QuantitativeValue", "value": "1", "unitCode": "MON"}
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "10m² Depolama Odası",
+        "description": "1+1 veya 2+1 ev eşyaları için uygun",
+        "priceCurrency": "TRY",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "unitCode": "MON",
+          "referenceQuantity": {"@type": "QuantitativeValue", "value": "1", "unitCode": "MON"}
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "20m² Depolama Odası",
+        "description": "3+1 ve üzeri ev eşyaları veya ofis depolama için geniş alan",
+        "priceCurrency": "TRY",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "unitCode": "MON",
+          "referenceQuantity": {"@type": "QuantitativeValue", "value": "1", "unitCode": "MON"}
+        }
+      }
+    ]
+  }
+}
+</script>';
+                $html = str_replace('</head>', $pricing_schema . "\n</head>", $html);
+            }
+
+            // 9. SEO: Hizmet sayfalarına Service schema
+            if (preg_match('#/hizmetlerimiz/([a-z-]+)#', $_SERVER['REQUEST_URI'], $hizmet_match)) {
+                $hizmet_slug = $hizmet_match[1];
+                $hizmet_map = array(
+                    'ev-esyasi-depolama' => array('Ev Eşyası Depolama', 'Ev eşyalarınızı güvenli, kilitli odalarda depolayın. Kamera güvenliği, sigorta ve randevulu erişim.'),
+                    'ofis-kurumsal-depolama' => array('Ofis ve Kurumsal Depolama', 'Ofis mobilyaları, arşiv dosyaları ve kurumsal ekipman için güvenli depolama çözümleri.'),
+                    'tadilat-depolama' => array('Tadilat Depolama', 'Ev veya ofis tadilat süresince eşyalarınızı güvenle saklayın. Kısa ve uzun süreli seçenekler.'),
+                    'kentsel-donusum-depolama' => array('Kentsel Dönüşüm Depolama', 'Kentsel dönüşüm sürecinde eşyalarınız için uzun süreli güvenli depolama. Avantajlı fiyatlar.'),
+                    'yurt-disi-depolama' => array('Yurt Dışı Depolama', 'Yurt dışına çıkarken eşyalarınızı güvenle depolayın. Uzun süreli paketler mevcut.'),
+                    'nakliyat-ve-depolama' => array('Nakliyat ve Depolama', 'Sanat Evden Eve Nakliyat ile taşıma ve depolama tek elden. İstanbul geneli hizmet.'),
+                );
+                if (isset($hizmet_map[$hizmet_slug])) {
+                    $h_name = $hizmet_map[$hizmet_slug][0];
+                    $h_desc = $hizmet_map[$hizmet_slug][1];
+                    $service_schema = '<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "' . $h_name . '",
+  "description": "' . $h_desc . '",
+  "provider": {"@id": "https://evidepo.com/#localbusiness"},
+  "serviceType": "Self Storage",
+  "areaServed": {"@type": "City", "name": "İstanbul"},
+  "url": "https://evidepo.com/hizmetlerimiz/' . $hizmet_slug . '/"
+}
+</script>';
+                    $html = str_replace('</head>', $service_schema . "\n</head>", $html);
+                }
+            }
+
             return $html;
         });
     });
