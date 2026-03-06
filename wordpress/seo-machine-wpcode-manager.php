@@ -46,10 +46,15 @@ if (!is_admin()) {
 @media(min-width:769px) and (max-width:1024px){.ev-brand-tagline{font-size:9px !important}}
 @media(min-width:1025px){.ev-brand-tagline{font-size:11px !important}}
 
-/* FIX: "En Popüler" badge - parent .ev-price-card overflow:hidden!important kesiyor */
-.ev-pricing-grid{overflow:visible !important}
-.ev-pricing{overflow:visible !important}
-.ev-price-card.popular{overflow:visible !important;margin-top:16px;position:relative !important}
+/* FIX: "En Popüler" badge - overflow:hidden kesiyor, badge icine al */
+.ev-price-card.popular{position:relative !important;overflow:hidden !important;padding-top:40px !important;margin-top:12px !important}
+.ev-price-card.popular::before{top:0 !important;left:50% !important;transform:translateX(-50%) !important;border-radius:0 0 12px 12px !important;padding:6px 20px !important;font-size:11px !important;z-index:2 !important}
+/* Mobilde kart arasi bosluk ve tasma onleme */
+@media(max-width:768px){
+.ev-pricing-grid{gap:20px !important;overflow:hidden !important}
+.ev-price-card{overflow:hidden !important}
+.ev-price-card a[href*="wa.me"]{position:relative !important;z-index:1 !important}
+}
 
 /* FIX: Footer - koyu arka plan üzerinde koyu metin görünmüyor */
 .site-footer{background:#0F1A2E !important}
